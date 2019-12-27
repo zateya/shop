@@ -5,6 +5,10 @@
   "main": "index.js",
   "author": "",
   "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com:zateya/shop.git"
+  },
   "devDependencies": {
     "browser-sync": "^2.26.7",
     "del": "^5.1.0",
@@ -20,7 +24,7 @@
   "scripts": {
     "build": "gulp build",
     "start": "npm run build && gulp serve",
-    "deploy": "gh-pages -d build"
+    "deploy": "gh-pages -d dist"
   },
   "browserslist": [
     "last 2 versions",

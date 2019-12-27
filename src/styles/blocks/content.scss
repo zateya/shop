@@ -1,0 +1,9 @@
+.content__container {
+  display: flex;
+}
+
+.content__aside {
+  flex-shrink: 0;
+  width: 297px;
+  margin-right: 39px;
+}
