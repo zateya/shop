@@ -1,0 +1,31 @@
+.button {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 46px;
+  padding: 13px 23px;
+  border: 0;
+  border-radius: 20px;
+  font-size: 16px;
+  line-height: 1.25;
+  font-weight: 700;
+  font-family: inherit;
+  text-transform: uppercase;
+  color: #fff;
+  background-color: $color-crimson;
+  transition: background-color 0.3s ease;
+  outline: 0;
+  cursor: pointer;
+
+  &:disabled,
+  &--disabled {
+    background-color: grayscale($color-crimson);
+    cursor: default;
+    pointer-events: none;
+  }
+
+  &:hover,
+  &:focus {
+    background-color: darken($color-crimson, 10%);
+  }
+}

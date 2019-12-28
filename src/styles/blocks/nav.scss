@@ -1,0 +1,33 @@
+.nav {
+  background-color: $color-red;
+}
+
+.nav__container {
+  display: flex;
+  justify-content: space-between;
+  min-height: 51px;
+}
+
+.nav__list {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  list-style: none;
+  width: 100%;
+  max-width: $main-content-width;
+  margin: 0;
+  padding: 0;
+}
+
+.nav__link {
+  display: block;
+  padding: 17px 0 16px;
+  color: #fff;
+  text-transform: uppercase;
+  text-decoration: none;
+  transition: color 0.3s ease;
+
+  &:hover {
+    color: $color-yellow;
+  }
+}

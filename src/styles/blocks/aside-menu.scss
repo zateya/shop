@@ -1,0 +1,21 @@
+.aside-menu {
+  @include setWhiteBlock;
+
+  list-style: none;
+  padding: 0 14px 9px;
+}
+
+.aside-menu__link {
+  display: block;
+  padding: 15px 9px 16px 43px;
+  color: $color-dark;
+  text-decoration: none;
+
+  &:hover {
+    color: $color-red;
+  }
+}
+
+.aside-menu__item:not(:last-child) .aside-menu__link {
+  border-bottom: 1px solid $color-grey-92;
+}

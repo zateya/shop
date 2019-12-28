@@ -1,0 +1,12 @@
+.promo {
+  @include addShadow;
+}
+
+.promo__img {
+  display: block;
+  transition: opacity 0.3s ease;
+}
+
+.promo__link:hover .promo__img {
+  opacity: 0.9;
+}

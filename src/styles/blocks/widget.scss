@@ -1,13 +1,29 @@
 .widget {
+  @include setWhiteBlock;
+
   padding-left: 25px;
   padding-right: 25px;
 }
 
 .widget__top {
-  padding: 17px 0 17px;
-  border-bottom: 1px solid $color-grey;
+  padding: 18px 0 16px;
+  border-bottom: 1px solid $color-grey-92;
 }
 
 .widget__title {
   margin: 0;
+}
+
+.widget__form {
+  padding-top: 20px;
+  padding-bottom: 30px;
+}
+
+.widget__form-title {
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+.widget__form-control {
+  margin-bottom: 23px;
 }

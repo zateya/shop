@@ -4,6 +4,6 @@
 
 .content__aside {
   flex-shrink: 0;
-  width: 297px;
-  margin-right: 39px;
+  width: $aside-width;
+  margin-right: $aside-gap;
 }

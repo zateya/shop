@@ -1,0 +1,29 @@
+.user-menu {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  list-style: none;
+  width: 100%;
+  padding: 0;
+  font-size: 12px;
+  line-height: 1.5;
+}
+
+.user-menu__item {
+  display: flex;
+  align-items: center;
+
+  &:not(:last-child):after {
+    content: "|";
+    margin: 0 18px;
+  }
+}
+
+.user-menu__link {
+  color: #fff;
+  text-decoration: none;
+
+  &:hover {
+    color: $color-crimson;
+  }
+}
