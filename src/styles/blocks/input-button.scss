@@ -1,0 +1,25 @@
+.input-button {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 54px;
+  padding: 0;
+  border: 0;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  background-color: $color-red;
+  outline: 0;
+  cursor: pointer;
+
+  &:disabled,
+  &--disabled {
+    background-color: grayscale($color-red);
+    cursor: default;
+    pointer-events: none;
+  }
+
+  &:hover,
+  &:focus {
+    background-color: darken($color-red, 10%);
+  }
+}

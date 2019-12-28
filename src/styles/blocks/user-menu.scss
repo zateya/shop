@@ -5,8 +5,6 @@
   list-style: none;
   width: 100%;
   padding: 0;
-  font-size: 12px;
-  line-height: 1.5;
 }
 
 .user-menu__item {
@@ -20,6 +18,8 @@
 }
 
 .user-menu__link {
+  font-size: 12px;
+  line-height: 1.5;
   color: #fff;
   text-decoration: none;
 

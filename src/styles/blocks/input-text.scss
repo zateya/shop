@@ -13,13 +13,8 @@
   &:focus {
     border-color: $color-grey-70;
   }
-}
 
-.input-text_size_small {
-  height: 37px;
-  padding: 10px 10px 9px;
-}
-
-.input-text_theme_dark {
-  background-color: #fff;
+  &::placeholder {
+    color: #a7a7a7;
+  }
 }

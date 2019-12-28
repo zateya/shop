@@ -11,6 +11,7 @@
   font-weight: 700;
   font-family: inherit;
   text-transform: uppercase;
+  text-decoration: none;
   color: #fff;
   background-color: $color-crimson;
   transition: background-color 0.3s ease;
@@ -27,5 +28,22 @@
   &:hover,
   &:focus {
     background-color: darken($color-crimson, 10%);
+  }
+}
+
+.button_invert {
+  min-height: 42px;
+  padding: 8px 22px;
+  border-radius: 0;
+  border: 2px solid #000;
+  font-size: 17px;
+  line-height: 1.2;
+  color: #000;
+  background-color: transparent;
+
+  &:hover,
+  &:focus {
+    color: #fff;
+    background-color: #000;
   }
 }

@@ -1,18 +1,26 @@
 @import "./scaffolding/variables.scss";
 @import "./scaffolding/mixins.scss";
 @import "./scaffolding/scaffolding.scss";
+
+@import "./blocks/button.scss";
+@import "./blocks/input-text.scss";
+@import "./blocks/input-button.scss";
+@import "./blocks/input-error.scss";
+@import "./blocks/form-control.scss";
+
 @import "./blocks/header.scss";
+@import "./blocks/search-form.scss";
 @import "./blocks/logo.scss";
+@import "./blocks/cart-link.scss";
 @import "./blocks/nav.scss";
 @import "./blocks/container.scss";
-@import "./blocks/content.scss";
+@import "./blocks/main.scss";
 @import "./blocks/aside.scss";
 @import "./blocks/aside-menu.scss";
 @import "./blocks/widget.scss";
 @import "./blocks/title.scss";
 @import "./blocks/user-menu.scss";
 @import "./blocks/promo.scss";
-@import "./blocks/button.scss";
-@import "./blocks/input-text.scss";
-@import "./blocks/input-error.scss";
-@import "./blocks/form-control.scss";
+@import "./blocks/content.scss";
+@import "./blocks/showcase.scss";
+@import "./blocks/features.scss";

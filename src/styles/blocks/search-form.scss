@@ -1,0 +1,15 @@
+.search-form__wrapper {
+  display: flex;
+}
+
+.search-form__button {
+  flex-shrink: 0;
+}
+
+.search-form__input {
+  height: 37px;
+  padding: 10px 9px 9px 26px;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  background-color: #fff;
+}

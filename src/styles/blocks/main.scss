@@ -1,0 +1,14 @@
+.main__container {
+  display: flex;
+}
+
+.main__aside {
+  flex-shrink: 0;
+  width: $aside-width;
+  margin-right: $aside-gap;
+}
+
+.main__content {
+  flex-grow: 1;
+  width: 100%;
+}
