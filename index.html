@@ -39,21 +39,25 @@
             </li>
           </ul>
 
-          <form class="search-form" action="/search/" method="GET">
-            <div class="input-group">
-              <input class="search-form__text input-text input-text_size_small input-text_theme_dark" type="search"
-                placeholder="Search here..." name="question">
+          <form class="search-form header__search" action="/search/" method="GET">
+            <div class="search-form__wrapper">
+              <input class="search-form__input input-text" type="search" placeholder="Search here..." name="question"
+                required>
               <button class="search-form__button input-button">
-                <span class="input-button__icon icon icon_search"></span>
+                <span class="search-form__icon icon icon_search"></span>
                 <span class="visually-hidden">Найти</span>
               </button>
             </div>
           </form>
 
-          <a class="cart-link" href="#">
-            <span class="cart-link__icon icon icon_cart"></span>
-            <div class="cart-link__title">Total</div>
-            <div class="cart-link__price">$600.00</div>
+          <a class="cart-link header__cart-link" href="#">
+            <span class="cart-link__icon-wrap">
+              <span class="cart-link__icon icon icon_cart"></span>
+            </span>
+            <div class="cart-link__info">
+              <div class="cart-link__title">Total</div>
+              <div class="cart-link__price">$600.00</div>
+            </div>
           </a>
         </div>
       </div>
@@ -91,9 +95,9 @@
       </nav>
     </header>
 
-    <main class="content">
-      <div class="content__container container">
-        <aside class="aside content__aside">
+    <main class="main">
+      <div class="main__container container">
+        <aside class="aside main__aside">
           <ul class="aside-menu aside__menu">
             <li class="aside-menu__item">
               <a class="aside-menu__link" href="#">
@@ -205,6 +209,83 @@
             </a>
           </div>
         </aside>
+
+        <div class="content main__content">
+          <section class="showcase content__showcase">
+            <div class="showcase__slider">
+              <div class="showcase__slide">
+                <div class="showcase__background" style="background-image: url(./images/showcase.jpg)">
+                  <div class="showcase__text">
+                    <h3 class="showcase__title">Collection 2016</h3>
+                    <p class="showcase__lead">
+                      save 50% for
+                      <span class="showcase__lead-subline">first purchase</span>
+                    </p>
+                    <div class="showcase__more">
+                      <a class="showcase__more-link button button_invert" href="#">Shop Now</a>
+                    </div>
+                  </div>
+                </div>
+
+                <ul class="features showcase__features">
+                  <li class="features__item">
+                    <h4 class="features__title">Money back</h4>
+                    <p class="features__info">30 Days Money Back Guarantee</p>
+                  </li>
+                  <li class="features__item">
+                    <h4 class="features__title">Free shipping</h4>
+                    <p class="features__info">Shipping on orders over $99</p>
+                  </li>
+                  <li class="features__item">
+                    <h4 class="features__title">Special Sale</h4>
+                    <p class="features__info">Extra $5 off on all items </p>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </section>
+
+          <section class="widget content__block">
+            <div class="widget__top">
+              <div class="widget__title title">Hot Deals</div>
+            </div>
+            <div class="slider widget__content">
+              <div class="slider__content">
+                <a class="big-card card">
+                  <div class="big-card__img-wrap">
+                    <img class="big-card__img card__img" class="" src="./images/" alt="">
+                  </div>
+
+                  <div class="big-card__info">
+                    <p class="card__title">Lorem ipsum dolor</p>
+                    <div class="card__price">
+                      <del class="card__price-old">100.00</del>
+                      <span class="card__price-new">$90.00</span>
+                    </div>
+                    <div class="card__rating rating">
+                      <span class="visually-hidden">Rating 4 of 5</span>
+                      <span class="star rating__item"></span>
+                      <span class="star rating__item"></span>
+                      <span class="star rating__item"></span>
+                      <span class="star rating__item"></span>
+                      <span class="star star_empty rating__item"></span>
+                    </div>
+                  </div>
+                </a>
+              </div>
+
+              <div class="slider__controls widget__controls">
+                <button class="slider__control slider__control_prev">
+                  <span class="visually-hidden">Prev</span>
+                </button>
+                <button class="slider__control slider__control_next">
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+            </div>
+          </section>
+
+        </div>
       </div>
     </main>
 
