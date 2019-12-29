@@ -2,7 +2,6 @@
   display: flex;
   list-style: none;
   align-items: center;
-  min-height: 79px;
   padding: 0;
   color: #fff;
   background-color: $color-red;
@@ -10,7 +9,7 @@
 
 .features__item {
   width: 33.3333%;
-  padding: 15px;
+  padding: 22px 15px;
   text-align: center;
 }
 

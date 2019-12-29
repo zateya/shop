@@ -1,0 +1,14 @@
+.cards-slider {
+  display: flex;
+  margin-left: -13.5px;
+  margin-right: -13.5px;
+}
+
+.cards-slider__item {
+  padding-left: 13.5px;
+  padding-right: 13.5px;
+
+  &:not(.slick-slide) {
+    width: 25%;
+  }
+}
