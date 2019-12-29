@@ -5,8 +5,8 @@
     $(this).slick({
       slidesToShow: 1,
       slidesToScroll: 1,
-      prevArrow: $(this).closest('.slider__control_prev'),
-      nextArrow: $(this).closest('.slider__control_next'),
+      prevArrow: $(this).parent().find('.slider__arrow_prev'),
+      nextArrow: $(this).parent().find('.slider__arrow_next'),
     });
   })
 })();
