@@ -65,8 +65,12 @@
   padding-top: 115.34%;
 }
 
-.card_vertical .card__img-wrap {
+.card_size_big .card__img-wrap {
   margin-bottom: 20px;
+}
+
+.card_size_medium .card__img-wrap {
+  margin-bottom: 17px;
 }
 
 .card_vertical .card__rating {

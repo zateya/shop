@@ -1,0 +1,23 @@
+.filters {
+  display: flex;
+  align-self: center;
+}
+
+.filters__item {
+  text-decoration: none;
+  color: inherit;
+
+  &:hover,
+  &:focus {
+    color: $color-red;
+  }
+
+  &--active {
+    font-weight: 700;
+    color: #000;
+  }
+
+  &:not(:last-child) {
+    margin-right: 25px;
+  }
+}
