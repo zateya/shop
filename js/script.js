@@ -1,7 +1,7 @@
 'use strict';
 
 (function() {
-  $('.onecard-slider').each(function() {
+  $('.big-cards.slider').each(function() {
     $(this).slick({
       slidesToShow: 1,
       slidesToScroll: 1,
@@ -10,7 +10,7 @@
     });
   });
 
-  $('.cards-slider').each(function() {
+  $('.medium-cards.slider').each(function() {
     $(this).slick({
       slidesToShow: 4,
       slidesToScroll: 1,
