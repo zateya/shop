@@ -6,7 +6,7 @@
 }
 
 .widget__top {
-  padding: 18px 0 16px;
+  padding: 23px 0 20px;
   border-bottom: 1px solid $color-grey-92;
 }
 
@@ -26,4 +26,8 @@
 
 .widget__form-control {
   margin-bottom: 23px;
+}
+
+.widget__controls {
+  display: none;
 }

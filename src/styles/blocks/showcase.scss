@@ -1,7 +1,13 @@
+.showcase {
+  @include addShadow;
+  min-height: 454px;
+  background-color: $color-red;
+}
+
 .showcase__background {
   display: flex;
   align-items: center;
-  min-height: 376px;
+  min-height: 375px;
   background-repeat: no-repeat;
   background-position: left top;
 
