@@ -8,6 +8,7 @@
   @include addShadow;
 
   background-color: #fff;
+  transition: box-shadow 0.2s ease;
 
   &:hover,
   &:focus {
