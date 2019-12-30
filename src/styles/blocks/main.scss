@@ -1,14 +1,23 @@
 .main__container {
   display: flex;
+  flex-direction: column;
+
+  @media (min-width: $desktop) {
+    flex-direction: row;
+  }
 }
 
 .main__aside {
-  flex-shrink: 0;
-  width: $aside-width;
-  margin-right: $aside-gap;
+  @media (min-width: $desktop) {
+    flex-shrink: 0;
+    width: $aside-width;
+    margin-right: $aside-gap;
+  }
 }
 
 .main__content {
-  flex-grow: 1;
-  width: $main-content-width;
+  @media (min-width: $desktop) {
+    flex-grow: 1;
+    width: $main-content-width;
+  }
 }

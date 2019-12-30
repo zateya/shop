@@ -11,3 +11,9 @@ $color-blue: #303a7a;
 $aside-width: 25.39%;
 $aside-gap: 39px;
 $main-content-width: calc(100% - #{$aside-width} - #{$aside-gap});
+
+$desktop: 992px;
+$tablet-max: 991px;
+$tablet: 768px;
+$phone-max: 767px;
+$phone-md: 480px;
