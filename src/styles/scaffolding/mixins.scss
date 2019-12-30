@@ -4,6 +4,17 @@
   background-color: #fff;
 }
 
+@mixin setActiveWhiteBlock {
+  @include addShadow;
+
+  background-color: #fff;
+
+  &:hover,
+  &:focus {
+    box-shadow: 0 0 15px rgba(#000, 0.1);
+  }
+}
+
 @mixin addShadow {
   box-shadow: 0 0 7px rgba(#000, 0.03);
 }

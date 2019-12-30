@@ -1,12 +1,14 @@
 .sales-item {
-  @include setWhiteBlock;
+  @include setActiveWhiteBlock;
 
   position: relative;
   display: flex;
   justify-content: flex-end;
   align-items: center;
   min-height: 226px;
-  padding: 40px 20px;
+  padding: 40px 25px;
+  text-decoration: none;
+  color: inherit;
   z-index: 0;
   overflow: hidden;
 
@@ -30,6 +32,7 @@
 .sales-item__text {
   width: 100%;
   max-width: 160px;
+  text-align: right;
 }
 
 .sales-item__img {
@@ -40,4 +43,46 @@
   max-width: none;
   height: 100%;
   z-index: -2;
+}
+
+.sales-item__title {
+  margin: 0;
+  font-size: 42px;
+  line-height: 1;
+  font-weight: 400;
+  font-family: "Alfa Slab One", cursive;
+  text-transform: uppercase;
+  color: $color-grey-87;
+}
+
+.sales-item__title-accent {
+  font-size: 48px;
+}
+
+.sales-item__subtitle {
+  margin: 0;
+  font-size: 17px;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+.sales-item__more {
+  display: inline-block;
+  margin-top: 20px;
+  font-weight: 900;
+  color: $color-blue;
+  text-transform: uppercase;
+  text-decoration: underline;
+}
+
+.sales-item:hover .sales-item__more {
+  color: $color-red;
+}
+
+.sales-item__note {
+  margin-top: 15px;
+  margin-bottom: 0;
+  font-size: 13px;
+  color: $color-grey-70;
 }
