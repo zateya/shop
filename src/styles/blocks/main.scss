@@ -1,14 +1,11 @@
 .main__container {
-  display: flex;
-  flex-direction: column;
-
-  @media (min-width: $desktop) {
-    flex-direction: row;
+  @media (min-width: $desktop-sm) {
+    display: flex;
   }
 }
 
 .main__aside {
-  @media (min-width: $desktop) {
+  @media (min-width: $desktop-sm) {
     flex-shrink: 0;
     width: $aside-width;
     margin-right: $aside-gap;
@@ -16,7 +13,7 @@
 }
 
 .main__content {
-  @media (min-width: $desktop) {
+  @media (min-width: $desktop-sm) {
     flex-grow: 1;
     width: $main-content-width;
   }

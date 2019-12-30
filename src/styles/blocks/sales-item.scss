@@ -1,0 +1,43 @@
+.sales-item {
+  @include setWhiteBlock;
+
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  min-height: 226px;
+  padding: 40px 20px;
+  z-index: 0;
+  overflow: hidden;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 185px;
+    bottom: 0;
+    width: 100%;
+    transform: skewX(-17deg);
+    background-color: #fff;
+    z-index: -1;
+
+    @media (min-width: $tablet) {
+      left: calc(100% - 210px);
+    }
+  }
+}
+
+.sales-item__text {
+  width: 100%;
+  max-width: 160px;
+}
+
+.sales-item__img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: auto;
+  max-width: none;
+  height: 100%;
+  z-index: -2;
+}

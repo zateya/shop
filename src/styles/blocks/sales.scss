@@ -1,0 +1,17 @@
+.sales__container {
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: $tablet) {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+.sales__item {
+  margin-top: 30px;
+
+  @media (min-width: $tablet) {
+    width: calc(50% - 21px);
+  }
+}

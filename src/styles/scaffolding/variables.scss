@@ -6,13 +6,15 @@ $color-grey-79: #cacaca;
 $color-grey-92: #eaeaea;
 $color-grey-95: #f3f3f3;
 $color-yellow: #ffc808;
-$color-blue: #303a7a;
+$color-dark-blue: #303a7a;
+$color-blue: #108be9;
 
 $aside-width: 25.39%;
 $aside-gap: 39px;
 $main-content-width: calc(100% - #{$aside-width} - #{$aside-gap});
 
-$desktop: 992px;
+$desktop-md: 1200px;
+$desktop-sm: 992px;
 $tablet-max: 991px;
 $tablet: 768px;
 $phone-max: 767px;
