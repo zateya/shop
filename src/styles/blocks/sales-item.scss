@@ -46,7 +46,6 @@
 }
 
 .sales-item__title {
-  margin: 0;
   font-size: 42px;
   line-height: 1;
   font-weight: 400;
@@ -60,7 +59,6 @@
 }
 
 .sales-item__subtitle {
-  margin: 0;
   font-size: 17px;
   font-weight: 900;
   text-transform: uppercase;
@@ -82,7 +80,6 @@
 
 .sales-item__note {
   margin-top: 15px;
-  margin-bottom: 0;
   font-size: 13px;
   color: $color-grey-70;
 }

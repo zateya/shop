@@ -1,0 +1,19 @@
+.promo-wide__link {
+  @include setActiveWhiteBlock;
+
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  min-height: 226px;
+  padding: 24px;
+  text-decoration: none;
+}
+
+.promo-wide__text {
+  width: 50%;
+  padding-left: 80px;
+}
+
+.promo-wide__more {
+  margin-top: 20px;
+}
