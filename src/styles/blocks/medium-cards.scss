@@ -1,12 +1,12 @@
 .medium-cards {
   display: flex;
-  margin-left: -13.5px;
-  margin-right: -13.5px;
+  margin-left: -13px;
+  margin-right: -13px;
 }
 
 .medium-cards__item {
-  padding-left: 13.5px;
-  padding-right: 13.5px;
+  padding-left: 13px;
+  padding-right: 13px;
   outline: none;
 
   &:not(.slick-slide) {

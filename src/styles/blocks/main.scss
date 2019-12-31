@@ -7,7 +7,13 @@
 .main__aside {
   @media (min-width: $desktop-sm) {
     flex-shrink: 0;
-    width: $aside-width;
+    min-width: $aside-width;
+    max-width: $aside-width;
+  }
+}
+
+.main__aside_left {
+  @media (min-width: $desktop-sm) {
     margin-right: $aside-gap;
   }
 }
@@ -15,6 +21,7 @@
 .main__content {
   @media (min-width: $desktop-sm) {
     flex-grow: 1;
-    width: $main-content-width;
+    min-width: $main-content-width;
+    max-width: $main-content-width;
   }
 }

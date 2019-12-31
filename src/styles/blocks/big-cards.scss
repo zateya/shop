@@ -1,0 +1,3 @@
+.big-cards_slider:not(.slick-initialized) .big-cards__item:not(:first-child) {
+  display: none;
+}

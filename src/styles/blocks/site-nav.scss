@@ -1,14 +1,14 @@
-.nav {
+.site-nav {
   background-color: $color-red;
 }
 
-.nav__container {
+.site-nav__container {
   display: flex;
   justify-content: space-between;
   min-height: 51px;
 }
 
-.nav__list {
+.site-nav__list {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
@@ -18,7 +18,7 @@
   padding: 0;
 }
 
-.nav__link {
+.site-nav__link {
   display: block;
   padding: 17px 0 16px;
   color: #fff;

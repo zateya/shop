@@ -16,9 +16,9 @@
   <div class="page">
     <header class="header">
       <div class="header__top container">
-        <div class="header__logo logo">
-          <a class="logo__link" href="#">
-            <img class="logo__img" src="./images/logo.svg" alt="Market Supply">
+        <div class="site-logo header__logo">
+          <a class="site-logo__link" href="#">
+            <img class="site-logo__img" src="./images/logo.svg" alt="Market Supply">
           </a>
         </div>
 
@@ -64,33 +64,33 @@
         </div>
       </div>
 
-      <nav class="nav header__nav">
-        <div class="nav__container container">
+      <nav class="site-nav header__nav">
+        <div class="site-nav__container container">
           <div class="catalog-nav">
-            <a class="catalog-nav__link nav__link" href="#">
+            <a class="catalog-nav__link site-nav__link" href="#">
               <span class="catalog-nav__icon icon icon_menu"></span>
               Categories
             </a>
           </div>
 
-          <ul class="nav__list">
-            <li class="nav__item">
-              <a class="nav__link" href="#">Clothing</a>
+          <ul class="site-nav__list">
+            <li class="site-nav__item">
+              <a class="site-nav__link" href="#">Clothing</a>
             </li>
-            <li class="nav__item">
-              <a class="nav__link" href="#">Electronics hot</a>
+            <li class="site-nav__item">
+              <a class="site-nav__link" href="#">Electronics hot</a>
             </li>
-            <li class="nav__item">
-              <a class="nav__link" href="#">Health & Beauty</a>
+            <li class="site-nav__item">
+              <a class="site-nav__link" href="#">Health & Beauty</a>
             </li>
-            <li class="nav__item">
-              <a class="nav__link" href="#">Watches</a>
+            <li class="site-nav__item">
+              <a class="site-nav__link" href="#">Watches</a>
             </li>
-            <li class="nav__item">
-              <a class="nav__link" href="#">Jewellery</a>
+            <li class="site-nav__item">
+              <a class="site-nav__link" href="#">Jewellery</a>
             </li>
-            <li class="nav__item">
-              <a class="nav__link" href="#">Shoes</a>
+            <li class="site-nav__item">
+              <a class="site-nav__link" href="#">Shoes</a>
             </li>
           </ul>
         </div>
@@ -99,7 +99,7 @@
 
     <main class="main">
       <div class="main__container container">
-        <aside class="aside main__aside">
+        <aside class="aside main__aside main__aside_left">
           <ul class="aside-menu aside__menu">
             <li class="aside-menu__item">
               <a class="aside-menu__link" href="#">
@@ -148,22 +148,22 @@
             </li>
           </ul>
 
-          <section class="widget aside__block">
+          <section class="widget widget_hot aside__block">
             <div class="widget__top">
               <div class="widget__title title">Hot Deals</div>
 
-              <div class="arrows widget__arrows">
-                <button class="arrows__button arrows__button_prev">
+              <div class="arrow-buttons widget__arrow-buttons">
+                <button class="arrow-button arrow-button_prev arrow-buttons__item">
                   <span class="visually-hidden">Prev</span>
                 </button>
-                <button class="arrows__button arrows__button_next">
+                <button class="arrow-button arrow-button_next arrow-buttons__item">
                   <span class="visually-hidden">Next</span>
                 </button>
               </div>
             </div>
             <div class="widget__content">
-              <div class="big-cards cards cards_vertical slider">
-                <div class="big-cards__item">
+              <div class="big-cards big-cards_slider cards cards_vertical">
+                <div class="big-cards__item cards__item">
                   <a class="card card_size_big card_vertical" href="#">
                     <div class="card__img-wrap">
                       <img class="card__img" class="" src="./images/card-big-1.jpg" alt="">
@@ -186,7 +186,7 @@
                     </div>
                   </a>
                 </div>
-                <div class="big-cards__item">
+                <div class="big-cards__item cards__item">
                   <a class="card card_size_big card_vertical" href="#">
                     <div class="card__img-wrap">
                       <img class="card__img" class="" src="./images/card-big-2.jpg" alt="">
@@ -214,22 +214,22 @@
 
           </section>
 
-          <section class="widget aside__block">
+          <section class="widget widget_special aside__block">
             <div class="widget__top">
               <div class="widget__title title">Special Deal</div>
 
-              <div class="arrows widget__arrows">
-                <button class="arrows__button arrows__button_prev">
+              <div class="arrow-buttons widget__arrow-buttons">
+                <button class="arrow-button arrow-button_prev arrow-buttons__item">
                   <span class="visually-hidden">Prev</span>
                 </button>
-                <button class="arrows__button arrows__button_next">
+                <button class="arrow-button arrow-button_next arrow-buttons__item">
                   <span class="visually-hidden">Next</span>
                 </button>
               </div>
             </div>
             <div class="widget__content">
-              <div class="big-cards cards cards_vertical slider">
-                <div class="big-cards__item">
+              <div class="big-cards big-cards_slider cards cards_vertical">
+                <div class="big-cards__item cards__item">
                   <a class="card card_size_big card_vertical" href="#">
                     <div class="card__img-wrap">
                       <img class="card__img" class="" src="./images/card-big-2.jpg" alt="">
@@ -252,7 +252,7 @@
                     </div>
                   </a>
                 </div>
-                <div class="big-cards__item">
+                <div class="big-cards__item cards__item">
                   <a class="card card_size_big card_vertical" href="#">
                     <div class="card__img-wrap">
                       <img class="card__img" class="" src="./images/card-big-1.jpg" alt="">
@@ -279,7 +279,7 @@
             </div>
           </section>
 
-          <section class="widget aside__block">
+          <section class="widget widget_signup aside__block">
             <div class="widget__top">
               <div class="widget__title title">Newsletters</div>
             </div>
@@ -338,30 +338,30 @@
             </div>
           </section>
 
-          <section class="widget content__block">
+          <section class="widget widget_new content__block">
             <div class="widget__top">
               <div class="widget__title title">New Products</div>
 
               <div class="filters widget__filters">
-                <a class="filters__item filters__item--active" data-filter="all" href="#">All</a>
+                <a class="filters__item filters__item_active" data-filter="all" href="#">All</a>
                 <a class="filters__item" data-filter="clothing" href="#">Clothing</a>
                 <a class="filters__item" data-filter="electronics" href="#">Electronics</a>
                 <a class="filters__item" data-filter="shoes" href="#">Shoes</a>
               </div>
 
-              <div class="arrows widget__arrows">
-                <button class="arrows__button arrows__button_prev">
+              <div class="arrow-buttons widget__arrow-buttons">
+                <button class="arrow-button arrow-button_prev arrow-buttons__item">
                   <span class="visually-hidden">Prev</span>
                 </button>
-                <button class="arrows__button arrows__button_next">
+                <button class="arrow-button arrow-button_next arrow-buttons__item">
                   <span class="visually-hidden">Next</span>
                 </button>
               </div>
             </div>
 
             <div class="widget__content">
-              <div class="medium-cards cards cards_vertical slider">
-                <div class="medium-cards__item" data-type="clothing">
+              <div class="medium-cards medium-cards_slider cards cards_vertical">
+                <div class="medium-cards__item cards__item" data-type="clothing">
                   <a class="card card_size_medium card_vertical" href="#">
                     <div class="card__img-wrap">
                       <img class="card__img" class="" src="./images/card-medium-1.jpg" alt="">
@@ -385,7 +385,7 @@
                   </a>
                 </div>
 
-                <div class="medium-cards__item" data-type="electronics">
+                <div class="medium-cards__item cards__item" data-type="electronics">
                   <a class="card card_size_medium card_vertical" href="#">
                     <div class="card__img-wrap">
                       <img class="card__img" class="" src="./images/card-medium-2.jpg" alt="">
@@ -409,7 +409,7 @@
                   </a>
                 </div>
 
-                <div class="medium-cards__item" data-type="clothing">
+                <div class="medium-cards__item cards__item" data-type="clothing">
                   <a class="card card_size_medium card_vertical" href="#">
                     <div class="card__img-wrap">
                       <img class="card__img" class="" src="./images/card-medium-3.jpg" alt="">
@@ -433,7 +433,7 @@
                   </a>
                 </div>
 
-                <div class="medium-cards__item" data-type="electronics">
+                <div class="medium-cards__item cards__item" data-type="electronics">
                   <a class="card card_size_medium card_vertical" href="#">
                     <div class="card__img-wrap">
                       <img class="card__img" class="" src="./images/card-medium-4.jpg" alt="">
@@ -457,7 +457,7 @@
                   </a>
                 </div>
 
-                <div class="medium-cards__item" data-type="electronics">
+                <div class="medium-cards__item cards__item" data-type="electronics">
                   <a class="card card_size_medium card_vertical" href="#">
                     <div class="card__img-wrap">
                       <img class="card__img" class="" src="./images/card-medium-5.jpg" alt="">
@@ -484,7 +484,7 @@
             </div>
           </section>
 
-          <section class="sales content__sales">
+          <section class="sales content__block">
             <div class="sales__container">
               <a class="sales-item sales__item" href="#">
                 <img class="sales-item__img" src="./images/sales-1.jpg" alt="">
@@ -507,30 +507,30 @@
             </div>
           </section>
 
-          <section class="widget content__block">
+          <section class="widget widget_latest content__block">
             <div class="widget__top">
               <div class="widget__title title">Latest Products</div>
 
               <div class="filters widget__filters">
-                <a class="filters__item filters__item--active" data-filter="all" href="#">All</a>
+                <a class="filters__item filters__item_active" data-filter="all" href="#">All</a>
                 <a class="filters__item" data-filter="clothing" href="#">Clothing</a>
                 <a class="filters__item" data-filter="electronics" href="#">Electronics</a>
                 <a class="filters__item" data-filter="shoes" href="#">Shoes</a>
               </div>
 
-              <div class="arrows widget__arrows">
-                <button class="arrows__button arrows__button_prev">
+              <div class="arrow-buttons widget__arrow-buttons">
+                <button class="arrow-button arrow-button_prev arrow-buttons__item">
                   <span class="visually-hidden">Prev</span>
                 </button>
-                <button class="arrows__button arrows__button_next">
+                <button class="arrow-button arrow-button_next arrow-buttons__item">
                   <span class="visually-hidden">Next</span>
                 </button>
               </div>
             </div>
 
             <div class="widget__content">
-              <div class="medium-cards cards cards_vertical slider">
-                <div class="medium-cards__item" data-type="electronics">
+              <div class="medium-cards medium-cards_slider cards cards_vertical">
+                <div class="medium-cards__item cards__item" data-type="electronics">
                   <a class="card card_size_medium card_vertical" href="#">
                     <div class="card__img-wrap">
                       <img class="card__img" class="" src="./images/card-medium-5.jpg" alt="">
@@ -554,7 +554,7 @@
                   </a>
                 </div>
 
-                <div class="medium-cards__item" data-type="clothing">
+                <div class="medium-cards__item cards__item" data-type="clothing">
                   <a class="card card_size_medium card_vertical" href="#">
                     <div class="card__img-wrap">
                       <img class="card__img" class="" src="./images/card-medium-6.jpg" alt="">
@@ -578,7 +578,7 @@
                   </a>
                 </div>
 
-                <div class="medium-cards__item" data-type="clothing">
+                <div class="medium-cards__item cards__item" data-type="clothing">
                   <a class="card card_size_medium card_vertical" href="#">
                     <div class="card__img-wrap">
                       <img class="card__img" class="" src="./images/card-medium-7.jpg" alt="">
@@ -602,7 +602,7 @@
                   </a>
                 </div>
 
-                <div class="medium-cards__item" data-type="electronics">
+                <div class="medium-cards__item cards__item" data-type="electronics">
                   <a class="card card_size_medium card_vertical" href="#">
                     <div class="card__img-wrap">
                       <img class="card__img" class="" src="./images/card-medium-8.jpg" alt="">
@@ -626,7 +626,7 @@
                   </a>
                 </div>
 
-                <div class="medium-cards__item" data-type="clothing">
+                <div class="medium-cards__item cards__item" data-type="clothing">
                   <a class="card card_size_medium card_vertical" href="#">
                     <div class="card__img-wrap">
                       <img class="card__img" class="" src="./images/card-medium-1.jpg" alt="">
