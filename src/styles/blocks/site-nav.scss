@@ -1,4 +1,5 @@
 .site-nav {
+  position: relative;
   background-color: $color-red;
 }
 
@@ -9,17 +10,36 @@
 }
 
 .site-nav__list {
-  display: flex;
-  flex-direction: column;
   list-style: none;
-  min-width: $main-content-width;
-  max-width: $main-content-width;
   margin: 0;
   padding: 0;
+  background-color: $color-red;
 
   @media (min-width: $desktop-sm) {
+    display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    min-width: $main-content-width;
+    max-width: $main-content-width;
+  }
+
+  @media (max-width: $tablet-max) {
+    position: absolute;
+    top: 100%;
+    width: 100%;
+    right: 0;
+    left: 0;
+    opacity: 0;
+    z-index: -1;
+    pointer-events: none;
+
+    &_opened {
+      display: block;
+      pointer-events: all;
+      opacity: 1;
+      z-index: 1;
+      transition: opacity 0.3s ease;
+    }
   }
 }
 
