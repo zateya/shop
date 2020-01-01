@@ -12,11 +12,6 @@
   }
 }
 
-.small-cards_slider:not(.slick-initialized)
-  .small-cards__items:not(:first-child) {
-  display: none;
-}
-
 .small-cards__item {
   width: 100%;
   padding: 16px 12px;
