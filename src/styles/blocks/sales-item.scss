@@ -6,7 +6,7 @@
   justify-content: flex-end;
   align-items: center;
   min-height: 226px;
-  padding: 40px 25px;
+  padding: 40px 24px;
   text-decoration: none;
   color: inherit;
   z-index: 0;
@@ -16,12 +16,20 @@
     content: "";
     position: absolute;
     top: 0;
-    left: 185px;
+    left: calc(100% - 180px);
     bottom: 0;
     width: 100%;
     transform: skewX(-17deg);
     background-color: #fff;
     z-index: -1;
+
+    @media (min-width: $phone-sm) {
+      left: 150px;
+    }
+
+    @media (min-width: $phone-md) {
+      left: 185px;
+    }
 
     @media (min-width: $tablet) {
       left: calc(100% - 210px);
@@ -72,6 +80,7 @@
   color: $color-blue;
   text-transform: uppercase;
   text-decoration: underline;
+  transition: color 0.3s ease;
 }
 
 .sales-item:hover .sales-item__more {

@@ -1,12 +1,13 @@
 .showcase {
   @include addShadow;
-  min-height: 455px;
+  min-height: 456px;
+  background-color: #fff;
 }
 
 .showcase__background {
   display: flex;
   align-items: center;
-  min-height: 375px;
+  min-height: 376px;
   background-repeat: no-repeat;
   background-position: left top;
 
@@ -20,7 +21,7 @@
 
 .showcase__text {
   max-width: 480px;
-  padding: 45px 25px 30px;
+  padding: 45px 24px 30px;
   text-align: center;
 }
 

@@ -1,0 +1,32 @@
+.small-cards {
+  overflow: hidden;
+}
+
+.small-cards__items {
+  display: flex;
+  margin: -16px -12px;
+  flex-wrap: wrap;
+
+  @media (min-width: $desktop-md) {
+    margin: -32px -12px;
+  }
+}
+
+.small-cards_slider:not(.slick-initialized)
+  .small-cards__items:not(:first-child) {
+  display: none;
+}
+
+.small-cards__item {
+  width: 100%;
+  padding: 16px 12px;
+
+  @media (min-width: $phone-horizontal) {
+    width: 50%;
+  }
+
+  @media (min-width: $desktop-md) {
+    width: 33.3333%;
+    padding: 32px 12px;
+  }
+}

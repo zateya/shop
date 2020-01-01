@@ -1,7 +1,7 @@
 .medium-cards {
   display: flex;
-  margin-left: -13px;
-  margin-right: -13px;
+  margin-left: -12px;
+  margin-right: -12px;
 }
 
 .medium-cards__item {
@@ -10,6 +10,18 @@
   outline: none;
 
   &:not(.slick-slide) {
-    width: 25%;
+    width: 50%;
+  }
+
+  @media (min-width: $phone-md) {
+    &:not(.slick-slide) {
+      width: 33.3333%;
+    }
+  }
+
+  @media (min-width: $phone-horizontal) {
+    &:not(.slick-slide) {
+      width: 25%;
+    }
   }
 }

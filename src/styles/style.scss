@@ -8,32 +8,36 @@
 @import "./blocks/input-error.scss";
 @import "./blocks/form-control.scss";
 
+@import "./blocks/widget.scss";
+@import "./blocks/filters.scss";
+@import "./blocks/title.scss";
+
+@import "./blocks/cards.scss";
+@import "./blocks/big-cards.scss";
+@import "./blocks/medium-cards.scss";
+@import "./blocks/small-cards.scss";
+@import "./blocks/card.scss";
+@import "./blocks/rating.scss";
+@import "./blocks/star.scss";
+@import "./blocks/arrow-buttons.scss";
+@import "./blocks/arrow-button.scss";
+
 @import "./blocks/header.scss";
 @import "./blocks/search-form.scss";
 @import "./blocks/site-logo.scss";
 @import "./blocks/cart-link.scss";
 @import "./blocks/site-nav.scss";
+@import "./blocks/catalog-nav.scss";
 @import "./blocks/container.scss";
 @import "./blocks/main.scss";
 @import "./blocks/aside.scss";
 @import "./blocks/aside-menu.scss";
-@import "./blocks/widget.scss";
-@import "./blocks/filters.scss";
-@import "./blocks/title.scss";
 @import "./blocks/user-menu.scss";
-@import "./blocks/promo.scss";
 @import "./blocks/content.scss";
 @import "./blocks/showcase.scss";
 @import "./blocks/features.scss";
-@import "./blocks/cards.scss";
-@import "./blocks/big-cards.scss";
-@import "./blocks/medium-cards.scss";
-@import "./blocks/card.scss";
-@import "./blocks/rating.scss";
-@import "./blocks/star.scss";
-@import "./blocks/slider.scss";
-@import "./blocks/arrow-buttons.scss";
-@import "./blocks/arrow-button.scss";
+
+@import "./blocks/promo.scss";
 @import "./blocks/sales.scss";
 @import "./blocks/sales-item.scss";
 @import "./blocks/promo-wide.scss";

@@ -1,14 +1,15 @@
 .widget {
   @include setWhiteBlock;
 
-  padding-left: 26px;
-  padding-right: 26px;
+  padding-left: 24px;
+  padding-right: 24px;
 }
 
 .widget__top {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
   padding: 23px 0 22px;
   box-shadow: inset 0 -1px $color-grey-92;
 }
@@ -17,13 +18,34 @@
   margin: 0 auto 0 0;
 }
 
-.widget__filters + .widget__arrow-buttons {
-  margin-left: 48px;
+.widget__filters {
+  @media (max-width: $phone-max) {
+    order: 2;
+    width: 100%;
+  }
 }
 
-.widget__content {
+.widget__filters + .widget__arrow-buttons {
+  margin-left: 15px;
+
+  @media (min-width: $phone-md) {
+    margin-left: 48px;
+  }
+}
+
+.widget__cards {
   position: relative;
   overflow: hidden;
+}
+
+.widget__cards_vertical {
+  padding-top: 27px;
+  padding-bottom: 36px;
+}
+
+.widget__cards_horizontal {
+  padding-top: 40px;
+  padding-bottom: 47px;
 }
 
 .widget__form {

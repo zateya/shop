@@ -1,3 +1,11 @@
+.main {
+  padding-bottom: 49px;
+
+  @media (min-width: $desktop-sm) {
+    padding-bottom: 69px;
+  }
+}
+
 .main__container {
   @media (min-width: $desktop-sm) {
     display: flex;
@@ -6,7 +14,6 @@
 
 .main__aside {
   @media (min-width: $desktop-sm) {
-    flex-shrink: 0;
     min-width: $aside-width;
     max-width: $aside-width;
   }
@@ -20,7 +27,6 @@
 
 .main__content {
   @media (min-width: $desktop-sm) {
-    flex-grow: 1;
     min-width: $main-content-width;
     max-width: $main-content-width;
   }

@@ -8,6 +8,14 @@
   text-align: center;
 }
 
+.card_horizontal {
+  display: flex;
+}
+
+.card_horizontal .card__info {
+  width: calc(100% - 109px); // minus image width and margin
+}
+
 .card__title {
   margin: 0;
   white-space: nowrap;
@@ -38,10 +46,6 @@
   color: #000;
 }
 
-.card__rating {
-  margin-top: 10px;
-}
-
 .card__img-wrap {
   position: relative;
   background-color: $color-grey-95;
@@ -57,14 +61,24 @@
   object-fit: contain;
 }
 
-.card_size_big .card__img-wrap {
+.card_img_big .card__img-wrap {
   padding-top: 80.6%;
   margin-bottom: 20px;
 }
 
-.card_size_medium .card__img-wrap {
-  padding-top: 115.34%;
-  margin-bottom: 16px;
+.card_img_medium .card__img-wrap {
+  padding-top: 115.341%;
+  margin-bottom: 17px;
+}
+
+.card_img_small .card__img-wrap {
+  width: 87px;
+  height: 82px;
+  margin-right: 22px;
+}
+
+.card__rating {
+  margin-top: 10px;
 }
 
 .card_vertical .card__rating {

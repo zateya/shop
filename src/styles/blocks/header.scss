@@ -25,7 +25,11 @@
   align-content: flex-start;
   width: 100%;
   max-width: $main-content-width;
-  padding-left: 100px;
+  padding-left: 30px;
+
+  @media (min-width: $desktop-sm) {
+    padding-left: 100px;
+  }
 }
 
 .header__search {
