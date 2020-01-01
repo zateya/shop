@@ -33,4 +33,14 @@
       ]
     });
   });
+
+  $('.small-cards-slider').each(function() {
+    $(this).slick({
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      fade: true,
+      prevArrow: $(this).closest('.widget').find('.arrow-button_prev'),
+      nextArrow: $(this).closest('.widget').find('.arrow-button_next'),
+    });
+  });
 })();
