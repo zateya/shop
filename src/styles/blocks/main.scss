@@ -27,7 +27,7 @@
 
 .main__content {
   @media (min-width: $desktop-sm) {
-    min-width: $main-content-width;
-    max-width: $main-content-width;
+    min-width: $content-width;
+    max-width: $content-width;
   }
 }

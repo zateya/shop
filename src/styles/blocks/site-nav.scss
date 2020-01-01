@@ -19,8 +19,8 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    min-width: $main-content-width;
-    max-width: $main-content-width;
+    min-width: $content-width;
+    max-width: $content-width;
   }
 
   @media (max-width: $tablet-max) {
