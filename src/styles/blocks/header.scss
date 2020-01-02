@@ -14,7 +14,8 @@
 }
 
 .header__logo {
-  margin: 14px 0 13px;
+  flex-shrink: 0;
+  margin: 9px 15px 8px 0;
 
   @media (min-width: $tablet) {
     margin: 18px 0 34px;
@@ -27,11 +28,11 @@
   flex-wrap: wrap;
   width: 100%;
   padding: 15px 0;
-  max-width: $content-width;
 
   @media (min-width: $tablet) {
     justify-content: space-between;
     align-content: flex-start;
+    max-width: $content-width;
     padding: 15px 0 25px 30px;
   }
 
