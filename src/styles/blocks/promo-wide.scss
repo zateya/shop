@@ -21,8 +21,7 @@
   text-align: center;
 
   @media (min-width: $tablet) {
-    max-width: calc(50% - 80px);
-    min-width: calc(50% - 80px);
+    width: calc(50% - 80px);
     padding-right: 24px;
     text-align: left;
   }
@@ -48,8 +47,7 @@
   }
 
   @media (min-width: $tablet) {
-    max-width: 52%;
-    min-width: 52%;
+    width: 52%;
     margin: 0 0 0 48px;
   }
 }

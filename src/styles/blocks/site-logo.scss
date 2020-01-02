@@ -1,3 +1,15 @@
+.site-logo {
+  width: 121px;
+  height: 43px;
+
+  @media (min-width: $tablet) {
+    width: 178px;
+    height: 63px;
+  }
+}
+
 .site-logo__img {
   display: block;
+  width: 100%;
+  height: auto;
 }

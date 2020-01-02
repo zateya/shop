@@ -1,15 +1,19 @@
 .showcase {
   @include addShadow;
-  min-height: 456px;
   background-color: #fff;
 }
 
 .showcase__background {
   display: flex;
   align-items: center;
-  min-height: 376px;
+  min-height: 306px;
   background-repeat: no-repeat;
   background-position: left top;
+  background-size: auto 100%;
+
+  @media (min-width: $phone-horizontal) {
+    min-height: 376px;
+  }
 
   /* ie11 */
   &::after {
@@ -20,29 +24,42 @@
 }
 
 .showcase__text {
-  max-width: 480px;
+  width: 100%;
+  max-width: 400px;
   padding: 45px 24px 30px;
   text-align: center;
+
+  @media (min-width: $phone-horizontal) {
+    max-width: 480px;
+  }
 }
 
 .showcase__title {
   margin: 0;
-  font-size: 38px;
+  font-size: 24px;
   line-height: 1.2;
   font-weight: 900;
   color: $color-dark-blue;
   text-transform: uppercase;
   text-shadow: 0px 3px 7px rgba(0, 0, 0, 0.13);
+
+  @media (min-width: $phone-horizontal) {
+    font-size: 38px;
+  }
 }
 
 .showcase__lead {
   margin: 0;
-  font-size: 60px;
+  font-size: 36px;
   line-height: 0.97;
   font-weight: 900;
   color: #fff;
   text-transform: uppercase;
   text-shadow: 0px 3px 7px rgba(0, 0, 0, 0.13);
+
+  @media (min-width: $phone-horizontal) {
+    font-size: 60px;
+  }
 }
 
 .showcase__lead-subline {
@@ -52,7 +69,11 @@
 }
 
 .showcase__more {
-  margin-top: 40px;
+  margin-top: 20px;
+
+  @media (min-width: $phone-horizontal) {
+    margin-top: 40px;
+  }
 }
 
 .showcase__features {

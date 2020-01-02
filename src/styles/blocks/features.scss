@@ -1,16 +1,29 @@
 .features {
   display: flex;
+  flex-wrap: wrap;
   list-style: none;
   align-items: flex-start;
-  padding: 0;
+  padding: 22px;
   color: #fff;
   background-color: $color-red;
 }
 
 .features__item {
-  width: 33.3333%;
-  padding: 22px 15px;
+  width: 100%;
+  padding: 0 15px;
   text-align: center;
+
+  &:not(:first-child) {
+    margin-top: 20px;
+  }
+
+  @media (min-width: $phone-horizontal) {
+    width: 33.3333%;
+
+    &:not(:first-child) {
+      margin-top: 0;
+    }
+  }
 }
 
 .features__title {

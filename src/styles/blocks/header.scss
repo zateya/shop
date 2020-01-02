@@ -6,34 +6,56 @@
 .header__top {
   display: flex;
   justify-content: space-between;
-  min-height: 115px;
-}
+  min-height: 70px;
 
-.header__user-menu {
-  margin: 15px 0 20px;
-  justify-content: flex-end;
+  @media (min-width: $tablet) {
+    min-height: 115px;
+  }
 }
 
 .header__logo {
-  margin: 18px 0;
+  margin: 14px 0 13px;
+
+  @media (min-width: $tablet) {
+    margin: 18px 0 34px;
+  }
 }
 
 .header__info {
   display: flex;
+  justify-content: flex-end;
   flex-wrap: wrap;
-  justify-content: space-between;
-  align-content: flex-start;
   width: 100%;
+  padding: 15px 0;
   max-width: $content-width;
-  padding-left: 30px;
+
+  @media (min-width: $tablet) {
+    justify-content: space-between;
+    align-content: flex-start;
+    padding: 15px 0 25px 30px;
+  }
 
   @media (min-width: $desktop-sm) {
     padding-left: 100px;
   }
 }
 
+.header__user-menu {
+  margin-top: 0;
+  margin-bottom: 20px;
+  justify-content: flex-end;
+
+  @media (max-width: $phone-max) {
+    display: none !important;
+  }
+}
+
 .header__search {
   flex-grow: 1;
+
+  @media (max-width: $phone-max) {
+    display: none;
+  }
 }
 
 .header__cart {
