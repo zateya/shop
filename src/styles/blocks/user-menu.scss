@@ -18,12 +18,14 @@
 }
 
 .user-menu__link {
+  @include addTransition(color);
+
   font-size: 12px;
   line-height: 1.5;
   color: #fff;
   text-decoration: none;
 
   &:hover {
-    color: $color-crimson;
+    color: $color-red;
   }
 }

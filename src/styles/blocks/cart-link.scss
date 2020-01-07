@@ -1,14 +1,22 @@
 .cart-link {
+  @include addTransition(color);
+
   display: flex;
   align-items: center;
-  width: 106px;
   margin-left: 40px;
   color: #fff;
   text-decoration: none;
-  transition: color 0.3s ease;
 
   &:hover {
     color: $color-red;
+  }
+}
+
+.cart-link__info {
+  min-width: 63px;
+
+  @media (max-width: $phone-max) {
+    display: none;
   }
 }
 
@@ -27,14 +35,28 @@
 }
 
 .cart-link__icon-wrap {
+  @include addTransition(background-color);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
   flex-shrink: 0;
   width: 37px;
   height: 37px;
-  margin-right: 6px;
   border-radius: 50%;
   background-color: $color-red;
+
+  @media (min-width: $tablet) {
+    margin-right: 6px;
+  }
 }
 
 .cart-link:hover .cart-link__icon-wrap {
   background-color: darken($color-red, 5%);
+}
+
+.cart-link__icon {
+  width: 100%;
+  height: 100%;
+  background-position: calc(50% - 1px) 50%;
 }

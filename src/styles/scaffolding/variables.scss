@@ -1,4 +1,5 @@
 $color-dark: #222222;
+$color-almost-black: #1f1e1e;
 $color-red: #f10e34;
 $color-crimson: #f22f49;
 $color-grey-70: #b6b6b6;
@@ -10,12 +11,12 @@ $color-yellow: #ffc808;
 $color-dark-blue: #303a7a;
 $color-blue: #108be9;
 
-$aside-width: calc((100% + 30px) * 0.265 - 20px);
 $aside-gap: 40px;
-$content-width: calc((100% + 30px) * 0.71 - 20px + 0.01px);
+$aside-width: calc((100% + 30px) * 0.265 - #{$aside-gap/ 2});
+$content-width: calc((100% + 30px) * 0.71 - #{$aside-gap/ 2} + 0.01px);
 // 100% + 30px = 1200px - container width,
 // 0.71 = 71% of 1200px,
-//-20px = aside-gap/2,
+// aside-gap/2 = -20px,
 // + 0.01px - calc fix
 
 $desktop-md: 1200px;

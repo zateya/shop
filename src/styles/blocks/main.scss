@@ -1,14 +1,15 @@
-.main {
-  padding-bottom: 49px;
-
-  @media (min-width: $desktop-sm) {
+.main__container {
+  @media (min-width: $tablet) {
     padding-bottom: 69px;
   }
-}
 
-.main__container {
   @media (min-width: $desktop-sm) {
     display: flex;
+  }
+
+  @media (max-width: $phone-max) {
+    padding-left: 0;
+    padding-right: 0;
   }
 }
 

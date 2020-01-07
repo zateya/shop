@@ -1,4 +1,6 @@
 .arrow-button {
+  @include addTransition(background-color);
+
   display: none;
   position: relative;
   width: 22px;
@@ -11,7 +13,6 @@
   background-repeat: no-repeat;
   background-size: 6px 9px;
   background-position: 7px 6px;
-  transition: background-color 0.2s ease;
   outline: none;
   cursor: pointer;
 

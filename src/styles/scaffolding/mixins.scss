@@ -20,6 +20,20 @@
   box-shadow: 0 0 7px rgba(#000, 0.03);
 }
 
+@mixin addTransition($property) {
+  transition: $property 0.2s ease;
+}
+
+@mixin resetChildMargins {
+  > :first-child {
+    margin-top: 0;
+  }
+
+  > :last-child {
+    margin-bottom: 0;
+  }
+}
+
 @mixin setVisuallyHidden {
   position: absolute !important;
   height: 1px;

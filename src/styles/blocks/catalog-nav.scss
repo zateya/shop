@@ -1,0 +1,8 @@
+.catalog-nav__link {
+  padding-left: 15px;
+  padding-right: 15px;
+
+  @media (min-width: $desktop-sm) {
+    padding-left: 24px;
+  }
+}

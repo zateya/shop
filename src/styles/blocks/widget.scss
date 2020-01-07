@@ -1,8 +1,13 @@
 .widget {
   @include setWhiteBlock;
 
-  padding-left: 24px;
-  padding-right: 24px;
+  padding-left: 15px;
+  padding-right: 15px;
+
+  @media (min-width: $phone-horizontal) {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
 }
 
 .widget__top {

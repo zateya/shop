@@ -8,8 +8,12 @@
   align-items: center;
   min-height: 306px;
   background-repeat: no-repeat;
-  background-position: left top;
+  background-position: calc(50% + 36px) top;
   background-size: auto 100%;
+
+  @media (min-width: $phone-md) {
+    background-position: left top;
+  }
 
   @media (min-width: $phone-horizontal) {
     min-height: 376px;
@@ -25,7 +29,7 @@
 
 .showcase__text {
   width: 100%;
-  max-width: 400px;
+  max-width: 360px;
   padding: 45px 24px 30px;
   text-align: center;
 

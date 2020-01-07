@@ -17,6 +17,8 @@
 }
 
 .card__title {
+  @include addTransition(color);
+
   margin: 0;
   white-space: nowrap;
   text-overflow: ellipsis;
