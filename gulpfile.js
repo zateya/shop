@@ -7,6 +7,7 @@ var autoprefixer = require('gulp-autoprefixer');
 var plumber = require('gulp-plumber');
 var minify = require('gulp-csso');
 var rename = require('gulp-rename');
+var svgstore = require("gulp-svgstore");
 var del = require('del');
 var server = require('browser-sync').create();
 var ghpages = require('gh-pages');
@@ -52,6 +53,16 @@ gulp.task('js', function () {
     .pipe(server.stream());
 });
 
+gulp.task('sprite', function () {
+  return gulp.src('src/images/sprite/*.svg')
+  .pipe(svgstore({
+    inlineSvg: true
+  }))
+  .pipe(rename("sprite.svg"))
+  .pipe(gulp.dest('dist/images'))
+  .pipe(server.stream());
+});
+
 gulp.task('serve', function () {
   server.init({
     server: 'dist/',
@@ -66,7 +77,7 @@ gulp.task('serve', function () {
   gulp.watch('src/js/**/*.js', gulp.series('js'));
 });
 
-gulp.task('build', gulp.series('clean', 'copy', 'css', 'html'));
+gulp.task('build', gulp.series('clean', 'copy', 'css', 'sprite','html'));
 gulp.task('start', gulp.series('build', 'serve'));
 
 ghpages.publish('build');

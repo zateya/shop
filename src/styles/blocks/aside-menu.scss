@@ -2,7 +2,15 @@
   @include setWhiteBlock;
 
   list-style: none;
-  padding: 2px 14px 6px;
+  padding: 0 14px;
+}
+
+.aside-menu__item:first-child {
+  padding-top: 2px;
+}
+
+.aside-menu__item:last-child {
+  padding-bottom: 6px;
 }
 
 .aside-menu__link {

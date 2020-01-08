@@ -15,13 +15,14 @@
 }
 
 .site-nav__list {
+  display: none;
   list-style: none;
   margin: 0;
   padding: 0;
   background-color: $color-red;
 
   @media (min-width: $desktop-sm) {
-    display: flex;
+    display: flex !important;
     flex-direction: row;
     flex-wrap: wrap;
     min-width: $content-width;
@@ -31,20 +32,10 @@
   @media (max-width: $tablet-max) {
     position: absolute;
     top: 100%;
-    width: 100%;
     right: 0;
     left: 0;
-    opacity: 0;
-    z-index: -1;
-    pointer-events: none;
-
-    &_opened {
-      display: block;
-      pointer-events: all;
-      opacity: 1;
-      z-index: 1;
-      transition: opacity 0.3s ease;
-    }
+    padding-bottom: 20px;
+    z-index: 1;
   }
 }
 
@@ -72,8 +63,26 @@
     font-weight: 700;
   }
 
-  &:hover {
+  &:hover,
+  &:focus {
     color: $color-yellow;
+  }
+}
+
+.site-nav__catalog {
+  @media (min-width: $desktop-sm) {
+    min-width: $aside-width;
+    max-width: $aside-width;
+  }
+}
+
+.site-nav__catalog-link {
+  padding-left: 15px;
+  padding-right: 15px;
+  justify-content: flex-start;
+
+  @media (min-width: $desktop-sm) {
+    padding-left: 24px;
   }
 }
 
@@ -84,25 +93,37 @@
 }
 
 .site-nav__icon_menu {
-  @include addTransition(background-image);
+  @include addTransition(fill);
 
   width: 16px;
-  height: 18px;
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='13'%3E%3Cpath fill-rule='evenodd' fill='%23FFF' d='M1.945 8.988c-.447 0-.826.156-1.138.468a1.55 1.55 0 00-.469 1.139c0 .446.156.826.469 1.138.312.313.691.469 1.138.469.446 0 .826-.156 1.138-.469.313-.312.469-.692.469-1.138a1.55 1.55 0 00-.469-1.139 1.55 1.55 0 00-1.138-.468zm0-4.286c-.447 0-.826.156-1.138.469a1.547 1.547 0 00-.469 1.138c0 .447.156.826.469 1.138.312.313.691.469 1.138.469.446 0 .826-.156 1.138-.469.313-.312.469-.691.469-1.138 0-.446-.156-.826-.469-1.138a1.547 1.547 0 00-1.138-.469zm13.313 4.901a.258.258 0 00-.188-.08H4.891a.258.258 0 00-.188.08.257.257 0 00-.079.188v1.607c0 .073.026.136.079.189a.257.257 0 00.188.079H15.07a.257.257 0 00.188-.079.259.259 0 00.08-.189V9.791a.258.258 0 00-.08-.188zM1.945.416A1.55 1.55 0 00.807.885a1.549 1.549 0 00-.469 1.138c0 .447.156.826.469 1.139a1.55 1.55 0 001.138.469c.446 0 .826-.157 1.138-.469a1.55 1.55 0 00.469-1.139c0-.446-.156-.825-.469-1.138A1.551 1.551 0 001.945.416zm13.313 4.901a.257.257 0 00-.188-.079H4.891a.257.257 0 00-.188.079.258.258 0 00-.079.189v1.607c0 .072.026.135.079.188.053.053.116.08.188.08H15.07a.258.258 0 00.188-.08.258.258 0 00.08-.188V5.506a.259.259 0 00-.08-.189zm0-4.286a.261.261 0 00-.188-.079H4.891a.261.261 0 00-.188.079.26.26 0 00-.079.189v1.607c0 .073.026.135.079.188.053.053.116.08.188.08H15.07a.258.258 0 00.188-.08.256.256 0 00.08-.188V1.22a.26.26 0 00-.08-.189z'/%3E%3C/svg%3E");
-  background-size: 16px 13px;
-  background-position: 50% calc(50% - 2px);
+  height: 13px;
+  margin-top: -1px;
+  fill: #fff;
 }
 
-.site-nav__link:hover .site-nav__icon_menu {
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='13'%3E%3Cpath fill-rule='evenodd' fill='%23ffc808' d='M1.945 8.988c-.447 0-.826.156-1.138.468a1.55 1.55 0 00-.469 1.139c0 .446.156.826.469 1.138.312.313.691.469 1.138.469.446 0 .826-.156 1.138-.469.313-.312.469-.692.469-1.138a1.55 1.55 0 00-.469-1.139 1.55 1.55 0 00-1.138-.468zm0-4.286c-.447 0-.826.156-1.138.469a1.547 1.547 0 00-.469 1.138c0 .447.156.826.469 1.138.312.313.691.469 1.138.469.446 0 .826-.156 1.138-.469.313-.312.469-.691.469-1.138 0-.446-.156-.826-.469-1.138a1.547 1.547 0 00-1.138-.469zm13.313 4.901a.258.258 0 00-.188-.08H4.891a.258.258 0 00-.188.08.257.257 0 00-.079.188v1.607c0 .073.026.136.079.189a.257.257 0 00.188.079H15.07a.257.257 0 00.188-.079.259.259 0 00.08-.189V9.791a.258.258 0 00-.08-.188zM1.945.416A1.55 1.55 0 00.807.885a1.549 1.549 0 00-.469 1.138c0 .447.156.826.469 1.139a1.55 1.55 0 001.138.469c.446 0 .826-.157 1.138-.469a1.55 1.55 0 00.469-1.139c0-.446-.156-.825-.469-1.138A1.551 1.551 0 001.945.416zm13.313 4.901a.257.257 0 00-.188-.079H4.891a.257.257 0 00-.188.079.258.258 0 00-.079.189v1.607c0 .072.026.135.079.188.053.053.116.08.188.08H15.07a.258.258 0 00.188-.08.258.258 0 00.08-.188V5.506a.259.259 0 00-.08-.189zm0-4.286a.261.261 0 00-.188-.079H4.891a.261.261 0 00-.188.079.26.26 0 00-.079.189v1.607c0 .073.026.135.079.188.053.053.116.08.188.08H15.07a.258.258 0 00.188-.08.256.256 0 00.08-.188V1.22a.26.26 0 00-.08-.189z'/%3E%3C/svg%3E");
+.site-nav__link:hover .site-nav__icon_menu,
+.site-nav__link:focus .site-nav__icon_menu {
+  fill: $color-yellow;
 }
 
 .site-nav__toggle {
   width: auto;
   padding-left: 15px;
   padding-right: 15px;
+  outline: none;
+  cursor: pointer;
 
   @media (min-width: $desktop-sm) {
     display: none;
   }
+}
+
+.site-nav__catalog-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  margin: 0;
+  z-index: 1;
 }

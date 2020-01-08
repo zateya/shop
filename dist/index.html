@@ -66,15 +66,21 @@
 
       <nav class="site-nav header__nav">
         <div class="site-nav__container container">
-          <div class="catalog-nav">
-            <a class="catalog-nav__link site-nav__link site-nav__link_accent" href="#">
-              <span class="catalog-nav__icon site-nav__icon site-nav__icon_menu"></span>
+          <div class="site-nav__catalog">
+            <a class="site-nav__catalog-link site-nav__link site-nav__link_accent" href="#">
+              <svg class="site-nav__catalog-icon site-nav__icon site-nav__icon_menu" aria-hidden="true" width="16"
+                height="13">
+                <use xlink:href="./images/sprite.svg#menu"></use>
+              </svg>
               Categories
             </a>
           </div>
 
           <button class="site-nav__toggle site-nav__link site-nav__link_accent" type="button">
-            <span class="site-nav__toggle-icon site-nav__icon site-nav__icon_menu"></span>
+            <svg class="site-nav__toggle-icon site-nav__icon site-nav__icon_menu" aria-hidden="true" width="16"
+              height="13">
+              <use xlink:href="./images/sprite.svg#menu"></use>
+            </svg>
             Menu
           </button>
 
@@ -316,7 +322,8 @@
           <section class="showcase content__showcase">
             <div class="showcase__slider">
               <div class="showcase__slide">
-                <div class="showcase__background" style="background-image: url(./images/showcase.jpg)">
+                <div class="showcase__background"
+                  style="background-color: #ffcd75; background-image: url(./images/showcase.jpg)">
                   <div class="showcase__text">
                     <h3 class="showcase__title">Collection 2016</h3>
                     <p class="showcase__lead">
@@ -1064,33 +1071,183 @@
               This is Photoshop's version of Lorem Ipsum. Proin gravida nibh velit it’s a cold world out there.
             </p>
 
-            <ul class="footer__list">
-              <li class="footer__list-item footer__icon-item">
-                <span class="footer__icon"></span>
-                0123 Main Road, Your City, NY 123456
+            <ul class="footer__list footer__list_contacts">
+              <li class="footer__list-item">
+                <span class="footer__icon-item">
+                  <span class="footer__list-icon footer__list-icon_pin">
+                    <svg aria-hidden="true" width="9" height="14">
+                      <use xlink:href="./images/sprite.svg#pin"></use>
+                    </svg>
+                  </span>
+                  0123 Main Road, Your City, NY 123456
+                </span>
               </li>
               <li class="footer__list-item">
                 <a class="footer__list-link footer__icon-item" href="#">
-                  <span class="footer__icon"></span>
+                  <span class="footer__list-icon footer__list-icon_phone">
+                    <svg aria-hidden="true" width="13" height="13">
+                      <use xlink:href="./images/sprite.svg#phone"></use>
+                    </svg>
+                  </span>
                   (000) 2345 - 6789
                 </a>
               </li>
               <li class="footer__list-item">
                 <a class="footer__list-link footer__icon-item" href="#">
-                  <span class="footer__icon"></span>
+                  <span class="footer__list-icon footer__list-icon_mail">
+                    <svg aria-hidden="true" width="14" height="11">
+                      <use xlink:href="./images/sprite.svg#mail"></use>
+                    </svg>
+                  </span>
                   info@psdfreebies.com
                 </a>
               </li>
             </ul>
           </div>
           <div class="footer__column footer__column_menu">
+            <h3 class="footer__title">Information</h3>
 
+            <ul class="footer__list footer__list_menu">
+              <li class="footer__list-item">
+                <a class="footer__list-link" href="#">
+                  Our Story
+                </a>
+              </li>
+              <li class="footer__list-item">
+                <a class="footer__list-link" href="#">
+                  Privacy & Policy
+                </a>
+              </li>
+              <li class="footer__list-item">
+                <a class="footer__list-link" href="#">
+                  Terms & Conditions
+                </a>
+              </li>
+              <li class="footer__list-item">
+                <a class="footer__list-link" href="#">
+                  Shipping & Delivery
+                </a>
+              </li>
+              <li class="footer__list-item">
+                <a class="footer__list-link" href="#">
+                  Careers
+                </a>
+              </li>
+              <li class="footer__list-item">
+                <a class="footer__list-link" href="#">
+                  FAQs
+                </a>
+              </li>
+            </ul>
           </div>
           <div class="footer__column footer__column_social">
+            <h3 class="footer__title">Our Social</h3>
 
+            <ul class="footer__list footer__list_social">
+              <li class="footer__list-item">
+                <a class="footer__list-link footer__icon-item" href="#">
+                  <span class="footer__list-icon footer__list-icon_google">
+                    <svg aria-hidden="true" width="18" height="12">
+                      <use xlink:href="./images/sprite.svg#google"></use>
+                    </svg>
+                  </span>
+                  Google+
+                </a>
+              </li>
+              <li class="footer__list-item">
+                <a class="footer__list-link footer__icon-item" href="#">
+                  <span class="footer__list-icon footer__list-icon_pinterest">
+                    <svg aria-hidden="true" width="10" height="13">
+                      <use xlink:href="./images/sprite.svg#pinterest"></use>
+                    </svg>
+                  </span>
+                  Pinterest
+                </a>
+              </li>
+              <li class="footer__list-item">
+                <a class="footer__list-link footer__icon-item" href="#">
+                  <span class="footer__list-icon footer__list-icon_vimeo">
+                    <svg aria-hidden="true" width="13" height="12">
+                      <use xlink:href="./images/sprite.svg#vimeo"></use>
+                    </svg>
+                  </span>
+                  Vimeo
+                </a>
+              </li>
+              <li class="footer__list-item">
+                <a class="footer__list-link footer__icon-item" href="#">
+                  <span class="footer__list-icon footer__list-icon_instagram">
+                    <svg aria-hidden="true" width="12" height="12">
+                      <use xlink:href="./images/sprite.svg#instagram"></use>
+                    </svg>
+                  </span>
+                  Instagram
+                </a>
+              </li>
+              <li class="footer__list-item">
+                <a class="footer__list-link footer__icon-item" href="#">
+                  <span class="footer__list-icon footer__list-icon_facebook">
+                    <svg aria-hidden="true" width="7" height="13">
+                      <use xlink:href="./images/sprite.svg#facebook"></use>
+                    </svg>
+                  </span>
+                  Facebook
+                </a>
+              </li>
+              <li class="footer__list-item">
+                <a class="footer__list-link footer__icon-item" href="#">
+                  <span class="footer__list-icon footer__list-icon_twitter">
+                    <svg aria-hidden="true" width="13" height="10">
+                      <use xlink:href="./images/sprite.svg#twitter"></use>
+                    </svg>
+                  </span>
+                  Twitter
+                </a>
+              </li>
+              <li class="footer__list-item">
+                <a class="footer__list-link footer__icon-item" href="#">
+                  <span class="footer__list-icon footer__list-icon_rss">
+                    <svg aria-hidden="true" width="11" height="11">
+                      <use xlink:href="./images/sprite.svg#rss"></use>
+                    </svg>
+                  </span>
+                  RSS
+                </a>
+              </li>
+              <li class="footer__list-item">
+                <a class="footer__list-link footer__icon-item" href="#">
+                  <span class="footer__list-icon footer__list-icon_youtube">
+                    <svg aria-hidden="true" width="11" height="11">
+                      <use xlink:href="./images/sprite.svg#youtube"></use>
+                    </svg>
+                  </span>
+                  YouTube
+                </a>
+              </li>
+            </ul>
           </div>
           <div class="footer__column footer__column_working">
+            <h3 class="footer__title">Opening Time</h3>
 
+            <ul class="footer__list footer__list_time">
+              <li class="footer__list-item">
+                <span class="footer__icon-item">
+                  <span class="footer__list-icon footer__list-icon_clock">
+                    <svg aria-hidden="true" width="12" height="12">
+                      <use xlink:href="./images/sprite.svg#clock"></use>
+                    </svg>
+                  </span>
+                  Monday - Friday: 08:30 am - 09:30 pm
+                </span>
+              </li>
+              <li class="footer__list-item">
+                <span class="footer__icon-item">
+                  Sat - Sun: 09:00 am - 10:00 pm
+                </span>
+              </li>
+            </ul>
+
+            <h3 class="footer__title">Payment Option</h3>
           </div>
         </div>
       </div>
@@ -1125,9 +1282,13 @@
       </div>
     </footer>
   </div>
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+  <script src="./js/plugins/svg4everybody.min.js"></script>
+  <script>
+    svg4everybody();
+  </script>
+  <script src="./js/script.js"></script>
 </body>
-<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-<script src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-<script src="./js/script.js"></script>
 
 </html>
