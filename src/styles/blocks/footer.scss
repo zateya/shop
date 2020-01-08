@@ -5,14 +5,161 @@
 }
 
 .footer__main {
-  padding-top: 40px;
-  padding-bottom: 45px;
+  padding-top: 30px;
+  padding-bottom: 20px;
   color: $color-grey-70;
 
   @media (min-width: $tablet) {
     padding-top: 60px;
-    padding-bottom: 65px;
+    padding-bottom: 40px;
   }
+}
+
+.footer__columns {
+  @media (min-width: $tablet) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}
+
+.footer__column {
+  @include resetChildMargins;
+
+  padding-top: 20px;
+  padding-bottom: 25px;
+
+  &:first-child {
+    padding-top: 0;
+  }
+
+  @media (min-width: $tablet) {
+    width: calc(50% - 15px);
+  }
+
+  @media (min-width: $desktop-sm) {
+    &_contacts {
+      width: 24%;
+      margin-right: auto;
+    }
+
+    &_info {
+      width: 20%;
+      padding-right: 20px;
+    }
+
+    &_social {
+      width: 27%;
+      padding-right: 20px;
+    }
+
+    &_working {
+      width: 23%;
+    }
+  }
+}
+
+.footer__logo {
+  margin-bottom: 14px;
+}
+
+.footer__text {
+  margin-top: 0;
+  margin-bottom: 24px;
+}
+
+.footer__title {
+  margin-top: 45px;
+  margin-bottom: 10px;
+  font-size: 18px;
+  line-height: 1.67;
+  font-weight: 700;
+  color: #fff;
+  text-transform: uppercase;
+
+  &_payment {
+    margin-bottom: 18px;
+  }
+}
+
+.footer__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+  @media (min-width: $desktop-sm) {
+    &_social {
+      column-count: 2;
+    }
+  }
+}
+
+.footer__list-item {
+  &:not(:last-child) {
+    margin-bottom: 6px;
+  }
+}
+
+.footer__list-link {
+  @include addTransition(color);
+
+  color: inherit;
+  text-decoration: none;
+
+  &:hover {
+    color: #fff;
+  }
+}
+
+.footer__icon-item {
+  display: inline-block;
+  position: relative;
+  padding-left: 28px;
+  z-index: 1;
+}
+
+.footer__list-icon {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 24px;
+  z-index: -1;
+}
+
+.footer__list-icon svg {
+  fill: $color-red;
+}
+
+.footer__payment-list {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  margin: 0;
+  margin-top: -17px;
+  margin-left: -23px;
+  padding: 0;
+}
+
+.footer__payment-item {
+  width: 46px;
+  height: 31px;
+  margin-top: 17px;
+  margin-left: 23px;
+}
+
+.footer__payment-link {
+  @include addTransition(opacity);
+  display: block;
+
+  &[href]:hover {
+    opacity: 0.8;
+  }
+}
+
+.footer__payment-img {
+  display: block;
 }
 
 .footer__info {
@@ -81,117 +228,4 @@
       }
     }
   }
-}
-
-.footer__columns {
-  @media (min-width: $tablet) {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-  }
-}
-
-.footer__column {
-  @include resetChildMargins;
-
-  padding-top: 20px;
-  padding-bottom: 25px;
-
-  &:first-child {
-    padding-top: 0;
-  }
-
-  @media (min-width: $tablet) {
-    width: calc(50% - 15px);
-  }
-
-  @media (min-width: $desktop-sm) {
-    &_contacts {
-      width: 24%;
-      margin-right: auto;
-    }
-
-    &_menu {
-      width: 20%;
-      padding-right: 20px;
-    }
-
-    &_social {
-      width: 27%;
-      padding-right: 20px;
-    }
-
-    &_working {
-      width: 23%;
-    }
-  }
-}
-
-.footer__logo {
-  margin-bottom: 14px;
-}
-
-.footer__text {
-  margin-top: 0;
-  margin-bottom: 24px;
-}
-
-.footer__title {
-  margin-top: 45px;
-  margin-bottom: 10px;
-  font-size: 18px;
-  line-height: 1.67;
-  font-weight: 700;
-  color: #fff;
-  text-transform: uppercase;
-}
-
-.footer__list {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-
-  @media (min-width: $desktop-sm) {
-    &_social {
-      column-count: 2;
-    }
-  }
-}
-
-.footer__list-item {
-  &:not(:last-child) {
-    margin-bottom: 6px;
-  }
-}
-
-.footer__list-link {
-  @include addTransition(color);
-
-  color: inherit;
-  text-decoration: none;
-
-  &:hover {
-    color: #fff;
-  }
-}
-
-.footer__icon-item {
-  display: inline-block;
-  position: relative;
-  padding-left: 28px;
-  z-index: 1;
-}
-
-.footer__list-icon {
-  display: flex;
-  align-items: center;
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 24px;
-  z-index: -1;
-}
-
-.footer__list-icon svg {
-  fill: $color-red;
 }
