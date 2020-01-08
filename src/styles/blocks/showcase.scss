@@ -30,12 +30,18 @@
 
 .showcase__text {
   width: 100%;
-  max-width: 360px;
-  padding: 45px 24px 30px;
+  max-width: 280px;
+  padding: 45px 15px 30px;
   text-align: center;
+
+  @media (min-width: $phone-md) {
+    max-width: 360px;
+  }
 
   @media (min-width: $phone-horizontal) {
     max-width: 480px;
+    padding-left: 24px;
+    padding-right: 24px;
   }
 }
 
