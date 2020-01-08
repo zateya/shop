@@ -78,4 +78,40 @@
       nextArrow: $(this).closest('.widget').find('.arrow-button_next'),
     });
   });
+
+  $('.brands-slider__items').slick({
+    slidesToShow: 2,
+    slidesToScroll: 1,
+    arrows: false,
+    autoplay: true,
+    autoplaySpeed: 2000,
+    speed: 800,
+    mobileFirst: true,
+    responsive: [
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 3,
+        }
+      },
+      {
+        breakpoint: 640,
+        settings: {
+          slidesToShow: 4,
+        }
+      },
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 5,
+        }
+      },
+      {
+        breakpoint: 1200,
+        settings: {
+          slidesToShow: 6,
+        }
+      },
+    ]
+  });
 })();
