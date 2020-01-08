@@ -3,6 +3,10 @@
   background-color: #fff;
 }
 
+.showcase__slider:not(.slick-initialized) .showcase__slide:not(:first-child) {
+  display: none;
+}
+
 .showcase__background {
   display: flex;
   align-items: center;
@@ -11,12 +15,9 @@
   background-position: calc(50% + 36px) top;
   background-size: auto 100%;
 
-  @media (min-width: $phone-md) {
-    background-position: left top;
-  }
-
   @media (min-width: $phone-horizontal) {
-    min-height: 376px;
+    min-height: 378px;
+    background-position: left top;
   }
 
   /* ie11 */
