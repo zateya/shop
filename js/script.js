@@ -79,6 +79,16 @@
     });
   });
 
+  $('.showcase__slider').slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    arrows: false,
+    autoplay: true,
+    speed: 1200,
+    autoplaySpeed: 7000,
+    fade: true,
+  });
+
   $('.brands-slider__items').slick({
     slidesToShow: 2,
     slidesToScroll: 1,
