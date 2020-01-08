@@ -1,6 +1,41 @@
 'use strict';
 
 (function () {
+
+  function switchAsideMenu () {
+    if(window.matchMedia('(max-width: 991px)').matches){
+      $('.aside-menu').removeClass('aside__menu').addClass('site-nav__catalog-menu');
+      $('.site-nav__catalog').append($('.aside-menu'));
+    } else {
+      $('.aside-menu').removeClass('site-nav__catalog-menu').addClass('aside__menu');
+      $('.aside').prepend($('.aside-menu'));
+    }
+  };
+
+  function showSiteNav () {
+    if(window.matchMedia('(min-width: 992px)').matches){
+      $('.site-nav__list').removeAttr('style');
+    }
+  }
+
+  function onWindowResize () {
+    showSiteNav();
+    switchAsideMenu();
+  };
+
+  $('.site-nav__catalog-link').on('click', function (event) {
+    event.preventDefault();
+    $('.aside-menu').slideToggle();
+  });
+
+  $(window).on('resize orientationchange', onWindowResize);
+  onWindowResize();
+
+  $('.site-nav__toggle').on('click', function (event) {
+    event.preventDefault();
+    $('.site-nav__list').slideToggle();
+  });
+
   $('.big-cards_slider').each(function() {
     $(this).slick({
       slidesToShow: 1,
