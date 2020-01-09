@@ -59,6 +59,36 @@
   }
 }
 
-.header__cart {
-  flex-shrink: 0;
+.header__cart-link {
+  margin-left: 10px;
+
+  @media (min-width: $tablet) {
+    margin-left: 40px;
+  }
+}
+
+.header__toggle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 37px;
+  height: 37px;
+  padding: 0;
+  margin-left: 5px;
+  border: 0;
+  background-color: transparent;
+  outline: none;
+  cursor: pointer;
+
+  &_active {
+    fill: $color-red;
+  }
+
+  @media (min-width: $tablet) {
+    display: none;
+  }
+}
+
+.header__toggle-icon {
+  fill: #fff;
 }

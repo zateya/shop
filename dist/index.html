@@ -23,6 +23,12 @@
         </div>
 
         <div class="header__info">
+          <button class="header__user-toggle header__toggle" type="button">
+            <svg class="header__user-icon header__toggle-icon" aria-hidden="true" width="12" height="14">
+              <use xlink:href="./images/sprite.svg#user"></use>
+            </svg>
+          </button>
+
           <ul class="user-menu header__user-menu">
             <li class="user-menu__item">
               <a class="user-menu__link" href="#">My Account</a>
@@ -41,12 +47,18 @@
             </li>
           </ul>
 
+          <button class="header__search-toggle header__toggle" type="button">
+            <svg class="header__search-icon header__toggle-icon" aria-hidden="true" width="15" height="15">
+              <use xlink:href="./images/sprite.svg#search"></use>
+            </svg>
+          </button>
+
           <form class="search-form header__search" action="/search/" method="GET">
             <div class="search-form__wrapper">
               <input class="search-form__input input-text" type="search" placeholder="Search here..." name="question"
                 required>
               <button class="search-form__button input-button">
-                <span class="search-form__icon icon icon_search"></span>
+                <span class="search-form__icon"></span>
                 <span class="visually-hidden">Найти</span>
               </button>
             </div>
@@ -54,7 +66,7 @@
 
           <a class="cart-link header__cart-link" href="#">
             <span class="cart-link__icon-wrap">
-              <span class="cart-link__icon icon icon_cart"></span>
+              <span class="cart-link__icon"></span>
             </span>
             <div class="cart-link__info">
               <div class="cart-link__title">Total</div>
@@ -161,7 +173,7 @@
 
           <section class="widget widget_hot aside__block">
             <div class="widget__top">
-              <div class="widget__title title">Hot Deals</div>
+              <h2 class="widget__title title">Hot Deals</h2>
 
               <div class="arrow-buttons widget__arrow-buttons">
                 <button class="arrow-button arrow-button_prev arrow-buttons__item">
@@ -229,7 +241,7 @@
 
           <section class="widget widget_special aside__block">
             <div class="widget__top">
-              <div class="widget__title title">Special Deal</div>
+              <h2 class="widget__title title">Special Deal</h2>
 
               <div class="arrow-buttons widget__arrow-buttons">
                 <button class="arrow-button arrow-button_prev arrow-buttons__item">
@@ -296,7 +308,7 @@
 
           <section class="widget widget_signup aside__block">
             <div class="widget__top">
-              <div class="widget__title title">Newsletters</div>
+              <h2 class="widget__title title">Newsletters</h2>
             </div>
 
             <form class="signup-form widget__form" action="/signup/" method="POST">
@@ -418,7 +430,7 @@
 
           <section class="widget widget_new content__block">
             <div class="widget__top">
-              <div class="widget__title title">New Products</div>
+              <h2 class="widget__title title">New Products</h2>
 
               <div class="filters widget__filters">
                 <a class="filters__item filters__item_active" data-filter="all" href="#">All</a>
@@ -592,7 +604,7 @@
 
           <section class="widget widget_latest content__block">
             <div class="widget__top">
-              <div class="widget__title title">Latest Products</div>
+              <h2 class="widget__title title">Latest Products</h2>
 
               <div class="filters widget__filters">
                 <a class="filters__item filters__item_active" data-filter="all" href="#">All</a>
@@ -755,7 +767,7 @@
 
           <section class="widget widget_featured content__block">
             <div class="widget__top">
-              <div class="widget__title title">Featured products</div>
+              <h2 class="widget__title title">Featured products</h2>
 
               <div class="arrow-buttons widget__arrow-buttons">
                 <button class="arrow-button arrow-button_prev arrow-buttons__item">
