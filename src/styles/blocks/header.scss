@@ -4,6 +4,7 @@
 }
 
 .header__top {
+  position: relative;
   display: flex;
   justify-content: space-between;
   min-height: 70px;
@@ -33,7 +34,7 @@
     justify-content: space-between;
     align-content: flex-start;
     max-width: $content-width;
-    padding: 15px 0 25px 30px;
+    padding: 0 0 25px 30px;
   }
 
   @media (min-width: $desktop-sm) {
@@ -42,12 +43,22 @@
 }
 
 .header__user-menu {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
   margin-top: 0;
   margin-bottom: 20px;
-  justify-content: flex-end;
 
   @media (max-width: $phone-max) {
-    display: none !important;
+    position: absolute;
+    display: none;
+    top: calc(100% - 1px);
+    left: 0;
+    right: 0;
+    margin: 0;
+    padding: 0 15px 20px;
+    background-color: $color-dark;
+    z-index: 1;
   }
 }
 
@@ -55,7 +66,14 @@
   flex-grow: 1;
 
   @media (max-width: $phone-max) {
+    position: absolute;
     display: none;
+    top: calc(100% - 1px);
+    left: 0;
+    right: 0;
+    z-index: 1;
+    padding: 2px 15px 13px;
+    background-color: $color-dark;
   }
 }
 
@@ -80,15 +98,17 @@
   outline: none;
   cursor: pointer;
 
-  &_active {
-    fill: $color-red;
-  }
-
   @media (min-width: $tablet) {
     display: none;
   }
 }
 
 .header__toggle-icon {
+  @include addTransition(fill);
+
   fill: #fff;
+}
+
+.header__toggle_active .header__toggle-icon {
+  fill: $color-red;
 }

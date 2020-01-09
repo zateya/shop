@@ -3,6 +3,10 @@
   background-color: #fff;
 }
 
+.showcase__slide {
+  outline: none;
+}
+
 .showcase__slider:not(.slick-initialized) .showcase__slide:not(:first-child) {
   display: none;
 }

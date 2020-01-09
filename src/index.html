@@ -29,23 +29,25 @@
             </svg>
           </button>
 
-          <ul class="user-menu header__user-menu">
-            <li class="user-menu__item">
-              <a class="user-menu__link" href="#">My Account</a>
-            </li>
-            <li class="user-menu__item">
-              <a class="user-menu__link" href="#">Wishlist</a>
-            </li>
-            <li class="user-menu__item">
-              <a class="user-menu__link" href="#">My Cart</a>
-            </li>
-            <li class="user-menu__item">
-              <a class="user-menu__link" href="#">Checkout</a>
-            </li>
-            <li class="user-menu__item">
-              <a class="user-menu__link" href="#">Login</a>
-            </li>
-          </ul>
+          <div class="header__user-menu">
+            <ul class="user-menu">
+              <li class="user-menu__item">
+                <a class="user-menu__link" href="#">My Account</a>
+              </li>
+              <li class="user-menu__item">
+                <a class="user-menu__link" href="#">Wishlist</a>
+              </li>
+              <li class="user-menu__item">
+                <a class="user-menu__link" href="#">My Cart</a>
+              </li>
+              <li class="user-menu__item">
+                <a class="user-menu__link" href="#">Checkout</a>
+              </li>
+              <li class="user-menu__item">
+                <a class="user-menu__link" href="#">Login</a>
+              </li>
+            </ul>
+          </div>
 
           <button class="header__search-toggle header__toggle" type="button">
             <svg class="header__search-icon header__toggle-icon" aria-hidden="true" width="15" height="15">
@@ -53,16 +55,18 @@
             </svg>
           </button>
 
-          <form class="search-form header__search" action="/search/" method="GET">
-            <div class="search-form__wrapper">
-              <input class="search-form__input input-text" type="search" placeholder="Search here..." name="question"
-                required>
-              <button class="search-form__button input-button">
-                <span class="search-form__icon"></span>
-                <span class="visually-hidden">Найти</span>
-              </button>
-            </div>
-          </form>
+          <div class="header__search">
+            <form class="search-form" action="/search/" method="GET">
+              <div class="search-form__wrapper">
+                <input class="search-form__input input-text" type="search" placeholder="Search here..." name="question"
+                  required>
+                <button class="search-form__button input-button">
+                  <span class="search-form__icon"></span>
+                  <span class="visually-hidden">Найти</span>
+                </button>
+              </div>
+            </form>
+          </div>
 
           <a class="cart-link header__cart-link" href="#">
             <span class="cart-link__icon-wrap">
