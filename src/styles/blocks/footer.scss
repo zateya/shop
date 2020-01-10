@@ -96,7 +96,11 @@
 
 .footer__list-item {
   &:not(:last-child) {
-    margin-bottom: 6px;
+    margin-bottom: 10px;
+
+    @media (min-width: $desktop-sm) {
+      margin-bottom: 6px;
+    }
   }
 }
 
