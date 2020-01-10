@@ -59,10 +59,12 @@
       if (!$('.catalog-nav__link').hasClass('bind')) {
         $('.catalog-nav__link').addClass('bind').bind('click', onCatalogLinkClick);
       }
+      console.log(1);
     } else {
       $('.aside-menu').removeClass('catalog-nav__menu').addClass('aside__menu').removeAttr('style');
       $('.aside').prepend($('.aside-menu'));
       $('.catalog-nav__link').removeClass('bind').unbind('click', onCatalogLinkClick);
+      console.log(2);
     }
   };
 
