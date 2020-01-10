@@ -69,23 +69,6 @@
   }
 }
 
-.site-nav__catalog {
-  @media (min-width: $desktop-sm) {
-    min-width: $aside-width;
-    max-width: $aside-width;
-  }
-}
-
-.site-nav__catalog-link {
-  padding-left: 15px;
-  padding-right: 15px;
-  justify-content: flex-start;
-
-  @media (min-width: $desktop-sm) {
-    padding-left: 24px;
-  }
-}
-
 .site-nav__icon {
   display: block;
   margin-right: 17px;
@@ -116,14 +99,4 @@
   @media (min-width: $desktop-sm) {
     display: none;
   }
-}
-
-.site-nav__catalog-menu {
-  display: none;
-  position: absolute;
-  top: 100%;
-  left: 0;
-  right: 0;
-  margin: 0;
-  z-index: 1;
 }

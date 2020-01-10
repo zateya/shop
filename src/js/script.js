@@ -2,7 +2,7 @@
 
 (function () {
 
-  function setActiveElement (elem, activeClass) {
+  function setActiveClass (elem, activeClass) {
     if (!elem.hasClass(activeClass)) {
       $('.' + activeClass).removeClass(activeClass);
     }
@@ -12,7 +12,7 @@
 
   $('.header__toggle').on('click', function (event) {
     event.preventDefault();
-    setActiveElement($(this), 'header__toggle_active');
+    setActiveClass($(this), 'header__toggle_active');
   });
 
   $('.header__user-toggle').on('click', function () {
@@ -38,13 +38,31 @@
     }
   }
 
+  $('.site-nav__toggle').on('click', function (event) {
+    event.preventDefault();
+    $('.aside-menu').slideUp();
+    $('.site-nav__list').slideToggle();
+  });
+
+  function onCatalogLinkClick () {
+    event.preventDefault();
+    $('.site-nav__list').slideUp();
+    $('.aside-menu').slideToggle();
+  };
+
+  $('.catalog-nav__link').addClass('bind').bind('click', onCatalogLinkClick);
+
   function switchAsideMenu () {
     if(window.matchMedia('(max-width: 991px)').matches){
-      $('.aside-menu').removeClass('aside__menu').addClass('site-nav__catalog-menu');
-      $('.site-nav__catalog').append($('.aside-menu'));
+      $('.aside-menu').removeClass('aside__menu').addClass('catalog-nav__menu');
+      $('.catalog-nav').append($('.aside-menu'));
+      if (!$('.catalog-nav__link').hasClass('bind')) {
+        $('.catalog-nav__link').addClass('bind').bind('click', onCatalogLinkClick);
+      }
     } else {
-      $('.aside-menu').removeClass('site-nav__catalog-menu').addClass('aside__menu').removeAttr('style');
+      $('.aside-menu').removeClass('catalog-nav__menu').addClass('aside__menu').removeAttr('style');
       $('.aside').prepend($('.aside-menu'));
+      $('.catalog-nav__link').removeClass('bind').unbind('click', onCatalogLinkClick);
     }
   };
 
@@ -56,18 +74,6 @@
 
   $(window).on('resize orientationchange', onWindowResize);
   onWindowResize();
-
-  $('.site-nav__catalog-link').on('click', function (event) {
-    event.preventDefault();
-    $('.site-nav__list').slideUp();
-    $('.aside-menu').slideToggle();
-  });
-
-  $('.site-nav__toggle').on('click', function (event) {
-    event.preventDefault();
-    $('.aside-menu').slideUp();
-    $('.site-nav__list').slideToggle();
-  });
 
   $('.big-cards_slider').each(function() {
     $(this).slick({
