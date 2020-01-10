@@ -12,1425 +12,1418 @@
   <link rel="stylesheet" href="./css/style.min.css">
 </head>
 
-<body>
-  <div class="page">
-    <header class="header">
-      <div class="header__top container">
-        <div class="site-logo site-logo_header header__logo">
-          <a class="site-logo__link" href="#">
-            <img class="site-logo__img" src="./images/logo.svg" alt="Market Supply">
-          </a>
-        </div>
-
-        <div class="header__info">
-          <button class="header__user-toggle header__toggle" type="button">
-            <svg class="header__user-icon header__toggle-icon" aria-hidden="true" width="12" height="14">
-              <use xlink:href="./images/sprite.svg#user"></use>
-            </svg>
-          </button>
-
-          <div class="header__user-menu">
-            <ul class="user-menu">
-              <li class="user-menu__item">
-                <a class="user-menu__link" href="#">My Account</a>
-              </li>
-              <li class="user-menu__item">
-                <a class="user-menu__link" href="#">Wishlist</a>
-              </li>
-              <li class="user-menu__item">
-                <a class="user-menu__link" href="#">My Cart</a>
-              </li>
-              <li class="user-menu__item">
-                <a class="user-menu__link" href="#">Checkout</a>
-              </li>
-              <li class="user-menu__item">
-                <a class="user-menu__link" href="#">Login</a>
-              </li>
-            </ul>
-          </div>
-
-          <button class="header__search-toggle header__toggle" type="button">
-            <svg class="header__search-icon header__toggle-icon" aria-hidden="true" width="15" height="15">
-              <use xlink:href="./images/sprite.svg#search"></use>
-            </svg>
-          </button>
-
-          <div class="header__search">
-            <form class="search-form" action="/search/" method="GET">
-              <div class="search-form__wrapper">
-                <input class="search-form__input input-text" type="search" placeholder="Search here..." name="question"
-                  required>
-                <button class="search-form__button input-button">
-                  <span class="search-form__icon"></span>
-                  <span class="visually-hidden">Найти</span>
-                </button>
-              </div>
-            </form>
-          </div>
-
-          <a class="cart-link header__cart-link" href="#">
-            <span class="cart-link__icon-wrap">
-              <span class="cart-link__icon"></span>
-            </span>
-            <div class="cart-link__info">
-              <div class="cart-link__title">Total</div>
-              <div class="cart-link__price">$600.00</div>
-            </div>
-          </a>
-        </div>
+<body class="page">
+  <header class="header">
+    <div class="header__top container">
+      <div class="site-logo site-logo_header header__logo">
+        <a class="site-logo__link" href="#">
+          <img class="site-logo__img" src="./images/logo.svg" alt="Market Supply">
+        </a>
       </div>
 
-      <nav class="site-nav header__nav">
-        <div class="site-nav__container container">
-          <div class="site-nav__catalog catalog-nav">
-            <a class="catalog-nav__link site-nav__link site-nav__link_accent" href="#">
-              <svg class="catalog-nav__icon site-nav__icon site-nav__icon_menu" aria-hidden="true" width="16"
-                height="13">
-                <use xlink:href="./images/sprite.svg#menu"></use>
-              </svg>
-              Categories
-            </a>
-          </div>
+      <div class="header__info">
+        <button class="header__user-toggle header__toggle" type="button">
+          <svg class="header__user-icon header__toggle-icon" aria-hidden="true" width="12" height="14">
+            <use xlink:href="./images/sprite.svg#user"></use>
+          </svg>
+        </button>
 
-          <button class="site-nav__toggle site-nav__link site-nav__link_accent" type="button">
-            <svg class="site-nav__toggle-icon site-nav__icon site-nav__icon_menu" aria-hidden="true" width="16"
-              height="13">
+        <div class="header__user-menu">
+          <ul class="user-menu">
+            <li class="user-menu__item">
+              <a class="user-menu__link" href="#">My Account</a>
+            </li>
+            <li class="user-menu__item">
+              <a class="user-menu__link" href="#">Wishlist</a>
+            </li>
+            <li class="user-menu__item">
+              <a class="user-menu__link" href="#">My Cart</a>
+            </li>
+            <li class="user-menu__item">
+              <a class="user-menu__link" href="#">Checkout</a>
+            </li>
+            <li class="user-menu__item">
+              <a class="user-menu__link" href="#">Login</a>
+            </li>
+          </ul>
+        </div>
+
+        <button class="header__search-toggle header__toggle" type="button">
+          <svg class="header__search-icon header__toggle-icon" aria-hidden="true" width="15" height="15">
+            <use xlink:href="./images/sprite.svg#search"></use>
+          </svg>
+        </button>
+
+        <div class="header__search">
+          <form class="search-form" action="/search/" method="GET">
+            <div class="search-form__wrapper">
+              <input class="search-form__input input-text" type="search" placeholder="Search here..." name="question"
+                required>
+              <button class="search-form__button input-button">
+                <span class="search-form__icon"></span>
+                <span class="visually-hidden">Найти</span>
+              </button>
+            </div>
+          </form>
+        </div>
+
+        <a class="cart-link header__cart-link" href="#">
+          <span class="cart-link__icon-wrap">
+            <span class="cart-link__icon"></span>
+          </span>
+          <div class="cart-link__info">
+            <div class="cart-link__title">Total</div>
+            <div class="cart-link__price">$600.00</div>
+          </div>
+        </a>
+      </div>
+    </div>
+
+    <nav class="site-nav header__nav">
+      <div class="site-nav__container container">
+        <div class="site-nav__catalog catalog-nav">
+          <a class="catalog-nav__link site-nav__link site-nav__link_accent" href="#">
+            <svg class="catalog-nav__icon site-nav__icon site-nav__icon_menu" aria-hidden="true" width="16" height="13">
               <use xlink:href="./images/sprite.svg#menu"></use>
             </svg>
-            Menu
-          </button>
-
-          <ul class="site-nav__list">
-            <li class="site-nav__item">
-              <a class="site-nav__link" href="#">Clothing</a>
-            </li>
-            <li class="site-nav__item">
-              <a class="site-nav__link" href="#">Electronics hot</a>
-            </li>
-            <li class="site-nav__item">
-              <a class="site-nav__link" href="#">Health & Beauty</a>
-            </li>
-            <li class="site-nav__item">
-              <a class="site-nav__link" href="#">Watches</a>
-            </li>
-            <li class="site-nav__item">
-              <a class="site-nav__link" href="#">Jewellery</a>
-            </li>
-            <li class="site-nav__item">
-              <a class="site-nav__link" href="#">Shoes</a>
-            </li>
-          </ul>
+            Categories
+          </a>
         </div>
-      </nav>
-    </header>
 
-    <main class="main">
-      <div class="main__container container">
-        <aside class="aside main__aside main__aside_left">
-          <ul class="aside-menu aside__menu">
-            <li class="aside-menu__item">
-              <a class="aside-menu__link" href="#">
-                Clothing
-              </a>
-            </li>
-            <li class="aside-menu__item">
-              <a class="aside-menu__link" href="#">
-                Electronics
-              </a>
-            </li>
-            <li class="aside-menu__item">
-              <a class="aside-menu__link" href="#">
-                Shoes
-              </a>
-            </li>
-            <li class="aside-menu__item">
-              <a class="aside-menu__link" href="#">
-                Watches
-              </a>
-            </li>
-            <li class="aside-menu__item">
-              <a class="aside-menu__link" href="#">
-                Jewellery
-              </a>
-            </li>
-            <li class="aside-menu__item">
-              <a class="aside-menu__link" href="#">
-                Health and Beauty
-              </a>
-            </li>
-            <li class="aside-menu__item">
-              <a class="aside-menu__link" href="#">
-                Kids and Babies
-              </a>
-            </li>
-            <li class="aside-menu__item">
-              <a class="aside-menu__link" href="#">
-                Sports
-              </a>
-            </li>
-            <li class="aside-menu__item">
-              <a class="aside-menu__link" href="#">
-                Home and Garden
-              </a>
-            </li>
-          </ul>
-
-          <section class="widget widget_hot aside__block">
-            <div class="widget__top">
-              <h2 class="widget__title title">Hot Deals</h2>
-
-              <div class="arrow-buttons widget__arrow-buttons">
-                <button class="arrow-button arrow-button_prev arrow-buttons__item">
-                  <span class="visually-hidden">Prev</span>
-                </button>
-                <button class="arrow-button arrow-button_next arrow-buttons__item">
-                  <span class="visually-hidden">Next</span>
-                </button>
-              </div>
-            </div>
-            <div class="widget__cards widget__cards_vertical">
-              <div class="big-cards big-cards_slider">
-                <div class="big-cards__item">
-                  <a class="card card_img_big card_vertical" href="#">
-                    <div class="card__img-wrap">
-                      <img class="card__img" src="./images/card-big-1.jpg" srcset="./images/card-big-1@2x.jpg 2x"
-                        alt="">
-                    </div>
-
-                    <div class="card__info">
-                      <p class="card__title">Lorem ipsum dolor ipsum dolor ipsum dolor</p>
-                      <div class="card__price">
-                        <del class="card__price-old">100.00</del>
-                        <span class="card__price-new">$90.00</span>
-                      </div>
-                      <div class="card__rating rating">
-                        <span class="visually-hidden">Rating 4 of 5</span>
-                        <span class="rating-item rating__item"></span>
-                        <span class="rating-item rating__item"></span>
-                        <span class="rating-item rating__item"></span>
-                        <span class="rating-item rating__item"></span>
-                        <span class="rating-item rating-item_empty rating__item"></span>
-                      </div>
-                    </div>
-                  </a>
-                </div>
-                <div class="big-cards__item">
-                  <a class="card card_img_big card_vertical" href="#">
-                    <div class="card__img-wrap">
-                      <img class="card__img" src="./images/card-big-2.jpg" srcset="./images/card-big-2@2x.jpg 2x"
-                        alt="">
-                    </div>
-
-                    <div class="card__info">
-                      <p class="card__title">Lorem ipsum dolor ipsum dolor ipsum dolor</p>
-                      <div class="card__price">
-                        <del class="card__price-old">100.00</del>
-                        <span class="card__price-new">$90.00</span>
-                      </div>
-                      <div class="card__rating rating">
-                        <span class="visually-hidden">Rating 4 of 5</span>
-                        <span class="rating-item rating__item"></span>
-                        <span class="rating-item rating__item"></span>
-                        <span class="rating-item rating__item"></span>
-                        <span class="rating-item rating-item_empty rating__item"></span>
-                        <span class="rating-item rating-item_empty rating__item"></span>
-                      </div>
-                    </div>
-                  </a>
-                </div>
-              </div>
-            </div>
-
-          </section>
-
-          <section class="widget widget_special aside__block">
-            <div class="widget__top">
-              <h2 class="widget__title title">Special Deal</h2>
-
-              <div class="arrow-buttons widget__arrow-buttons">
-                <button class="arrow-button arrow-button_prev arrow-buttons__item">
-                  <span class="visually-hidden">Prev</span>
-                </button>
-                <button class="arrow-button arrow-button_next arrow-buttons__item">
-                  <span class="visually-hidden">Next</span>
-                </button>
-              </div>
-            </div>
-            <div class="widget__cards widget__cards_vertical">
-              <div class="big-cards big-cards_slider">
-                <div class="big-cards__item">
-                  <a class="card card_img_big card_vertical" href="#">
-                    <div class="card__img-wrap">
-                      <img class="card__img" src="./images/card-big-2.jpg" srcset="./images/card-big-2@2x.jpg 2x"
-                        alt="">
-                    </div>
-
-                    <div class="card__info">
-                      <p class="card__title">Lorem ipsum dolor ipsum dolor ipsum dolor</p>
-                      <div class="card__price">
-                        <del class="card__price-old">100.00</del>
-                        <span class="card__price-new">$90.00</span>
-                      </div>
-                      <div class="card__rating rating">
-                        <span class="visually-hidden">Rating 4 of 5</span>
-                        <span class="rating-item rating__item"></span>
-                        <span class="rating-item rating__item"></span>
-                        <span class="rating-item rating__item"></span>
-                        <span class="rating-item rating__item"></span>
-                        <span class="rating-item rating-item_empty rating__item"></span>
-                      </div>
-                    </div>
-                  </a>
-                </div>
-                <div class="big-cards__item">
-                  <a class="card card_img_big card_vertical" href="#">
-                    <div class="card__img-wrap">
-                      <img class="card__img" src="./images/card-big-1.jpg" srcset="./images/card-big-1@2x.jpg 2x"
-                        alt="">
-                    </div>
-
-                    <div class="card__info">
-                      <p class="card__title">Lorem ipsum dolor ipsum dolor ipsum dolor</p>
-                      <div class="card__price">
-                        <del class="card__price-old">100.00</del>
-                        <span class="card__price-new">$90.00</span>
-                      </div>
-                      <div class="card__rating rating">
-                        <span class="visually-hidden">Rating 4 of 5</span>
-                        <span class="rating-item rating__item"></span>
-                        <span class="rating-item rating__item"></span>
-                        <span class="rating-item rating__item"></span>
-                        <span class="rating-item rating-item_empty rating__item"></span>
-                        <span class="rating-item rating-item_empty rating__item"></span>
-                      </div>
-                    </div>
-                  </a>
-                </div>
-              </div>
-            </div>
-          </section>
-
-          <section class="widget widget_signup aside__block">
-            <div class="widget__top">
-              <h2 class="widget__title title">Newsletters</h2>
-            </div>
-
-            <form class="signup-form widget__form" action="/signup/" method="POST">
-              <p class="widget__form-title">Sign Up for Our Newsletter!</p>
-
-              <div class="form-control widget__form-control">
-                <input class="signup-form__input input-text" type="text" name="email" required>
-                <label class="form-control__message input-error">Email is required</label>
-              </div>
-
-              <button class="signup-form__button widget__form-button button">Subscribe</button>
-            </form>
-          </section>
-
-          <div class="promo aside__block">
-            <a class="promo__link" href="#">
-              <img class="promo__img" src="./images/promo.jpg" alt="Mens body wash with extra fresh">
-            </a>
-          </div>
-        </aside>
-
-        <div class="content main__content">
-          <section class="showcase content__showcase">
-            <div class="showcase__slider">
-              <div class="showcase__slide">
-                <div class="showcase__background"
-                  style="background-color: #ffcd75; background-image: url(./images/showcase.jpg)">
-                  <div class="showcase__text">
-                    <h3 class="showcase__title">Collection 2016</h3>
-                    <p class="showcase__lead">
-                      save 50% for
-                      <span class="showcase__lead-subline">first purchase</span>
-                    </p>
-                    <div class="showcase__more">
-                      <a class="showcase__more-link button button_invert" href="#">Shop Now</a>
-                    </div>
-                  </div>
-                </div>
-
-                <ul class="features showcase__features">
-                  <li class="features__item">
-                    <h4 class="features__title">Money back</h4>
-                    <p class="features__info">30 Days Money Back Guarantee</p>
-                  </li>
-                  <li class="features__item">
-                    <h4 class="features__title">Free shipping</h4>
-                    <p class="features__info">Shipping on orders over $99</p>
-                  </li>
-                  <li class="features__item">
-                    <h4 class="features__title">Special Sale</h4>
-                    <p class="features__info">Extra $5 off on all items </p>
-                  </li>
-                </ul>
-              </div>
-
-              <div class="showcase__slide">
-                <div class="showcase__background"
-                  style="background-color: #8e8dea; background-image: url(./images/showcase-2.jpg)">
-                  <div class="showcase__text">
-                    <h3 class="showcase__title">Collection 2017</h3>
-                    <p class="showcase__lead">
-                      save 30% for
-                      <span class="showcase__lead-subline">first purchase</span>
-                    </p>
-                    <div class="showcase__more">
-                      <a class="showcase__more-link button button_invert" href="#">Shop Now</a>
-                    </div>
-                  </div>
-                </div>
-
-                <ul class="features showcase__features">
-                  <li class="features__item">
-                    <h4 class="features__title">Money back</h4>
-                    <p class="features__info">30 Days Money Back Guarantee</p>
-                  </li>
-                  <li class="features__item">
-                    <h4 class="features__title">Free shipping</h4>
-                    <p class="features__info">Shipping on orders over $99</p>
-                  </li>
-                  <li class="features__item">
-                    <h4 class="features__title">Special Sale</h4>
-                    <p class="features__info">Extra $5 off on all items </p>
-                  </li>
-                </ul>
-              </div>
-
-              <div class="showcase__slide">
-                <div class="showcase__background"
-                  style="background-color: #59e240; background-image: url(./images/showcase-3.jpg)">
-                  <div class="showcase__text">
-                    <h3 class="showcase__title">Collection 2018</h3>
-                    <p class="showcase__lead">
-                      save 20% for
-                      <span class="showcase__lead-subline">first purchase</span>
-                    </p>
-                    <div class="showcase__more">
-                      <a class="showcase__more-link button button_invert" href="#">Shop Now</a>
-                    </div>
-                  </div>
-                </div>
-
-                <ul class="features showcase__features">
-                  <li class="features__item">
-                    <h4 class="features__title">Money back</h4>
-                    <p class="features__info">30 Days Money Back Guarantee</p>
-                  </li>
-                  <li class="features__item">
-                    <h4 class="features__title">Free shipping</h4>
-                    <p class="features__info">Shipping on orders over $99</p>
-                  </li>
-                  <li class="features__item">
-                    <h4 class="features__title">Special Sale</h4>
-                    <p class="features__info">Extra $5 off on all items </p>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </section>
-
-          <section class="widget widget_new content__block">
-            <div class="widget__top">
-              <h2 class="widget__title title">New Products</h2>
-
-              <div class="filters widget__filters">
-                <a class="filters__item filters__item_active" data-filter="all" href="#">All</a>
-                <a class="filters__item" data-filter="clothing" href="#">Clothing</a>
-                <a class="filters__item" data-filter="electronics" href="#">Electronics</a>
-                <a class="filters__item" data-filter="shoes" href="#">Shoes</a>
-              </div>
-
-              <div class="arrow-buttons widget__arrow-buttons">
-                <button class="arrow-button arrow-button_prev arrow-buttons__item">
-                  <span class="visually-hidden">Prev</span>
-                </button>
-                <button class="arrow-button arrow-button_next arrow-buttons__item">
-                  <span class="visually-hidden">Next</span>
-                </button>
-              </div>
-            </div>
-
-            <div class="widget__cards widget__cards_vertical">
-              <div class="medium-cards medium-cards_slider">
-                <div class="medium-cards__item" data-type="clothing">
-                  <a class="card card_img_medium card_vertical" href="#">
-                    <div class="card__img-wrap">
-                      <img class="card__img" src="./images/card-medium-1.jpg" srcset="./images/card-medium-1@2x.jpg 2x"
-                        alt="">
-                    </div>
-
-                    <div class="card__info">
-                      <p class="card__title">Lorem ipsum dolor ipsum dolor ipsum dolor</p>
-                      <div class="card__price">
-                        <del class="card__price-old">100.00</del>
-                        <span class="card__price-new">$90.00</span>
-                      </div>
-                      <div class="card__rating rating">
-                        <span class="visually-hidden">Rating 4 of 5</span>
-                        <span class="rating-item rating__item"></span>
-                        <span class="rating-item rating__item"></span>
-                        <span class="rating-item rating__item"></span>
-                        <span class="rating-item rating__item"></span>
-                        <span class="rating-item rating-item_empty rating__item"></span>
-                      </div>
-                    </div>
-                  </a>
-                </div>
-
-                <div class="medium-cards__item" data-type="electronics">
-                  <a class="card card_img_medium card_vertical" href="#">
-                    <div class="card__img-wrap">
-                      <img class="card__img" src="./images/card-medium-2.jpg" srcset="./images/card-medium-2@2x.jpg 2x"
-                        alt="">
-                    </div>
-
-                    <div class="card__info">
-                      <p class="card__title">Lorem ipsum dolor ipsum dolor ipsum dolor</p>
-                      <div class="card__price">
-                        <del class="card__price-old">100.00</del>
-                        <span class="card__price-new">$90.00</span>
-                      </div>
-                      <div class="card__rating rating">
-                        <span class="visually-hidden">Rating 4 of 5</span>
-                        <span class="rating-item rating__item"></span>
-                        <span class="rating-item rating__item"></span>
-                        <span class="rating-item rating__item"></span>
-                        <span class="rating-item rating__item"></span>
-                        <span class="rating-item rating-item_empty rating__item"></span>
-                      </div>
-                    </div>
-                  </a>
-                </div>
-
-                <div class="medium-cards__item" data-type="clothing">
-                  <a class="card card_img_medium card_vertical" href="#">
-                    <div class="card__img-wrap">
-                      <img class="card__img" src="./images/card-medium-3.jpg" srcset="./images/card-medium-3@2x.jpg 2x"
-                        alt="">
-                    </div>
-
-                    <div class="card__info">
-                      <p class="card__title">Lorem ipsum dolor ipsum dolor ipsum dolor</p>
-                      <div class="card__price">
-                        <del class="card__price-old">100.00</del>
-                        <span class="card__price-new">$90.00</span>
-                      </div>
-                      <div class="card__rating rating">
-                        <span class="visually-hidden">Rating 4 of 5</span>
-                        <span class="rating-item rating__item"></span>
-                        <span class="rating-item rating__item"></span>
-                        <span class="rating-item rating__item"></span>
-                        <span class="rating-item rating__item"></span>
-                        <span class="rating-item rating-item_empty rating__item"></span>
-                      </div>
-                    </div>
-                  </a>
-                </div>
-
-                <div class="medium-cards__item" data-type="electronics">
-                  <a class="card card_img_medium card_vertical" href="#">
-                    <div class="card__img-wrap">
-                      <img class="card__img" src="./images/card-medium-4.jpg" srcset="./images/card-medium-4@2x.jpg 2x"
-                        alt="">
-                    </div>
-
-                    <div class="card__info">
-                      <p class="card__title">Lorem ipsum dolor ipsum dolor ipsum dolor</p>
-                      <div class="card__price">
-                        <del class="card__price-old">100.00</del>
-                        <span class="card__price-new">$90.00</span>
-                      </div>
-                      <div class="card__rating rating">
-                        <span class="visually-hidden">Rating 4 of 5</span>
-                        <span class="rating-item rating__item"></span>
-                        <span class="rating-item rating__item"></span>
-                        <span class="rating-item rating__item"></span>
-                        <span class="rating-item rating__item"></span>
-                        <span class="rating-item rating-item_empty rating__item"></span>
-                      </div>
-                    </div>
-                  </a>
-                </div>
-
-                <div class="medium-cards__item" data-type="electronics">
-                  <a class="card card_img_medium card_vertical" href="#">
-                    <div class="card__img-wrap">
-                      <img class="card__img" src="./images/card-medium-5.jpg" srcset="./images/card-medium-5@2x.jpg 2x"
-                        alt="">
-                    </div>
-
-                    <div class="card__info">
-                      <p class="card__title">Lorem ipsum dolor ipsum dolor ipsum dolor</p>
-                      <div class="card__price">
-                        <del class="card__price-old">100.00</del>
-                        <span class="card__price-new">$90.00</span>
-                      </div>
-                      <div class="card__rating rating">
-                        <span class="visually-hidden">Rating 4 of 5</span>
-                        <span class="rating-item rating__item"></span>
-                        <span class="rating-item rating__item"></span>
-                        <span class="rating-item rating__item"></span>
-                        <span class="rating-item rating__item"></span>
-                        <span class="rating-item rating-item_empty rating__item"></span>
-                      </div>
-                    </div>
-                  </a>
-                </div>
-              </div>
-            </div>
-          </section>
-
-          <section class="sales content__block">
-            <div class="sales__container">
-              <a class="sales-item sales__item" href="#">
-                <img class="sales-item__img" src="./images/sales-1.jpg" alt="">
-                <div class="sales-item__text">
-                  <div class="sales-item__title">201<span class="sales-item__title-accent">6</span></div>
-                  <div class="sales-item__subtitle">Fashion Sale</div>
-                  <span class="sales-item__more">Buy Now</span>
-                  <div class="sales-item__note">*on selected items only</div>
-                </div>
-              </a>
-              <a class="sales-item sales__item" href="#">
-                <img class="sales-item__img" src="./images/sales-2.jpg" alt="">
-                <div class="sales-item__text">
-                  <div class="sales-item__title">201<span class="sales-item__title-accent">6</span></div>
-                  <div class="sales-item__subtitle">Fashion Sale</div>
-                  <span class="sales-item__more">Buy Now</span>
-                  <div class="sales-item__note">*on selected items only</div>
-                </div>
-              </a>
-            </div>
-          </section>
-
-          <section class="widget widget_latest content__block">
-            <div class="widget__top">
-              <h2 class="widget__title title">Latest Products</h2>
-
-              <div class="filters widget__filters">
-                <a class="filters__item filters__item_active" data-filter="all" href="#">All</a>
-                <a class="filters__item" data-filter="clothing" href="#">Clothing</a>
-                <a class="filters__item" data-filter="electronics" href="#">Electronics</a>
-                <a class="filters__item" data-filter="shoes" href="#">Shoes</a>
-              </div>
-
-              <div class="arrow-buttons widget__arrow-buttons">
-                <button class="arrow-button arrow-button_prev arrow-buttons__item">
-                  <span class="visually-hidden">Prev</span>
-                </button>
-                <button class="arrow-button arrow-button_next arrow-buttons__item">
-                  <span class="visually-hidden">Next</span>
-                </button>
-              </div>
-            </div>
-
-            <div class="widget__cards widget__cards_vertical">
-              <div class="medium-cards medium-cards_slider">
-                <div class="medium-cards__item" data-type="electronics">
-                  <a class="card card_img_medium card_vertical" href="#">
-                    <div class="card__img-wrap">
-                      <img class="card__img" src="./images/card-medium-5.jpg" srcset="./images/card-medium-5@2x.jpg 2x"
-                        alt="">
-                    </div>
-
-                    <div class="card__info">
-                      <p class="card__title">Lorem ipsum dolor ipsum dolor ipsum dolor</p>
-                      <div class="card__price">
-                        <del class="card__price-old">100.00</del>
-                        <span class="card__price-new">$90.00</span>
-                      </div>
-                      <div class="card__rating rating">
-                        <span class="visually-hidden">Rating 4 of 5</span>
-                        <span class="rating-item rating__item"></span>
-                        <span class="rating-item rating__item"></span>
-                        <span class="rating-item rating__item"></span>
-                        <span class="rating-item rating__item"></span>
-                        <span class="rating-item rating-item_empty rating__item"></span>
-                      </div>
-                    </div>
-                  </a>
-                </div>
-
-                <div class="medium-cards__item" data-type="clothing">
-                  <a class="card card_img_medium card_vertical" href="#">
-                    <div class="card__img-wrap">
-                      <img class="card__img" src="./images/card-medium-6.jpg" srcset="./images/card-medium-6@2x.jpg 2x"
-                        alt="">
-                    </div>
-
-                    <div class="card__info">
-                      <p class="card__title">Lorem ipsum dolor ipsum dolor ipsum dolor</p>
-                      <div class="card__price">
-                        <del class="card__price-old">100.00</del>
-                        <span class="card__price-new">$90.00</span>
-                      </div>
-                      <div class="card__rating rating">
-                        <span class="visually-hidden">Rating 4 of 5</span>
-                        <span class="rating-item rating__item"></span>
-                        <span class="rating-item rating__item"></span>
-                        <span class="rating-item rating__item"></span>
-                        <span class="rating-item rating__item"></span>
-                        <span class="rating-item rating-item_empty rating__item"></span>
-                      </div>
-                    </div>
-                  </a>
-                </div>
-
-                <div class="medium-cards__item" data-type="clothing">
-                  <a class="card card_img_medium card_vertical" href="#">
-                    <div class="card__img-wrap">
-                      <img class="card__img" src="./images/card-medium-7.jpg" srcset="./images/card-medium-7@2x.jpg 2x"
-                        alt="">
-                    </div>
-
-                    <div class="card__info">
-                      <p class="card__title">Lorem ipsum dolor ipsum dolor ipsum dolor</p>
-                      <div class="card__price">
-                        <del class="card__price-old">100.00</del>
-                        <span class="card__price-new">$90.00</span>
-                      </div>
-                      <div class="card__rating rating">
-                        <span class="visually-hidden">Rating 4 of 5</span>
-                        <span class="rating-item rating__item"></span>
-                        <span class="rating-item rating__item"></span>
-                        <span class="rating-item rating__item"></span>
-                        <span class="rating-item rating__item"></span>
-                        <span class="rating-item rating-item_empty rating__item"></span>
-                      </div>
-                    </div>
-                  </a>
-                </div>
-
-                <div class="medium-cards__item" data-type="electronics">
-                  <a class="card card_img_medium card_vertical" href="#">
-                    <div class="card__img-wrap">
-                      <img class="card__img" src="./images/card-medium-8.jpg" srcset="./images/card-medium-8@2x.jpg 2x"
-                        alt="">
-                    </div>
-
-                    <div class="card__info">
-                      <p class="card__title">Lorem ipsum dolor ipsum dolor ipsum dolor</p>
-                      <div class="card__price">
-                        <del class="card__price-old">100.00</del>
-                        <span class="card__price-new">$90.00</span>
-                      </div>
-                      <div class="card__rating rating">
-                        <span class="visually-hidden">Rating 4 of 5</span>
-                        <span class="rating-item rating__item"></span>
-                        <span class="rating-item rating__item"></span>
-                        <span class="rating-item rating__item"></span>
-                        <span class="rating-item rating__item"></span>
-                        <span class="rating-item rating-item_empty rating__item"></span>
-                      </div>
-                    </div>
-                  </a>
-                </div>
-
-                <div class="medium-cards__item" data-type="clothing">
-                  <a class="card card_img_medium card_vertical" href="#">
-                    <div class="card__img-wrap">
-                      <img class="card__img" src="./images/card-medium-1.jpg" srcset="./images/card-medium-1@2x.jpg 2x"
-                        alt="">
-                    </div>
-
-                    <div class="card__info">
-                      <p class="card__title">Lorem ipsum dolor ipsum dolor ipsum dolor</p>
-                      <div class="card__price">
-                        <del class="card__price-old">100.00</del>
-                        <span class="card__price-new">$90.00</span>
-                      </div>
-                      <div class="card__rating rating">
-                        <span class="visually-hidden">Rating 4 of 5</span>
-                        <span class="rating-item rating__item"></span>
-                        <span class="rating-item rating__item"></span>
-                        <span class="rating-item rating__item"></span>
-                        <span class="rating-item rating__item"></span>
-                        <span class="rating-item rating-item_empty rating__item"></span>
-                      </div>
-                    </div>
-                  </a>
-                </div>
-              </div>
-            </div>
-          </section>
-
-          <section class="promo-wide content__block">
-            <a class="promo-wide__link" href="#">
-              <div class="promo-wide__background" style="background-image: url(./images/promo-wide.jpg);"></div>
-              <div class="promo-wide__text">
-                <div class="promo-wide__title title">Beautiful Laptop</div>
-                <div class="promo-wide__subtitle title title_color_blue title_bolder">Retina Display 18” Ready&nbsp;!
-                </div>
-                <div class="promo-wide__more button" href="#">Shop Now</div>
-              </div>
-            </a>
-          </section>
-
-          <section class="widget widget_featured content__block">
-            <div class="widget__top">
-              <h2 class="widget__title title">Featured products</h2>
-
-              <div class="arrow-buttons widget__arrow-buttons">
-                <button class="arrow-button arrow-button_prev arrow-buttons__item">
-                  <span class="visually-hidden">Prev</span>
-                </button>
-                <button class="arrow-button arrow-button_next arrow-buttons__item">
-                  <span class="visually-hidden">Next</span>
-                </button>
-              </div>
-            </div>
-
-            <div class="widget__cards widget__cards_horizontal">
-              <div class="small-cards-slider">
-                <div class="small-cards small-cards-slider__item">
-                  <div class="small-cards__items">
-                    <div class="small-cards__item">
-                      <a class="card card_img_small card_horizontal" href="#">
-                        <div class="card__img-wrap">
-                          <img class="card__img" src="./images/card-small-1.jpg"
-                            srcset="./images/card-small-1@2x.jpg 2x" alt="">
-                        </div>
-
-                        <div class="card__info">
-                          <p class="card__title">Lorem ipsum dolor ipsum dolor ipsum dolor</p>
-                          <div class="card__price">
-                            <del class="card__price-old">100.00</del>
-                            <span class="card__price-new">$90.00</span>
-                          </div>
-                          <div class="card__rating rating">
-                            <span class="visually-hidden">Rating 4 of 5</span>
-                            <span class="rating-item rating__item"></span>
-                            <span class="rating-item rating__item"></span>
-                            <span class="rating-item rating__item"></span>
-                            <span class="rating-item rating__item"></span>
-                            <span class="rating-item rating-item_empty rating__item"></span>
-                          </div>
-                        </div>
-                      </a>
-                    </div>
-
-                    <div class="small-cards__item">
-                      <a class="card card_img_small card_horizontal" href="#">
-                        <div class="card__img-wrap">
-                          <img class="card__img" src="./images/card-small-2.jpg"
-                            srcset="./images/card-small-2@2x.jpg 2x" alt="">
-                        </div>
-
-                        <div class="card__info">
-                          <p class="card__title">Lorem ipsum dolor ipsum dolor ipsum dolor</p>
-                          <div class="card__price">
-                            <del class="card__price-old">100.00</del>
-                            <span class="card__price-new">$90.00</span>
-                          </div>
-                          <div class="card__rating rating">
-                            <span class="visually-hidden">Rating 4 of 5</span>
-                            <span class="rating-item rating__item"></span>
-                            <span class="rating-item rating__item"></span>
-                            <span class="rating-item rating__item"></span>
-                            <span class="rating-item rating__item"></span>
-                            <span class="rating-item rating-item_empty rating__item"></span>
-                          </div>
-                        </div>
-                      </a>
-                    </div>
-
-                    <div class="small-cards__item">
-                      <a class="card card_img_small card_horizontal" href="#">
-                        <div class="card__img-wrap">
-                          <img class="card__img" src="./images/card-small-3.jpg"
-                            srcset="./images/card-small-3@2x.jpg 2x" alt="">
-                        </div>
-
-                        <div class="card__info">
-                          <p class="card__title">Lorem ipsum dolor ipsum dolor ipsum dolor</p>
-                          <div class="card__price">
-                            <del class="card__price-old">100.00</del>
-                            <span class="card__price-new">$90.00</span>
-                          </div>
-                          <div class="card__rating rating">
-                            <span class="visually-hidden">Rating 4 of 5</span>
-                            <span class="rating-item rating__item"></span>
-                            <span class="rating-item rating__item"></span>
-                            <span class="rating-item rating__item"></span>
-                            <span class="rating-item rating__item"></span>
-                            <span class="rating-item rating-item_empty rating__item"></span>
-                          </div>
-                        </div>
-                      </a>
-                    </div>
-
-                    <div class="small-cards__item">
-                      <a class="card card_img_small card_horizontal" href="#">
-                        <div class="card__img-wrap">
-                          <img class="card__img" src="./images/card-small-4.jpg"
-                            srcset="./images/card-small-4@2x.jpg 2x" alt="">
-                        </div>
-
-                        <div class="card__info">
-                          <p class="card__title">Lorem ipsum dolor ipsum dolor ipsum dolor</p>
-                          <div class="card__price">
-                            <del class="card__price-old">100.00</del>
-                            <span class="card__price-new">$90.00</span>
-                          </div>
-                          <div class="card__rating rating">
-                            <span class="visually-hidden">Rating 4 of 5</span>
-                            <span class="rating-item rating__item"></span>
-                            <span class="rating-item rating__item"></span>
-                            <span class="rating-item rating__item"></span>
-                            <span class="rating-item rating__item"></span>
-                            <span class="rating-item rating-item_empty rating__item"></span>
-                          </div>
-                        </div>
-                      </a>
-                    </div>
-
-                    <div class="small-cards__item">
-                      <a class="card card_img_small card_horizontal" href="#">
-                        <div class="card__img-wrap">
-                          <img class="card__img" src="./images/card-small-5.jpg"
-                            srcset="./images/card-small-5@2x.jpg 2x" alt="">
-                        </div>
-
-                        <div class="card__info">
-                          <p class="card__title">Lorem ipsum dolor ipsum dolor ipsum dolor</p>
-                          <div class="card__price">
-                            <del class="card__price-old">100.00</del>
-                            <span class="card__price-new">$90.00</span>
-                          </div>
-                          <div class="card__rating rating">
-                            <span class="visually-hidden">Rating 4 of 5</span>
-                            <span class="rating-item rating__item"></span>
-                            <span class="rating-item rating__item"></span>
-                            <span class="rating-item rating__item"></span>
-                            <span class="rating-item rating__item"></span>
-                            <span class="rating-item rating-item_empty rating__item"></span>
-                          </div>
-                        </div>
-                      </a>
-                    </div>
-
-                    <div class="small-cards__item">
-                      <a class="card card_img_small card_horizontal" href="#">
-                        <div class="card__img-wrap">
-                          <img class="card__img" src="./images/card-small-6.jpg"
-                            srcset="./images/card-small-6@2x.jpg 2x" alt="">
-                        </div>
-
-                        <div class="card__info">
-                          <p class="card__title">Lorem ipsum dolor ipsum dolor ipsum dolor</p>
-                          <div class="card__price">
-                            <del class="card__price-old">100.00</del>
-                            <span class="card__price-new">$90.00</span>
-                          </div>
-                          <div class="card__rating rating">
-                            <span class="visually-hidden">Rating 4 of 5</span>
-                            <span class="rating-item rating__item"></span>
-                            <span class="rating-item rating__item"></span>
-                            <span class="rating-item rating__item"></span>
-                            <span class="rating-item rating__item"></span>
-                            <span class="rating-item rating-item_empty rating__item"></span>
-                          </div>
-                        </div>
-                      </a>
-                    </div>
-                  </div>
-                </div>
-                <div class="small-cards small-cards-slider__item">
-                  <div class="small-cards__items">
-                    <div class="small-cards__item">
-                      <a class="card card_img_small card_horizontal" href="#">
-                        <div class="card__img-wrap">
-                          <img class="card__img" src="./images/card-small-6.jpg"
-                            srcset="./images/card-small-6@2x.jpg 2x" alt="">
-                        </div>
-
-                        <div class="card__info">
-                          <p class="card__title">Lorem ipsum dolor ipsum dolor ipsum dolor</p>
-                          <div class="card__price">
-                            <del class="card__price-old">100.00</del>
-                            <span class="card__price-new">$90.00</span>
-                          </div>
-                          <div class="card__rating rating">
-                            <span class="visually-hidden">Rating 4 of 5</span>
-                            <span class="rating-item rating__item"></span>
-                            <span class="rating-item rating__item"></span>
-                            <span class="rating-item rating__item"></span>
-                            <span class="rating-item rating__item"></span>
-                            <span class="rating-item rating-item_empty rating__item"></span>
-                          </div>
-                        </div>
-                      </a>
-                    </div>
-
-                    <div class="small-cards__item">
-                      <a class="card card_img_small card_horizontal" href="#">
-                        <div class="card__img-wrap">
-                          <img class="card__img" src="./images/card-small-5.jpg"
-                            srcset="./images/card-small-5@2x.jpg 2x" alt="">
-                        </div>
-
-                        <div class="card__info">
-                          <p class="card__title">Lorem ipsum dolor ipsum dolor ipsum dolor</p>
-                          <div class="card__price">
-                            <del class="card__price-old">100.00</del>
-                            <span class="card__price-new">$90.00</span>
-                          </div>
-                          <div class="card__rating rating">
-                            <span class="visually-hidden">Rating 4 of 5</span>
-                            <span class="rating-item rating__item"></span>
-                            <span class="rating-item rating__item"></span>
-                            <span class="rating-item rating__item"></span>
-                            <span class="rating-item rating__item"></span>
-                            <span class="rating-item rating-item_empty rating__item"></span>
-                          </div>
-                        </div>
-                      </a>
-                    </div>
-
-                    <div class="small-cards__item">
-                      <a class="card card_img_small card_horizontal" href="#">
-                        <div class="card__img-wrap">
-                          <img class="card__img" src="./images/card-small-4.jpg"
-                            srcset="./images/card-small-4@2x.jpg 2x" alt="">
-                        </div>
-
-                        <div class="card__info">
-                          <p class="card__title">Lorem ipsum dolor ipsum dolor ipsum dolor</p>
-                          <div class="card__price">
-                            <del class="card__price-old">100.00</del>
-                            <span class="card__price-new">$90.00</span>
-                          </div>
-                          <div class="card__rating rating">
-                            <span class="visually-hidden">Rating 4 of 5</span>
-                            <span class="rating-item rating__item"></span>
-                            <span class="rating-item rating__item"></span>
-                            <span class="rating-item rating__item"></span>
-                            <span class="rating-item rating__item"></span>
-                            <span class="rating-item rating-item_empty rating__item"></span>
-                          </div>
-                        </div>
-                      </a>
-                    </div>
-
-                    <div class="small-cards__item">
-                      <a class="card card_img_small card_horizontal" href="#">
-                        <div class="card__img-wrap">
-                          <img class="card__img" src="./images/card-small-3.jpg"
-                            srcset="./images/card-small-3@2x.jpg 2x" alt="">
-                        </div>
-
-                        <div class="card__info">
-                          <p class="card__title">Lorem ipsum dolor ipsum dolor ipsum dolor</p>
-                          <div class="card__price">
-                            <del class="card__price-old">100.00</del>
-                            <span class="card__price-new">$90.00</span>
-                          </div>
-                          <div class="card__rating rating">
-                            <span class="visually-hidden">Rating 4 of 5</span>
-                            <span class="rating-item rating__item"></span>
-                            <span class="rating-item rating__item"></span>
-                            <span class="rating-item rating__item"></span>
-                            <span class="rating-item rating__item"></span>
-                            <span class="rating-item rating-item_empty rating__item"></span>
-                          </div>
-                        </div>
-                      </a>
-                    </div>
-
-                    <div class="small-cards__item">
-                      <a class="card card_img_small card_horizontal" href="#">
-                        <div class="card__img-wrap">
-                          <img class="card__img" src="./images/card-small-2.jpg"
-                            srcset="./images/card-small-2@2x.jpg 2x" alt="">
-                        </div>
-
-                        <div class="card__info">
-                          <p class="card__title">Lorem ipsum dolor ipsum dolor ipsum dolor</p>
-                          <div class="card__price">
-                            <del class="card__price-old">100.00</del>
-                            <span class="card__price-new">$90.00</span>
-                          </div>
-                          <div class="card__rating rating">
-                            <span class="visually-hidden">Rating 4 of 5</span>
-                            <span class="rating-item rating__item"></span>
-                            <span class="rating-item rating__item"></span>
-                            <span class="rating-item rating__item"></span>
-                            <span class="rating-item rating__item"></span>
-                            <span class="rating-item rating-item_empty rating__item"></span>
-                          </div>
-                        </div>
-                      </a>
-                    </div>
-
-                    <div class="small-cards__item">
-                      <a class="card card_img_small card_horizontal" href="#">
-                        <div class="card__img-wrap">
-                          <img class="card__img" src="./images/card-small-1.jpg"
-                            srcset="./images/card-small-1@2x.jpg 2x" alt="">
-                        </div>
-
-                        <div class="card__info">
-                          <p class="card__title">Lorem ipsum dolor ipsum dolor ipsum dolor</p>
-                          <div class="card__price">
-                            <del class="card__price-old">100.00</del>
-                            <span class="card__price-new">$90.00</span>
-                          </div>
-                          <div class="card__rating rating">
-                            <span class="visually-hidden">Rating 4 of 5</span>
-                            <span class="rating-item rating__item"></span>
-                            <span class="rating-item rating__item"></span>
-                            <span class="rating-item rating__item"></span>
-                            <span class="rating-item rating__item"></span>
-                            <span class="rating-item rating-item_empty rating__item"></span>
-                          </div>
-                        </div>
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </section>
-
-        </div>
+        <button class="site-nav__toggle site-nav__link site-nav__link_accent" type="button">
+          <svg class="site-nav__toggle-icon site-nav__icon site-nav__icon_menu" aria-hidden="true" width="16"
+            height="13">
+            <use xlink:href="./images/sprite.svg#menu"></use>
+          </svg>
+          Menu
+        </button>
+
+        <ul class="site-nav__list">
+          <li class="site-nav__item">
+            <a class="site-nav__link" href="#">Clothing</a>
+          </li>
+          <li class="site-nav__item">
+            <a class="site-nav__link" href="#">Electronics hot</a>
+          </li>
+          <li class="site-nav__item">
+            <a class="site-nav__link" href="#">Health & Beauty</a>
+          </li>
+          <li class="site-nav__item">
+            <a class="site-nav__link" href="#">Watches</a>
+          </li>
+          <li class="site-nav__item">
+            <a class="site-nav__link" href="#">Jewellery</a>
+          </li>
+          <li class="site-nav__item">
+            <a class="site-nav__link" href="#">Shoes</a>
+          </li>
+        </ul>
       </div>
-    </main>
+    </nav>
+  </header>
 
-    <footer class="footer">
-      <section class="brands-slider footer__brands-slider">
-        <div class="brands-slider__container container">
-          <div class="brands-slider__items">
-            <div class="brands-slider__item">
-              <a class="brands-slider__link" href="#">
-                <img class="brands-slider__img" src="./images/brand-1.png" alt="">
-              </a>
-            </div>
-            <div class="brands-slider__item">
-              <a class="brands-slider__link" href="#">
-                <img class="brands-slider__img" src="./images/brand-2.png" alt="">
-              </a>
-            </div>
-            <div class="brands-slider__item">
-              <a class="brands-slider__link" href="#">
-                <img class="brands-slider__img" src="./images/brand-3.png" alt="">
-              </a>
-            </div>
-            <div class="brands-slider__item">
-              <a class="brands-slider__link" href="#">
-                <img class="brands-slider__img" src="./images/brand-4.png" alt="">
-              </a>
-            </div>
-            <div class="brands-slider__item">
-              <a class="brands-slider__link" href="#">
-                <img class="brands-slider__img" src="./images/brand-5.png" alt="">
-              </a>
-            </div>
-            <div class="brands-slider__item">
-              <a class="brands-slider__link" href="#">
-                <img class="brands-slider__img" src="./images/brand-1.png" alt="">
-              </a>
-            </div>
-            <div class="brands-slider__item">
-              <a class="brands-slider__link" href="#">
-                <img class="brands-slider__img" src="./images/brand-2.png" alt="">
-              </a>
-            </div>
-            <div class="brands-slider__item">
-              <a class="brands-slider__link" href="#">
-                <img class="brands-slider__img" src="./images/brand-3.png" alt="">
-              </a>
-            </div>
-            <div class="brands-slider__item">
-              <a class="brands-slider__link" href="#">
-                <img class="brands-slider__img" src="./images/brand-1.png" alt="">
-              </a>
-            </div>
-            <div class="brands-slider__item">
-              <a class="brands-slider__link" href="#">
-                <img class="brands-slider__img" src="./images/brand-5.png" alt="">
-              </a>
-            </div>
-            <div class="brands-slider__item">
-              <a class="brands-slider__link" href="#">
-                <img class="brands-slider__img" src="./images/brand-1.png" alt="">
-              </a>
-            </div>
-            <div class="brands-slider__item">
-              <a class="brands-slider__link" href="#">
-                <img class="brands-slider__img" src="./images/brand-4.png" alt="">
-              </a>
+  <main class="main">
+    <div class="main__container container">
+      <aside class="aside main__aside main__aside_left">
+        <ul class="aside-menu aside__menu">
+          <li class="aside-menu__item">
+            <a class="aside-menu__link" href="#">
+              Clothing
+            </a>
+          </li>
+          <li class="aside-menu__item">
+            <a class="aside-menu__link" href="#">
+              Electronics
+            </a>
+          </li>
+          <li class="aside-menu__item">
+            <a class="aside-menu__link" href="#">
+              Shoes
+            </a>
+          </li>
+          <li class="aside-menu__item">
+            <a class="aside-menu__link" href="#">
+              Watches
+            </a>
+          </li>
+          <li class="aside-menu__item">
+            <a class="aside-menu__link" href="#">
+              Jewellery
+            </a>
+          </li>
+          <li class="aside-menu__item">
+            <a class="aside-menu__link" href="#">
+              Health and Beauty
+            </a>
+          </li>
+          <li class="aside-menu__item">
+            <a class="aside-menu__link" href="#">
+              Kids and Babies
+            </a>
+          </li>
+          <li class="aside-menu__item">
+            <a class="aside-menu__link" href="#">
+              Sports
+            </a>
+          </li>
+          <li class="aside-menu__item">
+            <a class="aside-menu__link" href="#">
+              Home and Garden
+            </a>
+          </li>
+        </ul>
+
+        <section class="widget widget_hot aside__block">
+          <div class="widget__top">
+            <h2 class="widget__title title">Hot Deals</h2>
+
+            <div class="arrow-buttons widget__arrow-buttons">
+              <button class="arrow-button arrow-button_prev arrow-buttons__item">
+                <span class="visually-hidden">Prev</span>
+              </button>
+              <button class="arrow-button arrow-button_next arrow-buttons__item">
+                <span class="visually-hidden">Next</span>
+              </button>
             </div>
           </div>
+          <div class="widget__cards widget__cards_vertical">
+            <div class="big-cards big-cards_slider">
+              <div class="big-cards__item">
+                <a class="card card_img_big card_vertical" href="#">
+                  <div class="card__img-wrap">
+                    <img class="card__img" src="./images/card-big-1.jpg" srcset="./images/card-big-1@2x.jpg 2x" alt="">
+                  </div>
+
+                  <div class="card__info">
+                    <p class="card__title">Lorem ipsum dolor ipsum dolor ipsum dolor</p>
+                    <div class="card__price">
+                      <del class="card__price-old">100.00</del>
+                      <span class="card__price-new">$90.00</span>
+                    </div>
+                    <div class="card__rating rating">
+                      <span class="visually-hidden">Rating 4 of 5</span>
+                      <span class="rating-item rating__item"></span>
+                      <span class="rating-item rating__item"></span>
+                      <span class="rating-item rating__item"></span>
+                      <span class="rating-item rating__item"></span>
+                      <span class="rating-item rating-item_empty rating__item"></span>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="big-cards__item">
+                <a class="card card_img_big card_vertical" href="#">
+                  <div class="card__img-wrap">
+                    <img class="card__img" src="./images/card-big-2.jpg" srcset="./images/card-big-2@2x.jpg 2x" alt="">
+                  </div>
+
+                  <div class="card__info">
+                    <p class="card__title">Lorem ipsum dolor ipsum dolor ipsum dolor</p>
+                    <div class="card__price">
+                      <del class="card__price-old">100.00</del>
+                      <span class="card__price-new">$90.00</span>
+                    </div>
+                    <div class="card__rating rating">
+                      <span class="visually-hidden">Rating 4 of 5</span>
+                      <span class="rating-item rating__item"></span>
+                      <span class="rating-item rating__item"></span>
+                      <span class="rating-item rating__item"></span>
+                      <span class="rating-item rating-item_empty rating__item"></span>
+                      <span class="rating-item rating-item_empty rating__item"></span>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+
+        </section>
+
+        <section class="widget widget_special aside__block">
+          <div class="widget__top">
+            <h2 class="widget__title title">Special Deal</h2>
+
+            <div class="arrow-buttons widget__arrow-buttons">
+              <button class="arrow-button arrow-button_prev arrow-buttons__item">
+                <span class="visually-hidden">Prev</span>
+              </button>
+              <button class="arrow-button arrow-button_next arrow-buttons__item">
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+          </div>
+          <div class="widget__cards widget__cards_vertical">
+            <div class="big-cards big-cards_slider">
+              <div class="big-cards__item">
+                <a class="card card_img_big card_vertical" href="#">
+                  <div class="card__img-wrap">
+                    <img class="card__img" src="./images/card-big-2.jpg" srcset="./images/card-big-2@2x.jpg 2x" alt="">
+                  </div>
+
+                  <div class="card__info">
+                    <p class="card__title">Lorem ipsum dolor ipsum dolor ipsum dolor</p>
+                    <div class="card__price">
+                      <del class="card__price-old">100.00</del>
+                      <span class="card__price-new">$90.00</span>
+                    </div>
+                    <div class="card__rating rating">
+                      <span class="visually-hidden">Rating 4 of 5</span>
+                      <span class="rating-item rating__item"></span>
+                      <span class="rating-item rating__item"></span>
+                      <span class="rating-item rating__item"></span>
+                      <span class="rating-item rating__item"></span>
+                      <span class="rating-item rating-item_empty rating__item"></span>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="big-cards__item">
+                <a class="card card_img_big card_vertical" href="#">
+                  <div class="card__img-wrap">
+                    <img class="card__img" src="./images/card-big-1.jpg" srcset="./images/card-big-1@2x.jpg 2x" alt="">
+                  </div>
+
+                  <div class="card__info">
+                    <p class="card__title">Lorem ipsum dolor ipsum dolor ipsum dolor</p>
+                    <div class="card__price">
+                      <del class="card__price-old">100.00</del>
+                      <span class="card__price-new">$90.00</span>
+                    </div>
+                    <div class="card__rating rating">
+                      <span class="visually-hidden">Rating 4 of 5</span>
+                      <span class="rating-item rating__item"></span>
+                      <span class="rating-item rating__item"></span>
+                      <span class="rating-item rating__item"></span>
+                      <span class="rating-item rating-item_empty rating__item"></span>
+                      <span class="rating-item rating-item_empty rating__item"></span>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="widget widget_signup aside__block">
+          <div class="widget__top">
+            <h2 class="widget__title title">Newsletters</h2>
+          </div>
+
+          <form class="signup-form widget__form" action="/signup/" method="POST">
+            <p class="widget__form-title">Sign Up for Our Newsletter!</p>
+
+            <div class="form-control widget__form-control">
+              <input class="signup-form__input input-text" type="text" name="email" required>
+              <label class="form-control__message input-error">Email is required</label>
+            </div>
+
+            <button class="signup-form__button widget__form-button button">Subscribe</button>
+          </form>
+        </section>
+
+        <div class="promo aside__block">
+          <a class="promo__link" href="#">
+            <img class="promo__img" src="./images/promo.jpg" alt="Mens body wash with extra fresh">
+          </a>
         </div>
-      </section>
-      <div class="footer__main">
-        <div class="footer__columns container">
-          <div class="footer__column footer__column_contacts">
-            <div class="site-logo site-logo_footer footer__logo">
-              <a class="site-logo__link" href="#">
-                <img class="site-logo__img" src="./images/logo.svg" alt="Market Supply">
-              </a>
-            </div>
+      </aside>
 
-            <p class="footer__text">
-              This is Photoshop's version of Lorem Ipsum. Proin gravida nibh velit it’s a cold world out there.
-            </p>
+      <div class="content main__content">
+        <section class="showcase content__showcase">
+          <div class="showcase__slider">
+            <div class="showcase__slide">
+              <div class="showcase__background"
+                style="background-color: #ffcd75; background-image: url(./images/showcase.jpg)">
+                <div class="showcase__text">
+                  <h3 class="showcase__title">Collection 2016</h3>
+                  <p class="showcase__lead">
+                    save 50% for
+                    <span class="showcase__lead-subline">first purchase</span>
+                  </p>
+                  <div class="showcase__more">
+                    <a class="showcase__more-link button button_invert" href="#">Shop Now</a>
+                  </div>
+                </div>
+              </div>
 
-            <ul class="footer__list footer__list_contacts">
-              <li class="footer__list-item">
-                <span class="footer__icon-item">
-                  <span class="footer__list-icon footer__list-icon_pin">
-                    <svg aria-hidden="true" width="9" height="14">
-                      <use xlink:href="./images/sprite.svg#pin"></use>
-                    </svg>
-                  </span>
-                  0123 Main Road, Your City, NY 123456
-                </span>
-              </li>
-              <li class="footer__list-item">
-                <a class="footer__list-link footer__icon-item" href="#">
-                  <span class="footer__list-icon footer__list-icon_phone">
-                    <svg aria-hidden="true" width="13" height="13">
-                      <use xlink:href="./images/sprite.svg#phone"></use>
-                    </svg>
-                  </span>
-                  (000) 2345 - 6789
-                </a>
-              </li>
-              <li class="footer__list-item">
-                <a class="footer__list-link footer__icon-item" href="#">
-                  <span class="footer__list-icon footer__list-icon_mail">
-                    <svg aria-hidden="true" width="14" height="11">
-                      <use xlink:href="./images/sprite.svg#mail"></use>
-                    </svg>
-                  </span>
-                  info@psdfreebies.com
-                </a>
-              </li>
-            </ul>
-          </div>
-          <div class="footer__column footer__column_info">
-            <h3 class="footer__title footer__title_info">Information</h3>
-
-            <ul class="footer__list footer__list_info">
-              <li class="footer__list-item">
-                <a class="footer__list-link" href="#">
-                  Our Story
-                </a>
-              </li>
-              <li class="footer__list-item">
-                <a class="footer__list-link" href="#">
-                  Privacy & Policy
-                </a>
-              </li>
-              <li class="footer__list-item">
-                <a class="footer__list-link" href="#">
-                  Terms & Conditions
-                </a>
-              </li>
-              <li class="footer__list-item">
-                <a class="footer__list-link" href="#">
-                  Shipping & Delivery
-                </a>
-              </li>
-              <li class="footer__list-item">
-                <a class="footer__list-link" href="#">
-                  Careers
-                </a>
-              </li>
-              <li class="footer__list-item">
-                <a class="footer__list-link" href="#">
-                  FAQs
-                </a>
-              </li>
-            </ul>
-          </div>
-          <div class="footer__column footer__column_social">
-            <h3 class="footer__title footer__title_social">Our Social</h3>
-
-            <ul class="footer__list footer__list_social">
-              <li class="footer__list-item">
-                <a class="footer__list-link footer__icon-item" href="#">
-                  <span class="footer__list-icon footer__list-icon_google">
-                    <svg aria-hidden="true" width="18" height="12">
-                      <use xlink:href="./images/sprite.svg#google"></use>
-                    </svg>
-                  </span>
-                  Google+
-                </a>
-              </li>
-              <li class="footer__list-item">
-                <a class="footer__list-link footer__icon-item" href="#">
-                  <span class="footer__list-icon footer__list-icon_pinterest">
-                    <svg aria-hidden="true" width="10" height="13">
-                      <use xlink:href="./images/sprite.svg#pinterest"></use>
-                    </svg>
-                  </span>
-                  Pinterest
-                </a>
-              </li>
-              <li class="footer__list-item">
-                <a class="footer__list-link footer__icon-item" href="#">
-                  <span class="footer__list-icon footer__list-icon_vimeo">
-                    <svg aria-hidden="true" width="13" height="12">
-                      <use xlink:href="./images/sprite.svg#vimeo"></use>
-                    </svg>
-                  </span>
-                  Vimeo
-                </a>
-              </li>
-              <li class="footer__list-item">
-                <a class="footer__list-link footer__icon-item" href="#">
-                  <span class="footer__list-icon footer__list-icon_instagram">
-                    <svg aria-hidden="true" width="12" height="12">
-                      <use xlink:href="./images/sprite.svg#instagram"></use>
-                    </svg>
-                  </span>
-                  Instagram
-                </a>
-              </li>
-              <li class="footer__list-item">
-                <a class="footer__list-link footer__icon-item" href="#">
-                  <span class="footer__list-icon footer__list-icon_facebook">
-                    <svg aria-hidden="true" width="7" height="13">
-                      <use xlink:href="./images/sprite.svg#facebook"></use>
-                    </svg>
-                  </span>
-                  Facebook
-                </a>
-              </li>
-              <li class="footer__list-item">
-                <a class="footer__list-link footer__icon-item" href="#">
-                  <span class="footer__list-icon footer__list-icon_twitter">
-                    <svg aria-hidden="true" width="13" height="10">
-                      <use xlink:href="./images/sprite.svg#twitter"></use>
-                    </svg>
-                  </span>
-                  Twitter
-                </a>
-              </li>
-              <li class="footer__list-item">
-                <a class="footer__list-link footer__icon-item" href="#">
-                  <span class="footer__list-icon footer__list-icon_rss">
-                    <svg aria-hidden="true" width="11" height="11">
-                      <use xlink:href="./images/sprite.svg#rss"></use>
-                    </svg>
-                  </span>
-                  RSS
-                </a>
-              </li>
-              <li class="footer__list-item">
-                <a class="footer__list-link footer__icon-item" href="#">
-                  <span class="footer__list-icon footer__list-icon_youtube">
-                    <svg aria-hidden="true" width="11" height="11">
-                      <use xlink:href="./images/sprite.svg#youtube"></use>
-                    </svg>
-                  </span>
-                  YouTube
-                </a>
-              </li>
-            </ul>
-          </div>
-          <div class="footer__column footer__column_working">
-            <h3 class="footer__title footer__title_time">Opening Time</h3>
-
-            <ul class="footer__list footer__list_time">
-              <li class="footer__list-item">
-                <span class="footer__icon-item">
-                  <span class="footer__list-icon footer__list-icon_clock">
-                    <svg aria-hidden="true" width="12" height="12">
-                      <use xlink:href="./images/sprite.svg#clock"></use>
-                    </svg>
-                  </span>
-                  Monday - Friday: 08:30 am - 09:30 pm
-                </span>
-              </li>
-              <li class="footer__list-item">
-                <span class="footer__icon-item">
-                  Sat - Sun: 09:00 am - 10:00 pm
-                </span>
-              </li>
-            </ul>
-
-            <h3 class="footer__title footer__title_payment">Payment Option</h3>
-
-            <div class="footer__payment">
-              <ul class="footer__payment-list">
-                <li class="footer__payment-item">
-                  <a class="footer__payment-link" href="#">
-                    <img class="footer__payment-img" src="./images/payment-1.svg" alt="">
-                  </a>
+              <ul class="features showcase__features">
+                <li class="features__item">
+                  <h4 class="features__title">Money back</h4>
+                  <p class="features__info">30 Days Money Back Guarantee</p>
                 </li>
-                <li class="footer__payment-item">
-                  <a class="footer__payment-link" href="#">
-                    <img class="footer__payment-img" src="./images/payment-2.svg" alt="">
-                  </a>
+                <li class="features__item">
+                  <h4 class="features__title">Free shipping</h4>
+                  <p class="features__info">Shipping on orders over $99</p>
                 </li>
-                <li class="footer__payment-item">
-                  <a class="footer__payment-link" href="#">
-                    <img class="footer__payment-img" src="./images/payment-3.svg" alt="">
-                  </a>
-                </li>
-                <li class="footer__payment-item">
-                  <a class="footer__payment-link" href="#">
-                    <img class="footer__payment-img" src="./images/payment-4.svg" alt="">
-                  </a>
-                </li>
-                <li class="footer__payment-item">
-                  <a class="footer__payment-link" href="#">
-                    <img class="footer__payment-img" src="./images/payment-5.svg" alt="">
-                  </a>
-                </li>
-                <li class="footer__payment-item">
-                  <a class="footer__payment-link" href="#">
-                    <img class="footer__payment-img" src="./images/payment-6.svg" alt="">
-                  </a>
-                </li>
-                <li class="footer__payment-item">
-                  <a class="footer__payment-link" href="#">
-                    <img class="footer__payment-img" src="./images/payment-7.svg" alt="">
-                  </a>
+                <li class="features__item">
+                  <h4 class="features__title">Special Sale</h4>
+                  <p class="features__info">Extra $5 off on all items </p>
                 </li>
               </ul>
             </div>
 
+            <div class="showcase__slide">
+              <div class="showcase__background"
+                style="background-color: #8e8dea; background-image: url(./images/showcase-2.jpg)">
+                <div class="showcase__text">
+                  <h3 class="showcase__title">Collection 2017</h3>
+                  <p class="showcase__lead">
+                    save 30% for
+                    <span class="showcase__lead-subline">first purchase</span>
+                  </p>
+                  <div class="showcase__more">
+                    <a class="showcase__more-link button button_invert" href="#">Shop Now</a>
+                  </div>
+                </div>
+              </div>
+
+              <ul class="features showcase__features">
+                <li class="features__item">
+                  <h4 class="features__title">Money back</h4>
+                  <p class="features__info">30 Days Money Back Guarantee</p>
+                </li>
+                <li class="features__item">
+                  <h4 class="features__title">Free shipping</h4>
+                  <p class="features__info">Shipping on orders over $99</p>
+                </li>
+                <li class="features__item">
+                  <h4 class="features__title">Special Sale</h4>
+                  <p class="features__info">Extra $5 off on all items </p>
+                </li>
+              </ul>
+            </div>
+
+            <div class="showcase__slide">
+              <div class="showcase__background"
+                style="background-color: #59e240; background-image: url(./images/showcase-3.jpg)">
+                <div class="showcase__text">
+                  <h3 class="showcase__title">Collection 2018</h3>
+                  <p class="showcase__lead">
+                    save 20% for
+                    <span class="showcase__lead-subline">first purchase</span>
+                  </p>
+                  <div class="showcase__more">
+                    <a class="showcase__more-link button button_invert" href="#">Shop Now</a>
+                  </div>
+                </div>
+              </div>
+
+              <ul class="features showcase__features">
+                <li class="features__item">
+                  <h4 class="features__title">Money back</h4>
+                  <p class="features__info">30 Days Money Back Guarantee</p>
+                </li>
+                <li class="features__item">
+                  <h4 class="features__title">Free shipping</h4>
+                  <p class="features__info">Shipping on orders over $99</p>
+                </li>
+                <li class="features__item">
+                  <h4 class="features__title">Special Sale</h4>
+                  <p class="features__info">Extra $5 off on all items </p>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <section class="widget widget_new content__block">
+          <div class="widget__top">
+            <h2 class="widget__title title">New Products</h2>
+
+            <div class="filters widget__filters">
+              <a class="filters__item filters__item_active" data-filter="all" href="#">All</a>
+              <a class="filters__item" data-filter="clothing" href="#">Clothing</a>
+              <a class="filters__item" data-filter="electronics" href="#">Electronics</a>
+              <a class="filters__item" data-filter="shoes" href="#">Shoes</a>
+            </div>
+
+            <div class="arrow-buttons widget__arrow-buttons">
+              <button class="arrow-button arrow-button_prev arrow-buttons__item">
+                <span class="visually-hidden">Prev</span>
+              </button>
+              <button class="arrow-button arrow-button_next arrow-buttons__item">
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+          </div>
+
+          <div class="widget__cards widget__cards_vertical">
+            <div class="medium-cards medium-cards_slider">
+              <div class="medium-cards__item" data-type="clothing">
+                <a class="card card_img_medium card_vertical" href="#">
+                  <div class="card__img-wrap">
+                    <img class="card__img" src="./images/card-medium-1.jpg" srcset="./images/card-medium-1@2x.jpg 2x"
+                      alt="">
+                  </div>
+
+                  <div class="card__info">
+                    <p class="card__title">Lorem ipsum dolor ipsum dolor ipsum dolor</p>
+                    <div class="card__price">
+                      <del class="card__price-old">100.00</del>
+                      <span class="card__price-new">$90.00</span>
+                    </div>
+                    <div class="card__rating rating">
+                      <span class="visually-hidden">Rating 4 of 5</span>
+                      <span class="rating-item rating__item"></span>
+                      <span class="rating-item rating__item"></span>
+                      <span class="rating-item rating__item"></span>
+                      <span class="rating-item rating__item"></span>
+                      <span class="rating-item rating-item_empty rating__item"></span>
+                    </div>
+                  </div>
+                </a>
+              </div>
+
+              <div class="medium-cards__item" data-type="electronics">
+                <a class="card card_img_medium card_vertical" href="#">
+                  <div class="card__img-wrap">
+                    <img class="card__img" src="./images/card-medium-2.jpg" srcset="./images/card-medium-2@2x.jpg 2x"
+                      alt="">
+                  </div>
+
+                  <div class="card__info">
+                    <p class="card__title">Lorem ipsum dolor ipsum dolor ipsum dolor</p>
+                    <div class="card__price">
+                      <del class="card__price-old">100.00</del>
+                      <span class="card__price-new">$90.00</span>
+                    </div>
+                    <div class="card__rating rating">
+                      <span class="visually-hidden">Rating 4 of 5</span>
+                      <span class="rating-item rating__item"></span>
+                      <span class="rating-item rating__item"></span>
+                      <span class="rating-item rating__item"></span>
+                      <span class="rating-item rating__item"></span>
+                      <span class="rating-item rating-item_empty rating__item"></span>
+                    </div>
+                  </div>
+                </a>
+              </div>
+
+              <div class="medium-cards__item" data-type="clothing">
+                <a class="card card_img_medium card_vertical" href="#">
+                  <div class="card__img-wrap">
+                    <img class="card__img" src="./images/card-medium-3.jpg" srcset="./images/card-medium-3@2x.jpg 2x"
+                      alt="">
+                  </div>
+
+                  <div class="card__info">
+                    <p class="card__title">Lorem ipsum dolor ipsum dolor ipsum dolor</p>
+                    <div class="card__price">
+                      <del class="card__price-old">100.00</del>
+                      <span class="card__price-new">$90.00</span>
+                    </div>
+                    <div class="card__rating rating">
+                      <span class="visually-hidden">Rating 4 of 5</span>
+                      <span class="rating-item rating__item"></span>
+                      <span class="rating-item rating__item"></span>
+                      <span class="rating-item rating__item"></span>
+                      <span class="rating-item rating__item"></span>
+                      <span class="rating-item rating-item_empty rating__item"></span>
+                    </div>
+                  </div>
+                </a>
+              </div>
+
+              <div class="medium-cards__item" data-type="electronics">
+                <a class="card card_img_medium card_vertical" href="#">
+                  <div class="card__img-wrap">
+                    <img class="card__img" src="./images/card-medium-4.jpg" srcset="./images/card-medium-4@2x.jpg 2x"
+                      alt="">
+                  </div>
+
+                  <div class="card__info">
+                    <p class="card__title">Lorem ipsum dolor ipsum dolor ipsum dolor</p>
+                    <div class="card__price">
+                      <del class="card__price-old">100.00</del>
+                      <span class="card__price-new">$90.00</span>
+                    </div>
+                    <div class="card__rating rating">
+                      <span class="visually-hidden">Rating 4 of 5</span>
+                      <span class="rating-item rating__item"></span>
+                      <span class="rating-item rating__item"></span>
+                      <span class="rating-item rating__item"></span>
+                      <span class="rating-item rating__item"></span>
+                      <span class="rating-item rating-item_empty rating__item"></span>
+                    </div>
+                  </div>
+                </a>
+              </div>
+
+              <div class="medium-cards__item" data-type="electronics">
+                <a class="card card_img_medium card_vertical" href="#">
+                  <div class="card__img-wrap">
+                    <img class="card__img" src="./images/card-medium-5.jpg" srcset="./images/card-medium-5@2x.jpg 2x"
+                      alt="">
+                  </div>
+
+                  <div class="card__info">
+                    <p class="card__title">Lorem ipsum dolor ipsum dolor ipsum dolor</p>
+                    <div class="card__price">
+                      <del class="card__price-old">100.00</del>
+                      <span class="card__price-new">$90.00</span>
+                    </div>
+                    <div class="card__rating rating">
+                      <span class="visually-hidden">Rating 4 of 5</span>
+                      <span class="rating-item rating__item"></span>
+                      <span class="rating-item rating__item"></span>
+                      <span class="rating-item rating__item"></span>
+                      <span class="rating-item rating__item"></span>
+                      <span class="rating-item rating-item_empty rating__item"></span>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="sales content__block">
+          <div class="sales__container">
+            <a class="sales-item sales__item" href="#">
+              <img class="sales-item__img" src="./images/sales-1.jpg" alt="">
+              <div class="sales-item__text">
+                <div class="sales-item__title">201<span class="sales-item__title-accent">6</span></div>
+                <div class="sales-item__subtitle">Fashion Sale</div>
+                <span class="sales-item__more">Buy Now</span>
+                <div class="sales-item__note">*on selected items only</div>
+              </div>
+            </a>
+            <a class="sales-item sales__item" href="#">
+              <img class="sales-item__img" src="./images/sales-2.jpg" alt="">
+              <div class="sales-item__text">
+                <div class="sales-item__title">201<span class="sales-item__title-accent">6</span></div>
+                <div class="sales-item__subtitle">Fashion Sale</div>
+                <span class="sales-item__more">Buy Now</span>
+                <div class="sales-item__note">*on selected items only</div>
+              </div>
+            </a>
+          </div>
+        </section>
+
+        <section class="widget widget_latest content__block">
+          <div class="widget__top">
+            <h2 class="widget__title title">Latest Products</h2>
+
+            <div class="filters widget__filters">
+              <a class="filters__item filters__item_active" data-filter="all" href="#">All</a>
+              <a class="filters__item" data-filter="clothing" href="#">Clothing</a>
+              <a class="filters__item" data-filter="electronics" href="#">Electronics</a>
+              <a class="filters__item" data-filter="shoes" href="#">Shoes</a>
+            </div>
+
+            <div class="arrow-buttons widget__arrow-buttons">
+              <button class="arrow-button arrow-button_prev arrow-buttons__item">
+                <span class="visually-hidden">Prev</span>
+              </button>
+              <button class="arrow-button arrow-button_next arrow-buttons__item">
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+          </div>
+
+          <div class="widget__cards widget__cards_vertical">
+            <div class="medium-cards medium-cards_slider">
+              <div class="medium-cards__item" data-type="electronics">
+                <a class="card card_img_medium card_vertical" href="#">
+                  <div class="card__img-wrap">
+                    <img class="card__img" src="./images/card-medium-5.jpg" srcset="./images/card-medium-5@2x.jpg 2x"
+                      alt="">
+                  </div>
+
+                  <div class="card__info">
+                    <p class="card__title">Lorem ipsum dolor ipsum dolor ipsum dolor</p>
+                    <div class="card__price">
+                      <del class="card__price-old">100.00</del>
+                      <span class="card__price-new">$90.00</span>
+                    </div>
+                    <div class="card__rating rating">
+                      <span class="visually-hidden">Rating 4 of 5</span>
+                      <span class="rating-item rating__item"></span>
+                      <span class="rating-item rating__item"></span>
+                      <span class="rating-item rating__item"></span>
+                      <span class="rating-item rating__item"></span>
+                      <span class="rating-item rating-item_empty rating__item"></span>
+                    </div>
+                  </div>
+                </a>
+              </div>
+
+              <div class="medium-cards__item" data-type="clothing">
+                <a class="card card_img_medium card_vertical" href="#">
+                  <div class="card__img-wrap">
+                    <img class="card__img" src="./images/card-medium-6.jpg" srcset="./images/card-medium-6@2x.jpg 2x"
+                      alt="">
+                  </div>
+
+                  <div class="card__info">
+                    <p class="card__title">Lorem ipsum dolor ipsum dolor ipsum dolor</p>
+                    <div class="card__price">
+                      <del class="card__price-old">100.00</del>
+                      <span class="card__price-new">$90.00</span>
+                    </div>
+                    <div class="card__rating rating">
+                      <span class="visually-hidden">Rating 4 of 5</span>
+                      <span class="rating-item rating__item"></span>
+                      <span class="rating-item rating__item"></span>
+                      <span class="rating-item rating__item"></span>
+                      <span class="rating-item rating__item"></span>
+                      <span class="rating-item rating-item_empty rating__item"></span>
+                    </div>
+                  </div>
+                </a>
+              </div>
+
+              <div class="medium-cards__item" data-type="clothing">
+                <a class="card card_img_medium card_vertical" href="#">
+                  <div class="card__img-wrap">
+                    <img class="card__img" src="./images/card-medium-7.jpg" srcset="./images/card-medium-7@2x.jpg 2x"
+                      alt="">
+                  </div>
+
+                  <div class="card__info">
+                    <p class="card__title">Lorem ipsum dolor ipsum dolor ipsum dolor</p>
+                    <div class="card__price">
+                      <del class="card__price-old">100.00</del>
+                      <span class="card__price-new">$90.00</span>
+                    </div>
+                    <div class="card__rating rating">
+                      <span class="visually-hidden">Rating 4 of 5</span>
+                      <span class="rating-item rating__item"></span>
+                      <span class="rating-item rating__item"></span>
+                      <span class="rating-item rating__item"></span>
+                      <span class="rating-item rating__item"></span>
+                      <span class="rating-item rating-item_empty rating__item"></span>
+                    </div>
+                  </div>
+                </a>
+              </div>
+
+              <div class="medium-cards__item" data-type="electronics">
+                <a class="card card_img_medium card_vertical" href="#">
+                  <div class="card__img-wrap">
+                    <img class="card__img" src="./images/card-medium-8.jpg" srcset="./images/card-medium-8@2x.jpg 2x"
+                      alt="">
+                  </div>
+
+                  <div class="card__info">
+                    <p class="card__title">Lorem ipsum dolor ipsum dolor ipsum dolor</p>
+                    <div class="card__price">
+                      <del class="card__price-old">100.00</del>
+                      <span class="card__price-new">$90.00</span>
+                    </div>
+                    <div class="card__rating rating">
+                      <span class="visually-hidden">Rating 4 of 5</span>
+                      <span class="rating-item rating__item"></span>
+                      <span class="rating-item rating__item"></span>
+                      <span class="rating-item rating__item"></span>
+                      <span class="rating-item rating__item"></span>
+                      <span class="rating-item rating-item_empty rating__item"></span>
+                    </div>
+                  </div>
+                </a>
+              </div>
+
+              <div class="medium-cards__item" data-type="clothing">
+                <a class="card card_img_medium card_vertical" href="#">
+                  <div class="card__img-wrap">
+                    <img class="card__img" src="./images/card-medium-1.jpg" srcset="./images/card-medium-1@2x.jpg 2x"
+                      alt="">
+                  </div>
+
+                  <div class="card__info">
+                    <p class="card__title">Lorem ipsum dolor ipsum dolor ipsum dolor</p>
+                    <div class="card__price">
+                      <del class="card__price-old">100.00</del>
+                      <span class="card__price-new">$90.00</span>
+                    </div>
+                    <div class="card__rating rating">
+                      <span class="visually-hidden">Rating 4 of 5</span>
+                      <span class="rating-item rating__item"></span>
+                      <span class="rating-item rating__item"></span>
+                      <span class="rating-item rating__item"></span>
+                      <span class="rating-item rating__item"></span>
+                      <span class="rating-item rating-item_empty rating__item"></span>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="promo-wide content__block">
+          <a class="promo-wide__link" href="#">
+            <div class="promo-wide__background" style="background-image: url(./images/promo-wide.jpg);"></div>
+            <div class="promo-wide__text">
+              <div class="promo-wide__title title">Beautiful Laptop</div>
+              <div class="promo-wide__subtitle title title_color_blue title_bolder">Retina Display 18” Ready&nbsp;!
+              </div>
+              <div class="promo-wide__more button" href="#">Shop Now</div>
+            </div>
+          </a>
+        </section>
+
+        <section class="widget widget_featured content__block">
+          <div class="widget__top">
+            <h2 class="widget__title title">Featured products</h2>
+
+            <div class="arrow-buttons widget__arrow-buttons">
+              <button class="arrow-button arrow-button_prev arrow-buttons__item">
+                <span class="visually-hidden">Prev</span>
+              </button>
+              <button class="arrow-button arrow-button_next arrow-buttons__item">
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+          </div>
+
+          <div class="widget__cards widget__cards_horizontal">
+            <div class="small-cards-slider">
+              <div class="small-cards small-cards-slider__item">
+                <div class="small-cards__items">
+                  <div class="small-cards__item">
+                    <a class="card card_img_small card_horizontal" href="#">
+                      <div class="card__img-wrap">
+                        <img class="card__img" src="./images/card-small-1.jpg" srcset="./images/card-small-1@2x.jpg 2x"
+                          alt="">
+                      </div>
+
+                      <div class="card__info">
+                        <p class="card__title">Lorem ipsum dolor ipsum dolor ipsum dolor</p>
+                        <div class="card__price">
+                          <del class="card__price-old">100.00</del>
+                          <span class="card__price-new">$90.00</span>
+                        </div>
+                        <div class="card__rating rating">
+                          <span class="visually-hidden">Rating 4 of 5</span>
+                          <span class="rating-item rating__item"></span>
+                          <span class="rating-item rating__item"></span>
+                          <span class="rating-item rating__item"></span>
+                          <span class="rating-item rating__item"></span>
+                          <span class="rating-item rating-item_empty rating__item"></span>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+
+                  <div class="small-cards__item">
+                    <a class="card card_img_small card_horizontal" href="#">
+                      <div class="card__img-wrap">
+                        <img class="card__img" src="./images/card-small-2.jpg" srcset="./images/card-small-2@2x.jpg 2x"
+                          alt="">
+                      </div>
+
+                      <div class="card__info">
+                        <p class="card__title">Lorem ipsum dolor ipsum dolor ipsum dolor</p>
+                        <div class="card__price">
+                          <del class="card__price-old">100.00</del>
+                          <span class="card__price-new">$90.00</span>
+                        </div>
+                        <div class="card__rating rating">
+                          <span class="visually-hidden">Rating 4 of 5</span>
+                          <span class="rating-item rating__item"></span>
+                          <span class="rating-item rating__item"></span>
+                          <span class="rating-item rating__item"></span>
+                          <span class="rating-item rating__item"></span>
+                          <span class="rating-item rating-item_empty rating__item"></span>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+
+                  <div class="small-cards__item">
+                    <a class="card card_img_small card_horizontal" href="#">
+                      <div class="card__img-wrap">
+                        <img class="card__img" src="./images/card-small-3.jpg" srcset="./images/card-small-3@2x.jpg 2x"
+                          alt="">
+                      </div>
+
+                      <div class="card__info">
+                        <p class="card__title">Lorem ipsum dolor ipsum dolor ipsum dolor</p>
+                        <div class="card__price">
+                          <del class="card__price-old">100.00</del>
+                          <span class="card__price-new">$90.00</span>
+                        </div>
+                        <div class="card__rating rating">
+                          <span class="visually-hidden">Rating 4 of 5</span>
+                          <span class="rating-item rating__item"></span>
+                          <span class="rating-item rating__item"></span>
+                          <span class="rating-item rating__item"></span>
+                          <span class="rating-item rating__item"></span>
+                          <span class="rating-item rating-item_empty rating__item"></span>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+
+                  <div class="small-cards__item">
+                    <a class="card card_img_small card_horizontal" href="#">
+                      <div class="card__img-wrap">
+                        <img class="card__img" src="./images/card-small-4.jpg" srcset="./images/card-small-4@2x.jpg 2x"
+                          alt="">
+                      </div>
+
+                      <div class="card__info">
+                        <p class="card__title">Lorem ipsum dolor ipsum dolor ipsum dolor</p>
+                        <div class="card__price">
+                          <del class="card__price-old">100.00</del>
+                          <span class="card__price-new">$90.00</span>
+                        </div>
+                        <div class="card__rating rating">
+                          <span class="visually-hidden">Rating 4 of 5</span>
+                          <span class="rating-item rating__item"></span>
+                          <span class="rating-item rating__item"></span>
+                          <span class="rating-item rating__item"></span>
+                          <span class="rating-item rating__item"></span>
+                          <span class="rating-item rating-item_empty rating__item"></span>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+
+                  <div class="small-cards__item">
+                    <a class="card card_img_small card_horizontal" href="#">
+                      <div class="card__img-wrap">
+                        <img class="card__img" src="./images/card-small-5.jpg" srcset="./images/card-small-5@2x.jpg 2x"
+                          alt="">
+                      </div>
+
+                      <div class="card__info">
+                        <p class="card__title">Lorem ipsum dolor ipsum dolor ipsum dolor</p>
+                        <div class="card__price">
+                          <del class="card__price-old">100.00</del>
+                          <span class="card__price-new">$90.00</span>
+                        </div>
+                        <div class="card__rating rating">
+                          <span class="visually-hidden">Rating 4 of 5</span>
+                          <span class="rating-item rating__item"></span>
+                          <span class="rating-item rating__item"></span>
+                          <span class="rating-item rating__item"></span>
+                          <span class="rating-item rating__item"></span>
+                          <span class="rating-item rating-item_empty rating__item"></span>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+
+                  <div class="small-cards__item">
+                    <a class="card card_img_small card_horizontal" href="#">
+                      <div class="card__img-wrap">
+                        <img class="card__img" src="./images/card-small-6.jpg" srcset="./images/card-small-6@2x.jpg 2x"
+                          alt="">
+                      </div>
+
+                      <div class="card__info">
+                        <p class="card__title">Lorem ipsum dolor ipsum dolor ipsum dolor</p>
+                        <div class="card__price">
+                          <del class="card__price-old">100.00</del>
+                          <span class="card__price-new">$90.00</span>
+                        </div>
+                        <div class="card__rating rating">
+                          <span class="visually-hidden">Rating 4 of 5</span>
+                          <span class="rating-item rating__item"></span>
+                          <span class="rating-item rating__item"></span>
+                          <span class="rating-item rating__item"></span>
+                          <span class="rating-item rating__item"></span>
+                          <span class="rating-item rating-item_empty rating__item"></span>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="small-cards small-cards-slider__item">
+                <div class="small-cards__items">
+                  <div class="small-cards__item">
+                    <a class="card card_img_small card_horizontal" href="#">
+                      <div class="card__img-wrap">
+                        <img class="card__img" src="./images/card-small-6.jpg" srcset="./images/card-small-6@2x.jpg 2x"
+                          alt="">
+                      </div>
+
+                      <div class="card__info">
+                        <p class="card__title">Lorem ipsum dolor ipsum dolor ipsum dolor</p>
+                        <div class="card__price">
+                          <del class="card__price-old">100.00</del>
+                          <span class="card__price-new">$90.00</span>
+                        </div>
+                        <div class="card__rating rating">
+                          <span class="visually-hidden">Rating 4 of 5</span>
+                          <span class="rating-item rating__item"></span>
+                          <span class="rating-item rating__item"></span>
+                          <span class="rating-item rating__item"></span>
+                          <span class="rating-item rating__item"></span>
+                          <span class="rating-item rating-item_empty rating__item"></span>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+
+                  <div class="small-cards__item">
+                    <a class="card card_img_small card_horizontal" href="#">
+                      <div class="card__img-wrap">
+                        <img class="card__img" src="./images/card-small-5.jpg" srcset="./images/card-small-5@2x.jpg 2x"
+                          alt="">
+                      </div>
+
+                      <div class="card__info">
+                        <p class="card__title">Lorem ipsum dolor ipsum dolor ipsum dolor</p>
+                        <div class="card__price">
+                          <del class="card__price-old">100.00</del>
+                          <span class="card__price-new">$90.00</span>
+                        </div>
+                        <div class="card__rating rating">
+                          <span class="visually-hidden">Rating 4 of 5</span>
+                          <span class="rating-item rating__item"></span>
+                          <span class="rating-item rating__item"></span>
+                          <span class="rating-item rating__item"></span>
+                          <span class="rating-item rating__item"></span>
+                          <span class="rating-item rating-item_empty rating__item"></span>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+
+                  <div class="small-cards__item">
+                    <a class="card card_img_small card_horizontal" href="#">
+                      <div class="card__img-wrap">
+                        <img class="card__img" src="./images/card-small-4.jpg" srcset="./images/card-small-4@2x.jpg 2x"
+                          alt="">
+                      </div>
+
+                      <div class="card__info">
+                        <p class="card__title">Lorem ipsum dolor ipsum dolor ipsum dolor</p>
+                        <div class="card__price">
+                          <del class="card__price-old">100.00</del>
+                          <span class="card__price-new">$90.00</span>
+                        </div>
+                        <div class="card__rating rating">
+                          <span class="visually-hidden">Rating 4 of 5</span>
+                          <span class="rating-item rating__item"></span>
+                          <span class="rating-item rating__item"></span>
+                          <span class="rating-item rating__item"></span>
+                          <span class="rating-item rating__item"></span>
+                          <span class="rating-item rating-item_empty rating__item"></span>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+
+                  <div class="small-cards__item">
+                    <a class="card card_img_small card_horizontal" href="#">
+                      <div class="card__img-wrap">
+                        <img class="card__img" src="./images/card-small-3.jpg" srcset="./images/card-small-3@2x.jpg 2x"
+                          alt="">
+                      </div>
+
+                      <div class="card__info">
+                        <p class="card__title">Lorem ipsum dolor ipsum dolor ipsum dolor</p>
+                        <div class="card__price">
+                          <del class="card__price-old">100.00</del>
+                          <span class="card__price-new">$90.00</span>
+                        </div>
+                        <div class="card__rating rating">
+                          <span class="visually-hidden">Rating 4 of 5</span>
+                          <span class="rating-item rating__item"></span>
+                          <span class="rating-item rating__item"></span>
+                          <span class="rating-item rating__item"></span>
+                          <span class="rating-item rating__item"></span>
+                          <span class="rating-item rating-item_empty rating__item"></span>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+
+                  <div class="small-cards__item">
+                    <a class="card card_img_small card_horizontal" href="#">
+                      <div class="card__img-wrap">
+                        <img class="card__img" src="./images/card-small-2.jpg" srcset="./images/card-small-2@2x.jpg 2x"
+                          alt="">
+                      </div>
+
+                      <div class="card__info">
+                        <p class="card__title">Lorem ipsum dolor ipsum dolor ipsum dolor</p>
+                        <div class="card__price">
+                          <del class="card__price-old">100.00</del>
+                          <span class="card__price-new">$90.00</span>
+                        </div>
+                        <div class="card__rating rating">
+                          <span class="visually-hidden">Rating 4 of 5</span>
+                          <span class="rating-item rating__item"></span>
+                          <span class="rating-item rating__item"></span>
+                          <span class="rating-item rating__item"></span>
+                          <span class="rating-item rating__item"></span>
+                          <span class="rating-item rating-item_empty rating__item"></span>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+
+                  <div class="small-cards__item">
+                    <a class="card card_img_small card_horizontal" href="#">
+                      <div class="card__img-wrap">
+                        <img class="card__img" src="./images/card-small-1.jpg" srcset="./images/card-small-1@2x.jpg 2x"
+                          alt="">
+                      </div>
+
+                      <div class="card__info">
+                        <p class="card__title">Lorem ipsum dolor ipsum dolor ipsum dolor</p>
+                        <div class="card__price">
+                          <del class="card__price-old">100.00</del>
+                          <span class="card__price-new">$90.00</span>
+                        </div>
+                        <div class="card__rating rating">
+                          <span class="visually-hidden">Rating 4 of 5</span>
+                          <span class="rating-item rating__item"></span>
+                          <span class="rating-item rating__item"></span>
+                          <span class="rating-item rating__item"></span>
+                          <span class="rating-item rating__item"></span>
+                          <span class="rating-item rating-item_empty rating__item"></span>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <section class="brands-slider footer__brands-slider">
+      <div class="brands-slider__container container">
+        <div class="brands-slider__items">
+          <div class="brands-slider__item">
+            <a class="brands-slider__link" href="#">
+              <img class="brands-slider__img" src="./images/brand-1.png" alt="">
+            </a>
+          </div>
+          <div class="brands-slider__item">
+            <a class="brands-slider__link" href="#">
+              <img class="brands-slider__img" src="./images/brand-2.png" alt="">
+            </a>
+          </div>
+          <div class="brands-slider__item">
+            <a class="brands-slider__link" href="#">
+              <img class="brands-slider__img" src="./images/brand-3.png" alt="">
+            </a>
+          </div>
+          <div class="brands-slider__item">
+            <a class="brands-slider__link" href="#">
+              <img class="brands-slider__img" src="./images/brand-4.png" alt="">
+            </a>
+          </div>
+          <div class="brands-slider__item">
+            <a class="brands-slider__link" href="#">
+              <img class="brands-slider__img" src="./images/brand-5.png" alt="">
+            </a>
+          </div>
+          <div class="brands-slider__item">
+            <a class="brands-slider__link" href="#">
+              <img class="brands-slider__img" src="./images/brand-1.png" alt="">
+            </a>
+          </div>
+          <div class="brands-slider__item">
+            <a class="brands-slider__link" href="#">
+              <img class="brands-slider__img" src="./images/brand-2.png" alt="">
+            </a>
+          </div>
+          <div class="brands-slider__item">
+            <a class="brands-slider__link" href="#">
+              <img class="brands-slider__img" src="./images/brand-3.png" alt="">
+            </a>
+          </div>
+          <div class="brands-slider__item">
+            <a class="brands-slider__link" href="#">
+              <img class="brands-slider__img" src="./images/brand-1.png" alt="">
+            </a>
+          </div>
+          <div class="brands-slider__item">
+            <a class="brands-slider__link" href="#">
+              <img class="brands-slider__img" src="./images/brand-5.png" alt="">
+            </a>
+          </div>
+          <div class="brands-slider__item">
+            <a class="brands-slider__link" href="#">
+              <img class="brands-slider__img" src="./images/brand-1.png" alt="">
+            </a>
+          </div>
+          <div class="brands-slider__item">
+            <a class="brands-slider__link" href="#">
+              <img class="brands-slider__img" src="./images/brand-4.png" alt="">
+            </a>
           </div>
         </div>
       </div>
-      <div class="footer__info">
-        <div class="footer__info-container container">
-          <ul class="footer__info-nav">
-            <li class="footer__info-item">
-              <a class="footer__info-link" href="#">Sitemap</a>
+    </section>
+    <div class="footer__main">
+      <div class="footer__columns container">
+        <div class="footer__column footer__column_contacts">
+          <div class="site-logo site-logo_footer footer__logo">
+            <a class="site-logo__link" href="#">
+              <img class="site-logo__img" src="./images/logo.svg" alt="Market Supply">
+            </a>
+          </div>
+
+          <p class="footer__text">
+            This is Photoshop's version of Lorem Ipsum. Proin gravida nibh velit it’s a cold world out there.
+          </p>
+
+          <ul class="footer__list footer__list_contacts">
+            <li class="footer__list-item">
+              <span class="footer__icon-item">
+                <span class="footer__list-icon footer__list-icon_pin">
+                  <svg aria-hidden="true" width="9" height="14">
+                    <use xlink:href="./images/sprite.svg#pin"></use>
+                  </svg>
+                </span>
+                0123 Main Road, Your City, NY 123456
+              </span>
             </li>
-            <li class="footer__info-item">
-              <a class="footer__info-link" href="#">Searchs</a>
+            <li class="footer__list-item">
+              <a class="footer__list-link footer__icon-item" href="#">
+                <span class="footer__list-icon footer__list-icon_phone">
+                  <svg aria-hidden="true" width="13" height="13">
+                    <use xlink:href="./images/sprite.svg#phone"></use>
+                  </svg>
+                </span>
+                (000) 2345 - 6789
+              </a>
             </li>
-            <li class="footer__info-item">
-              <a class="footer__info-link" href="#">Searchs</a>
+            <li class="footer__list-item">
+              <a class="footer__list-link footer__icon-item" href="#">
+                <span class="footer__list-icon footer__list-icon_mail">
+                  <svg aria-hidden="true" width="14" height="11">
+                    <use xlink:href="./images/sprite.svg#mail"></use>
+                  </svg>
+                </span>
+                info@psdfreebies.com
+              </a>
             </li>
-            <li class="footer__info-item">
-              <a class="footer__info-link" href="#">Advance</a>
+          </ul>
+        </div>
+        <div class="footer__column footer__column_info">
+          <h3 class="footer__title footer__title_info">Information</h3>
+
+          <ul class="footer__list footer__list_info">
+            <li class="footer__list-item">
+              <a class="footer__list-link" href="#">
+                Our Story
+              </a>
             </li>
-            <li class="footer__info-item">
-              <a class="footer__info-link" href="#">Searchs</a>
+            <li class="footer__list-item">
+              <a class="footer__list-link" href="#">
+                Privacy & Policy
+              </a>
             </li>
-            <li class="footer__info-item">
-              <a class="footer__info-link" href="#">Contact Us</a>
+            <li class="footer__list-item">
+              <a class="footer__list-link" href="#">
+                Terms & Conditions
+              </a>
+            </li>
+            <li class="footer__list-item">
+              <a class="footer__list-link" href="#">
+                Shipping & Delivery
+              </a>
+            </li>
+            <li class="footer__list-item">
+              <a class="footer__list-link" href="#">
+                Careers
+              </a>
+            </li>
+            <li class="footer__list-item">
+              <a class="footer__list-link" href="#">
+                FAQs
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__column footer__column_social">
+          <h3 class="footer__title footer__title_social">Our Social</h3>
+
+          <ul class="footer__list footer__list_social">
+            <li class="footer__list-item">
+              <a class="footer__list-link footer__icon-item" href="#">
+                <span class="footer__list-icon footer__list-icon_google">
+                  <svg aria-hidden="true" width="18" height="12">
+                    <use xlink:href="./images/sprite.svg#google"></use>
+                  </svg>
+                </span>
+                Google+
+              </a>
+            </li>
+            <li class="footer__list-item">
+              <a class="footer__list-link footer__icon-item" href="#">
+                <span class="footer__list-icon footer__list-icon_pinterest">
+                  <svg aria-hidden="true" width="10" height="13">
+                    <use xlink:href="./images/sprite.svg#pinterest"></use>
+                  </svg>
+                </span>
+                Pinterest
+              </a>
+            </li>
+            <li class="footer__list-item">
+              <a class="footer__list-link footer__icon-item" href="#">
+                <span class="footer__list-icon footer__list-icon_vimeo">
+                  <svg aria-hidden="true" width="13" height="12">
+                    <use xlink:href="./images/sprite.svg#vimeo"></use>
+                  </svg>
+                </span>
+                Vimeo
+              </a>
+            </li>
+            <li class="footer__list-item">
+              <a class="footer__list-link footer__icon-item" href="#">
+                <span class="footer__list-icon footer__list-icon_instagram">
+                  <svg aria-hidden="true" width="12" height="12">
+                    <use xlink:href="./images/sprite.svg#instagram"></use>
+                  </svg>
+                </span>
+                Instagram
+              </a>
+            </li>
+            <li class="footer__list-item">
+              <a class="footer__list-link footer__icon-item" href="#">
+                <span class="footer__list-icon footer__list-icon_facebook">
+                  <svg aria-hidden="true" width="7" height="13">
+                    <use xlink:href="./images/sprite.svg#facebook"></use>
+                  </svg>
+                </span>
+                Facebook
+              </a>
+            </li>
+            <li class="footer__list-item">
+              <a class="footer__list-link footer__icon-item" href="#">
+                <span class="footer__list-icon footer__list-icon_twitter">
+                  <svg aria-hidden="true" width="13" height="10">
+                    <use xlink:href="./images/sprite.svg#twitter"></use>
+                  </svg>
+                </span>
+                Twitter
+              </a>
+            </li>
+            <li class="footer__list-item">
+              <a class="footer__list-link footer__icon-item" href="#">
+                <span class="footer__list-icon footer__list-icon_rss">
+                  <svg aria-hidden="true" width="11" height="11">
+                    <use xlink:href="./images/sprite.svg#rss"></use>
+                  </svg>
+                </span>
+                RSS
+              </a>
+            </li>
+            <li class="footer__list-item">
+              <a class="footer__list-link footer__icon-item" href="#">
+                <span class="footer__list-icon footer__list-icon_youtube">
+                  <svg aria-hidden="true" width="11" height="11">
+                    <use xlink:href="./images/sprite.svg#youtube"></use>
+                  </svg>
+                </span>
+                YouTube
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__column footer__column_working">
+          <h3 class="footer__title footer__title_time">Opening Time</h3>
+
+          <ul class="footer__list footer__list_time">
+            <li class="footer__list-item">
+              <span class="footer__icon-item">
+                <span class="footer__list-icon footer__list-icon_clock">
+                  <svg aria-hidden="true" width="12" height="12">
+                    <use xlink:href="./images/sprite.svg#clock"></use>
+                  </svg>
+                </span>
+                Monday - Friday: 08:30 am - 09:30 pm
+              </span>
+            </li>
+            <li class="footer__list-item">
+              <span class="footer__icon-item">
+                Sat - Sun: 09:00 am - 10:00 pm
+              </span>
             </li>
           </ul>
 
-          <p class="footer__copy">
-            <span class="footer__copy-item">&copy; 2016 PSDFreebies.com</span>
-            <span class="footer__copy-item">All Rights Reserved.</span>
-          </p>
+          <h3 class="footer__title footer__title_payment">Payment Option</h3>
+
+          <div class="footer__payment">
+            <ul class="footer__payment-list">
+              <li class="footer__payment-item">
+                <a class="footer__payment-link" href="#">
+                  <img class="footer__payment-img" src="./images/payment-1.svg" alt="">
+                </a>
+              </li>
+              <li class="footer__payment-item">
+                <a class="footer__payment-link" href="#">
+                  <img class="footer__payment-img" src="./images/payment-2.svg" alt="">
+                </a>
+              </li>
+              <li class="footer__payment-item">
+                <a class="footer__payment-link" href="#">
+                  <img class="footer__payment-img" src="./images/payment-3.svg" alt="">
+                </a>
+              </li>
+              <li class="footer__payment-item">
+                <a class="footer__payment-link" href="#">
+                  <img class="footer__payment-img" src="./images/payment-4.svg" alt="">
+                </a>
+              </li>
+              <li class="footer__payment-item">
+                <a class="footer__payment-link" href="#">
+                  <img class="footer__payment-img" src="./images/payment-5.svg" alt="">
+                </a>
+              </li>
+              <li class="footer__payment-item">
+                <a class="footer__payment-link" href="#">
+                  <img class="footer__payment-img" src="./images/payment-6.svg" alt="">
+                </a>
+              </li>
+              <li class="footer__payment-item">
+                <a class="footer__payment-link" href="#">
+                  <img class="footer__payment-img" src="./images/payment-7.svg" alt="">
+                </a>
+              </li>
+            </ul>
+          </div>
+
         </div>
       </div>
-    </footer>
-  </div>
+    </div>
+    <div class="footer__info">
+      <div class="footer__info-container container">
+        <ul class="footer__info-nav">
+          <li class="footer__info-item">
+            <a class="footer__info-link" href="#">Sitemap</a>
+          </li>
+          <li class="footer__info-item">
+            <a class="footer__info-link" href="#">Searchs</a>
+          </li>
+          <li class="footer__info-item">
+            <a class="footer__info-link" href="#">Searchs</a>
+          </li>
+          <li class="footer__info-item">
+            <a class="footer__info-link" href="#">Advance</a>
+          </li>
+          <li class="footer__info-item">
+            <a class="footer__info-link" href="#">Searchs</a>
+          </li>
+          <li class="footer__info-item">
+            <a class="footer__info-link" href="#">Contact Us</a>
+          </li>
+        </ul>
+
+        <p class="footer__copy">
+          <span class="footer__copy-item">&copy; 2016 PSDFreebies.com</span>
+          <span class="footer__copy-item">All Rights Reserved.</span>
+        </p>
+      </div>
+    </div>
+  </footer>
   <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
   <script src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
   <script src="./js/plugins/svg4everybody.min.js"></script>
