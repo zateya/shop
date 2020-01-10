@@ -1,5 +1,6 @@
 html {
   box-sizing: border-box;
+  height: 100%;
 }
 
 *,
@@ -9,14 +10,9 @@ html {
 }
 
 body {
+  min-height: 100%;
   min-width: 320px;
   margin: 0;
-  font-size: 15px;
-  line-height: 1.2;
-  font-weight: 400;
-  font-family: "Lato", Arial, Helvetica, sans-serif;
-  color: #3d3d3d;
-  background-color: $color-grey-95;
 }
 
 img {
