@@ -1,9 +1,12 @@
 .promo {
   @include addShadow;
+
+  text-align: center;
 }
 
 .promo__img {
-  display: block;
+  display: inline-block;
+  vertical-align: top;
   transition: opacity 0.3s ease;
 }
 

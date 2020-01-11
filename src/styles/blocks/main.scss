@@ -1,10 +1,22 @@
+.main {
+  position: relative;
+
+  @media (min-width: $desktop-sm) {
+    position: static;
+  }
+}
+
 .main__container {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 30px;
+
   @media (min-width: $tablet) {
-    padding-bottom: 69px;
+    padding-bottom: 70px;
   }
 
   @media (min-width: $desktop-sm) {
-    display: flex;
+    flex-direction: row;
   }
 
   @media (max-width: $phone-max) {
@@ -14,7 +26,10 @@
 }
 
 .main__aside {
+  order: 2;
+
   @media (min-width: $desktop-sm) {
+    order: 0;
     min-width: $aside-width;
     max-width: $aside-width;
   }
