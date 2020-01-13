@@ -1,4 +1,4 @@
-.small-cards-slider:not(.slick-initialized)
+.small-cards-slider:not(.slick-slider)
   .small-cards-slider__item:not(:first-child) {
   display: none;
 }

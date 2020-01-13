@@ -7,7 +7,7 @@
   outline: none;
 }
 
-.showcase__slider:not(.slick-initialized) .showcase__slide:not(:first-child) {
+.showcase__slider:not(.slick-slider) .showcase__slide:not(:first-child) {
   display: none;
 }
 

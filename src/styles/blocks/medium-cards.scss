@@ -1,7 +1,15 @@
 .medium-cards {
-  display: flex;
   margin-left: -12px;
   margin-right: -12px;
+}
+
+.medium-cards:not(.slick-slider) {
+  display: flex;
+}
+
+.medium-cards .slick-track {
+  margin-left: 0;
+  margin-right: 0;
 }
 
 .medium-cards__item {

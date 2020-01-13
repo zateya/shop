@@ -104,8 +104,9 @@
   });
 
   // Слайдер карточек товаров в контенте
+
   $('.medium-cards_slider').each(function() {
-    $(this).slick({
+    var params = {
       slidesToShow: 2,
       slidesToScroll: 1,
       prevArrow: $(this).closest('.widget').find('.arrow-button_prev'),
@@ -125,36 +126,33 @@
           }
         },
       ]
-    });
+    };
+
+    $(this).slick(params);
   });
 
   // Фильтр карточек товаров
+
   $('.filters__item').on('click', function (event) {
     event.preventDefault();
 
     var filterName = $(this).data('filter');
+    var slider = $(this).closest('.widget').find('.medium-cards_slider');
     var activeClass = 'filters__item_active';
 
     if (!$(this).hasClass(activeClass)) {
       setActiveClass($(this).closest('.filters'), $(this), activeClass);
 
-      var slides = $(this).parents('.widget').find('[data-type]');
-
-      if (filterName === 'all') {
-        slides.show();
-
+      if (filterName === 'all' || filterName === '') {
+        slider.slick('slickUnfilter');
         return false;
       }
 
-      slides.each(function () {
-        if ($(this).data('type') !== filterName) {
-          $(this).hide();
-        } else {
-          $(this).show();
-        }
+      slider.slick('slickUnfilter');
+      slider.slick('slickFilter', function(index, slide) {
+        return $(slide).data('type') === filterName;
       });
     }
-
   });
 
   // Слайдер маленьких карточек товаров в контенте
