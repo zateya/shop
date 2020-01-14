@@ -149,8 +149,6 @@
           return $(slide).data('type') === filterName;
         });
       }
-
-      return false;
     }
   });
 

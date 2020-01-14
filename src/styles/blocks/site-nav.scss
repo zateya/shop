@@ -1,6 +1,7 @@
 .site-nav {
   position: relative;
   background-color: $color-red;
+  z-index: 1;
 }
 
 .site-nav__container {
