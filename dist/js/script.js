@@ -106,7 +106,7 @@
   // Слайдер карточек товаров в контенте
 
   $('.medium-cards_slider').each(function() {
-    var params = {
+    $(this).slick({
       slidesToShow: 2,
       slidesToScroll: 1,
       prevArrow: $(this).closest('.widget').find('.arrow-button_prev'),
@@ -126,9 +126,7 @@
           }
         },
       ]
-    };
-
-    $(this).slick(params);
+    });
   });
 
   // Фильтр карточек товаров
@@ -145,13 +143,14 @@
 
       if (filterName === 'all' || filterName === '') {
         slider.slick('slickUnfilter');
-        return false;
+      } else {
+        slider.slick('slickUnfilter');
+        slider.slick('slickFilter', function(index, slide) {
+          return $(slide).data('type') === filterName;
+        });
       }
 
-      slider.slick('slickUnfilter');
-      slider.slick('slickFilter', function(index, slide) {
-        return $(slide).data('type') === filterName;
-      });
+      return false;
     }
   });
 
@@ -202,4 +201,65 @@
       },
     ]
   });
+
+  // Валидация формы подписки
+  function showInputError (errorElement, message) {
+    errorElement.addClass('input-error_visible');
+    errorElement.text(message);
+  };
+
+  function hideInputError (errorElement) {
+    errorElement.removeClass('input-error_visible');
+    errorElement.text('');
+  };
+
+  function isEmailValid (emailInput) {
+    var errorElement = emailInput.parent().find('.input-error');
+    var emailElement = emailInput[0];
+    var message = '';
+
+    emailElement.setCustomValidity('');
+
+    if (!emailElement.validity.valid) {
+      if (emailElement.validity.valueMissing) {
+        message = 'Email is required'
+      } else {
+        message = 'Check Email'
+      }
+      showInputError(errorElement, message);
+      return false;
+    }
+
+    hideInputError(errorElement);
+    return true;
+  };
+
+  function emailInputHandler (event) {
+    isEmailValid($(event.target));
+  };
+
+  function inputBlurHandler (event) {
+    var input = $(event.target);
+
+    if (input.val().length === 0) {
+      var errorElement = input.parent().find('.input-error');
+      hideInputError(errorElement);
+    }
+  };
+
+  function signupSubmitHandler (event) {
+    event.preventDefault();
+
+    var form = $('.signup-form');
+    var emailInput = form.find('.input-text');
+
+    if (isEmailValid(emailInput)) {
+      console.log('Success!');
+      form[0].reset();
+    }
+  };
+
+  $('.signup-form__input').on('input', emailInputHandler);
+  $('.signup-form__input').on('blur', inputBlurHandler);
+  $('.signup-form').on('submit', signupSubmitHandler);
 })();

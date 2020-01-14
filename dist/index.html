@@ -309,12 +309,12 @@
             <h2 class="widget__title title">Newsletters</h2>
           </div>
 
-          <form class="signup-form widget__form" action="/signup/" method="POST">
+          <form class="signup-form widget__form" action="/signup/" method="POST" autocomplete="off" novalidate>
             <p class="widget__form-title">Sign Up for Our Newsletter!</p>
 
             <div class="form-control widget__form-control">
-              <input class="signup-form__input input-text" type="text" name="email" required>
-              <label class="form-control__message input-error">Email is required</label>
+              <input class="signup-form__input input-text" type="email" name="email" required>
+              <span class="form-control__message input-error" data-for-element="email">Email is required</span>
             </div>
 
             <button class="signup-form__button widget__form-button button">Subscribe</button>
