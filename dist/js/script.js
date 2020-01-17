@@ -138,6 +138,8 @@
     var slider = $(this).closest('.widget').find('.medium-cards_slider');
     var activeClass = 'filters__item_active';
 
+    slider.slick('slickGoTo', 0);
+
     if (!$(this).hasClass(activeClass)) {
       setActiveClass($(this).closest('.filters'), $(this), activeClass);
 
