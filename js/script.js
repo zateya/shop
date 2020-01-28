@@ -109,6 +109,8 @@
     $(this).slick({
       slidesToShow: 2,
       slidesToScroll: 1,
+      autoplay: false,
+      infinite: true,
       prevArrow: $(this).closest('.widget').find('.arrow-button_prev'),
       nextArrow: $(this).closest('.widget').find('.arrow-button_next'),
       mobileFirst: true,
@@ -116,15 +118,13 @@
         {
           breakpoint: 480,
           settings: {
-            slidesToShow: 3,
-            slidesToScroll: 1
+            slidesToShow: 3
           }
         },
         {
           breakpoint: 640,
           settings: {
-            slidesToShow: 4,
-            slidesToScroll: 1
+            slidesToShow: 4
           }
         },
       ]
